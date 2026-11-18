@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F3F5">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/settings"
+        android:textColor="@color/title_color"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_below="@id/tv_title"
+        android:layout_margin="20dp"
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_share"
+            android:text="@string/share"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+        </ImageView>
+        <View
+            android:layout_below="@id/tv_share"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#33242424"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:text="@string/rate_us"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tv_share"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_next"
+            android:layout_below="@id/tv_share"
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+        </ImageView>
+        <View
+            android:layout_below="@id/tv_rate"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:background="#33242424"
+            android:layout_height="0.3dp">
+        </View>
+
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:text="@string/about"
+            android:gravity="center_vertical"
+            android:layout_below="@id/tv_rate"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_next"
+            android:layout_below="@id/tv_rate"
+            android:layout_alignParentRight="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    
+
+
+
+
+</RelativeLayout>

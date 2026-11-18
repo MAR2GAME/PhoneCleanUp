@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/dialog_shape"
+    android:minHeight="88dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@mipmap/ic_devicis"
+        android:layout_width="20dp"
+        android:layout_height="25dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_device_ip"
+        android:layout_toRightOf="@id/iv"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/title_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_device_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_ip"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/theme_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_device_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_role"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/main_caption"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_device_interface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_device_mac"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/main_caption"
+        android:textSize="13sp" />
+
+</RelativeLayout>

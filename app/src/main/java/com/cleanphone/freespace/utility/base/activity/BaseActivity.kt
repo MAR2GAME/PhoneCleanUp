@@ -1,0 +1,49 @@
+package com.cleanphone.freespace.utility.base.activity
+
+import android.content.Context
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.cleanphone.freespace.utility.advertise.AdvertiseUserAttributes
+import com.cleanphone.freespace.utility.base.command.checkNotificationPermission
+import com.cleanphone.freespace.utility.base.command.hasStoragePermission
+import com.cleanphone.freespace.utility.utils.ActivityManagerUtils
+import com.cleanphone.freespace.utility.view.ProgressDialog
+
+
+open class BaseActivity : AppCompatActivity() {
+
+
+    var progressDialog: ProgressDialog? = null
+
+    fun handleLoadingState(showLoading: Boolean) {
+        if (progressDialog == null) {
+            progressDialog = ProgressDialog(this)
+        }
+        if (showLoading) {
+            progressDialog?.showProgress()
+        } else {
+            progressDialog?.hideProgress()
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        ActivityManagerUtils.addActivity(this)
+    }
+
+    override fun onDestroy() {
+        progressDialog?.hideProgress()
+        progressDialog = null
+        AdvertiseUserAttributes.setUser(
+            mapOf("has_notification_permission" to checkNotificationPermission(this)),
+            "user_set",
+        )
+        AdvertiseUserAttributes.setUser(
+            mapOf("has_allfile_permission" to hasStoragePermission()),
+            "user_set",
+        )
+        ActivityManagerUtils.removeActivity(this)
+        super.onDestroy()
+    }
+
+}

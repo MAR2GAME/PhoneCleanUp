@@ -1,0 +1,31 @@
+
+{
+  "project_info": {
+    "project_number": "449354747802",
+    "project_id": "phone-clean-up-free-space",
+    "storage_bucket": "phone-clean-up-free-space.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449354747802:android:d5afb7a5780f70596c3423",
+        "android_client_info": {
+          "package_name": "com.cleanphone.freespace.utility"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQz-WUnzOHNHbblJTFbba8bK3ZXKR8dXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#F1F3F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProcessManagerActivity">
+    <RelativeLayout
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ic_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/process_manager"
+                android:textColor="@color/title_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_below="@id/ll_back"
+            android:layout_margin="20dp"
+            android:src="@mipmap/ic_process"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_memory_usage_hint"
+            android:layout_toRightOf="@id/iv"
+            android:layout_below="@id/ll_back"
+            android:layout_marginTop="20dp"
+            android:text="@string/memory_usage"
+            android:textSize="15sp"
+            android:textColor="@color/hint_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_memory_usage"
+            android:layout_toRightOf="@id/iv"
+            android:layout_below="@id/tv_memory_usage_hint"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/theme_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_size_hint"
+            android:layout_toRightOf="@id/iv"
+            android:layout_below="@id/tv_memory_usage"
+            android:text="@string/running_apps"
+            android:textSize="15sp"
+            android:textColor="@color/hint_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_toRightOf="@id/iv"
+            android:layout_below="@id/tv_size_hint"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/title_color"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <RelativeLayout
+            android:id="@+id/rl_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/iv_nodata"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_nodata" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="260dp"
+                android:text="@string/not_found"
+                android:textColor="#666666"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/text_seletor"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build/
+/app/build/
+/app/.gradle/
+/app/.cxx/
+/app/release/
+/captures
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Local signing and deployment configuration
+*.jks
+*.keystore
+app/remote_config_key_*.json
+app/remote_config_*_unwrapped.json
+/key/
+/.sdk-src/
+/com/
+/META-INF/
+/.kotlin/
+/.superpowers/
+/.idea/
+
+# Local screenshots and UI inspection dumps
+/*-current.png
+/phonecleanup.png
+/phonecleanup.xml

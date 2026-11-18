@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F1F3F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SubmitMessageActivity">
+    <TextView
+        android:id="@+id/tv_bg"
+        android:background="@drawable/top_bg_shape"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="54dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="@string/uninstall"
+            android:textColor="@color/title_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:text="@string/why_uninstall_phone_clean_up"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/title_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/ll_back"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:text="@string/tell_us"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/title_color"
+        android:textSize="15sp"
+        android:layout_below="@id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_check1"
+        android:layout_below="@id/tv_bg"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/lacked_features_I_wanted"
+        android:textColor="@color/title_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:background="@drawable/dialog_shape"
+        android:layout_height="65dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/iv_check1"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/tv_bg"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_check_nor"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_check2"
+        android:layout_below="@id/tv_check1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/title_color"
+        android:text="@string/not_using_often"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/dialog_shape"
+        android:layout_height="65dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/iv_check2"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/tv_check1"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_check_nor"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_check3"
+        android:layout_below="@id/tv_check2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/title_color"
+        android:text="@string/i_not_need_it_anymore"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/dialog_shape"
+        android:layout_height="65dp">
+    </TextView>
+    <ImageView
+        android:id="@+id/iv_check3"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/tv_check2"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_check_nor"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+    </ImageView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:background="@drawable/btn_unclick"
+        android:layout_below="@id/tv_check3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_seletor"
+        android:text="@string/submit"
+        android:layout_width="320dp"
+        android:layout_height="55dp">
+    </Button>
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:textColor="#999999"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btn_submit"
+        android:layout_marginTop="10dp"
+        android:text="@string/cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

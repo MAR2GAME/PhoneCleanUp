@@ -1,0 +1,8 @@
+# Copy these settings into your ignored local.properties and supply local values.
+# sdk.dir should point to your Android SDK installation.
+sdk.dir=
+RELEASE_STORE_FILE=phonecleanup.jks
+RELEASE_STORE_PASSWORD=
+RELEASE_KEY_ALIAS=
+RELEASE_KEY_PASSWORD=
+ADV_REMOTE_CONFIG_ENCRYPTION_KEY=

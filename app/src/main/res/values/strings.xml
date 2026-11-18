@@ -1,0 +1,298 @@
+<resources>
+    <string name="app_name">Phone Clean Up</string>
+    <string name="splash_hint">By proceeding, you confirm you accept our Terms of Service | Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="get_started">Get started</string>
+    <string name="storage">STORAGE</string>
+    <string name="checking">Checking device information...</string>
+    <string name="overcooling">overcooling</string>
+    <string name="damage">damage</string>
+    <string name="good">good</string>codex --no-alt-screen
+    <string name="overheat">overheat</string>
+    <string name="overvoltage">overvoltage</string>
+    <string name="unknown">unknown</string>
+    <string name="fault">fault</string>
+    <string name="skip">skip</string>
+    <string name="ok">Ok</string>
+
+    <string name="back_to_main_page">Back To Main Page</string>
+
+
+    <string name="device_model">Device model</string>
+    <string name="system_version">System version</string>
+    <string name="screen_resolution">Screen resolution</string>
+    <string name="battery_health_status">Battery health status</string>
+    <string name="storage_usage">Storage usage</string>
+    <string name="generating_cleanup_plan">Generating cleanup plan</string>
+    <string name="to_done">Done</string>
+    <string name="home">Home</string>
+    <string name="toolbox">ToolBox</string>
+    <string name="settings">Settings</string>
+    <string name="setting">Setting</string>
+    <string name="access_required">Access Required</string>
+    <string name="permission_is_required">Permission is Required</string>
+    <string name="usage_permission_dialog_hint">Grant Access to Usage Data</string>
+    <string name="dialog_permission_hint">Please allow access to use this feature</string>
+    <string name="will_not_share_private_data">Won\'t share private data</string>
+    <string name="will_not_collect_private_data">Won\'t collect private data</string>
+    <string name="allow_btn">Allow</string>
+    <string name="cancel">Cancel</string>
+    <string name="notification_dialog_title">Notification permissions</string>
+    <string name="notification_dialog_hint">Turn on notification permissions so you won\'t miss important files!</string>
+
+    <string name="app_not_found">App not found</string>
+    <string name="manage">Manage</string>
+    <string name="update_hint">The update has been downloaded and completed</string>
+    <string name="update">Update</string>
+    <string name="app_usage_empty">No app usage data found.</string>
+
+    <string name="unable_to_open_permission">Unable to open permission settings page, please grant permission manually.</string>
+
+    <string name="exit_app">Exit app?</string>
+    <string name="exit_app_hint">Sure you want to exit the app now?</string>
+    <string name="exit">Exit</string>
+    <string name="message_notification">Message notification</string>
+    <string name="you_receive_a_new_message">you receive a new message</string>
+
+    <string name="rate_us_title">Thank you for using this app</string>
+    <string name="rate_us_hint">We would be very grateful if you could rate us 5 stars！</string>
+
+    <string name="feedback">We sincerely appreciate your feedback.</string>
+
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="about">About</string>
+    <string name="agreement">Terms of Service | Privacy Policy</string>
+    <string name="version">Version</string>
+
+    <string name="used_space">Used space</string>
+
+    <string name="remove_junk">Remove Junk</string>
+    <string name="remove_junk_hint">scan and organize files</string>
+
+    <string name="scan_now">Scan Now</string>
+    <string name="view_now">View   Now</string>
+    <string name="check_now">Check Now</string>
+    <string name="notification_cleared_count">%1$d notifications</string>
+
+    <string name="junk_files">Junk files</string>
+    <string name="submit">Submit</string>
+
+    <string name="remember">Remember, Phone Clean Up can help with:</string>
+    <string name="quick_junk_file_scans">1.Quick junk file scans</string>
+    <string name="manage_files_title">2.Managing large files &amp; screenshots</string>
+    <string name="keeping_battery_health">3.Keeping an eye on battery health</string>
+
+
+    <string name="thank_you_for_your_feedback">Thank You for Your Feedback</string>
+    <string name="recorded">We truly appreciate you taking the time to help us improve. Your input has been recorded.</string>
+    <string name="give_us_another_try">Give Us Another Try</string>
+
+    <string name="lacked_features_I_wanted">Lacked features I wanted</string>
+    <string name="not_using_often">Not using it often</string>
+    <string name="i_not_need_it_anymore">I don\'t need it anymore</string>
+
+    <string name="why_uninstall_phone_clean_up">Why uninstall Phone clean Up?</string>
+    <string name="tell_us">To help us improve, could you tell us the main reason you\'re uninstalling?</string>
+
+    <string name="what_issues_did_you_experience">What issues did you experience?</string>
+    <string name="we_will_improve_your_experience">We will improve your experience</string>
+
+    <string name="have_been_cleared">have been cleared</string>
+    <string name="task_complete">Task Complete</string>
+    <string name="network_scan">Network Scan</string>
+    <string name="network_scan_hint">scan Wi-Fi and connected devices</string>
+    <string name="network_speed">Network Speed</string>
+    <string name="network_speed_hint">test network connection speed</string>
+    <string name="network_usage">Network Usage</string>
+    <string name="network_usage_hint">view your usage of data</string>
+    <string name="app_usage">App Usage</string>
+    <string name="app_usage_hint">view screen time for apps</string>
+    <string name="notification_bar">Notification Bar</string>
+    <string name="notification_bar_hint">check if there are unwanted notifications</string>
+
+    <string name="back">Back</string>
+    <string name="clean_now">Clean Now</string>
+    <string name="junk_delete_hint">No personal data is deleted in this process</string>
+    <string name="delete_hint">No personal data is deleted in this process</string>
+    <string name="very_clean">Your phone is very clean.</string>
+    <string name="scanning">Scanning....</string>
+    <string name="junk_selected">Junk Selected</string>
+    <string name="zero_kb">0KB</string>
+    <string name="obsolete_files">Obsolete files</string>
+    <string name="residuals">Residuals</string>
+    <string name="ad_junk">Ad Junk</string>
+    <string name="trash_items">Trash Items</string>
+    <string name="continue_btn">Continue</string>
+    <string name="documents">Documents</string>
+    <string name="start">Start</string>
+    <string name="not_found">not found</string>
+    <string name="stop">Stop</string>
+    <string name="speaker_hint">There will be vibration and sound during speaker cleaning,which is normal!</string>
+    <string name="cleaning">Cleaning...</string>
+    <string name="cleaning_countdown_format">Cleaning (%1$s s)</string>
+    <string name="please_wait_a_moment">Please wait a moment</string>
+    <string name="speaker_back_hint">Cleaning,please wait a moment</string>
+    <string name="loading_the_components_of_speaker_cleaner">Loading..</string>
+    <string name="click_the_button_to_start_cleaning">Click the button to start cleaning</string>
+    <string name="clean_dust_hint">There will be vibration and sound during speaker cleaning, which is normal!</string>
+    <string name="scanning_in_progress">Scanning in progress. Are you sure want to stop?</string>
+    <string name="cleaning_in_progress">junk file found. Are you sure want to stop?</string>
+    <string name="running_apps">Running apps</string>
+    <string name="size">Size</string>
+    <string name="install_time">Install Time</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="memory_usage">Memory usage</string>
+    <string name="app_size">App size</string>
+    <string name="scanning_for_running_process">Scanning for running process..</string>
+    <string name="scanning_apps">Scanning apps..</string>
+    <string name="got_it">Got it</string>
+    <string name="force_stop">Tap \' Force Stop \' to quit the running app completely.</string>
+    <string name="uninstall_app">Tap \' Uninstall \' to remove the app you don\'t use often.</string>
+    <string name="scanning_for_battery_info">Scanning for battery info..</string>
+    <string name="temperature">Temperature</string>
+    <string name="percentage">Percentage</string>
+    <string name="estimated_battery">Estimated battery</string>
+    <string name="capacity">Capacity</string>
+    <string name="voltage">Voltage</string>
+    <string name="health">Health</string>
+    <string name="type">Type</string>
+
+    <string name="deep_Clean">Deep Clean</string>
+    <string name="failed_to_obtain_battery_information">Failed to obtain battery information</string>
+
+    <string name="scanning_large_file">Scanning large files..</string>
+    <string name="scanning_images">Scanning images..</string>
+    <string name="scanning_videos">Scanning videos..</string>
+    <string name="scanning_audio_files">Scanning audio files..</string>
+    <string name="scanning_documents">Scanning documents..</string>
+    <string name="scanning_apk_files">Scanning apk files..</string>
+    <string name="scanning_downloads">Scanning downloads..</string>
+    <string name="scanning_screenshots">Scanning screenshots..</string>
+    <string name="please_wait_with_status">Please wait a moment, %1$s</string>
+    <string name="process_manager">Process Manager</string>
+    <string name="app_manager">App Manager</string>
+    <string name="speaker_cleaner">Speaker Cleaner</string>
+    <string name="battery_info">Battery Info</string>
+    <string name="battery_info_hint">check battery status</string>
+    <string name="screenshot_manager">Screenshot Manager</string>
+    <string name="total_size">Screenshot totally</string>
+    <string name="select_all">Select All</string>
+    <string name="all_types">All Types</string>
+    <string name="all_size">All Size</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="large_file_cleaner">Large File Cleaner</string>
+    <string name="network_speed_not_wifi">@string/network_scan_unknown_ssid</string>
+    <string name="delete_screenshots_hint">Do you want to delete these screenshots?</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_7_days">Last 7 days</string>
+    <string name="last_30_days">last 30 days</string>
+    <string name="network_speed_running">Running...</string>
+    <string name="hours_spent">Hours spent</string>
+    <string name="times_opened">Times opened</string>
+    <string name="network_speed_type_wifi">Wi-Fi</string>
+    <string name="network_speed_type_mobile">Mobile</string>
+    <string name="network_speed_type_ethernet">Ethernet</string>
+    <string name="network_speed_unknown">Unknown</string>
+    <string name="network_speed_failed">Couldn\'t measure your speed. Try again.</string>
+    <string name="app_usage_duration_less_than_minute">&lt;1 min</string>
+    <string name="app_usage_duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="app_usage_duration_hours">%1$d h</string>
+    <string name="app_usage_duration_hours_zero_minutes">%1$d h 0 min</string>
+    <string name="app_usage_duration_minutes">%1$d min</string>
+    <string name="battery_time_hours_minutes">%1$d h %2$d min</string>
+    <string name="battery_time_minutes">%1$d min</string>
+    <string name="network_speed_ready">Ready to run a speed test</string>
+    <string name="network_speed_testing_download">Testing download speed...</string>
+    <string name="network_speed_testing_upload">Testing upload speed...</string>
+    <string name="network_speed_completed">Speed test completed</string>
+
+    <string name="turn_it_on">Tip Find Phone Clean Up and turn it on</string>
+    <string name="finished">Finished</string>
+    <string name="other">Other</string>
+    <string name="network_scan_result">Wi-Fi Scan Result</string>
+    <string name="network_scan_ssid">SSID</string>
+    <string name="network_scan_last_scan">Last Scan</string>
+    <string name="network_scan_details">Details</string>
+    <string name="network_scan_wifi_auth">Wi-Fi Auth</string>
+    <string name="network_scan_arp_spoofing">ARP Spoofing</string>
+    <string name="network_scan_ssl_stripping">SSL Stripping</string>
+    <string name="network_scan_ssl_splitting">SSL Splitting</string>
+    <string name="network_scan_dns_spoofing">DNS Spoofing</string>
+    <string name="network_scan_devices">Devices</string>
+    <string name="network_scan_unknown">Unknown</string>
+    <string name="network_scan_unknown_ssid">&lt;unknown ssid&gt;</string>
+    <string name="network_scan_not_connected">Not connected</string>
+    <string name="network_scan_obtain_permissions">Obtain Permissions</string>
+    <string name="network_scan_enable_location">Enable Location</string>
+    <string name="notification_showing_up_to">Showing up to %1$d blocked messages</string>
+    <string name="notification_blocking_enabled">Notification blocking is enabled</string>
+    <string name="notifications_blocked">notifications blocked</string>
+    <string name="one_tap_tidy_up">One-tap Tidy Up</string>
+    <string name="notification_time_just_now">Just now</string>
+    <string name="notification_empty">No blocked notifications yet.</string>
+    <string name="blocked_notifications">Blocked Notifications</string>
+    <string name="network_scan_security_open">Open</string>
+    <string name="network_scan_role_gateway">Gateway</string>
+    <string name="network_scan_role_this_device">This device</string>
+    <string name="network_scan_role_active_device">Active device</string>
+    <string name="network_scan_role_cached_device">Cached device</string>
+
+    <string name="images">Images</string>
+
+    <string name="video">Video</string>
+
+    <string name="audio">Audio</string>
+    <string name="delete_size_format">Delete %1$s</string>
+
+    <string name="screenshots">Screenshots</string>
+
+    <string name="apk">Apk</string>
+
+    <string name="large_files">Large Files</string>
+
+    <string name="delete_selected_files_hint">Do you want to delete the selected files?</string>
+
+
+    <string name="network_scan_scan_again">Scan Again</string>
+    <string name="network_scan_scanning">Scanning...</string>
+    <string name="network_scan_devices_title">Devices</string>
+    <string name="network_scan_devices_empty">No devices found yet. Run a network scan first.</string>
+    <string name="network_scan_no_conflict_detected">No conflict detected</string>
+    <string name="network_scan_gateway_conflict">Gateway conflict detected</string>
+    <string name="network_scan_no_redirect_detected">No redirect detected</string>
+    <string name="network_scan_redirect_detected">Redirect or portal detected</string>
+    <string name="network_scan_https_verified">HTTPS verified</string>
+    <string name="network_scan_https_check_failed">HTTPS check failed</string>
+    <string name="network_scan_dns_risk_detected">Unusual DNS response</string>
+    <string name="network_scan_mac_format">MAC: %1$s</string>
+    <string name="network_scan_interface_format">Interface: %1$s</string>
+    <string name="network_type">Network type</string>
+    <string name="wifi_name">Wi-Fi_name</string>
+    <string name="ip">IP</string>
+    <string name="network_speed_run_test">Run Speed Test</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="total_usage">Total Usage</string>
+    <string name="network_usage_permission_hint">Allow usage access so CleanPartner can show today\'s mobile and Wi-Fi traffic by app.</string>
+
+    <string name="network_usage_cellular_today">Cellular Today</string>
+    <string name="network_usage_wifi_today">Wi-Fi Today</string>
+    <string name="network_usage_total_today">Total Usage Today</string>
+    <string name="network_usage_downloads_today">Downloads Today</string>
+    <string name="network_usage_uploads_today">Uploads Today</string>
+    <string name="network_usage_empty">No network usage data found for today.</string>
+
+    <string name="blocked_notifications_hint">Block notifications from selected apps in the notification bar</string>
+    <string name="ineffective_cleaning">Ineffective Cleaning</string>
+    <string name="unaware_of_other_app_features">Unaware of Other App Features</string>
+    <string name="i_not_know_what_else_this_app_can_do">I don\'t know what else this app can do.</string>
+    <string name="cleaning_did_not_feel_effective_enough">Cleaning didn\'t feel effective enough.</string>
+    <string name="discover">Discover</string>
+    <string name="not_uninstall_yet">Don\'t Uninstall yet</string>
+    <string name="still_want_to_uninstall">Still want to uninstall</string>
+</resources>

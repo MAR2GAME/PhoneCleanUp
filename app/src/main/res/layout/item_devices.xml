@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <TextView
+        android:id="@+id/tv_name"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:textSize="17sp"
+        android:textColor="@color/title_color"
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </TextView>
+    <ImageView
+        android:src="@mipmap/ic_devicis"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="25dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/tv_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/network_scan_unknown"
+        android:textColor="@color/main_caption"
+        android:textSize="13sp" />
+</RelativeLayout>

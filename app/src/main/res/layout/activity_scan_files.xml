@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F3F5"
+    android:orientation="vertical"
+    tools:context=".ui.ScanFilesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg_shape"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_scan_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="54dp"
+            android:src="@mipmap/ic_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.cleanphone.freespace.utility.view.MyRotatingRingView
+                android:id="@+id/rotatingRingView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:backgroundColor="#D9D9D9"
+                app:ringColor="#00BC7D"
+                app:ringWidth="15dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_state"
+                android:text="@string/scanning"
+                android:textSize="22sp"
+                android:textColor="@color/title_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:textSize="24sp"
+                android:visibility="gone"
+                android:textColor="@color/title_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+               >
+            </TextView>
+            <TextView
+                android:id="@+id/tv_hint"
+                android:visibility="gone"
+                android:layout_below="@id/tv_size"
+                android:text="@string/junk_selected"
+                android:textSize="24sp"
+                android:textColor="@color/title_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/bt_clean"
+            android:layout_width="320dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btn_unclick"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="@string/clean_now"
+            android:textAllCaps="false"
+            android:textColor="@color/text_seletor"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/ll_hint"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/iv_clean_hint"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_clean_hint"/>
+            <TextView
+                android:id="@+id/tv_clean_hint"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/junk_delete_hint"
+                android:textColor="#F5753A"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rate_us_shape"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/rate_us"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/ex_junk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_hint"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp"
+        android:groupIndicator="@null" />
+
+
+</LinearLayout>

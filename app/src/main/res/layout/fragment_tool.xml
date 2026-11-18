@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F3F5">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/app_name"
+        android:textColor="@color/title_color"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_below="@id/tv_title"
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <RelativeLayout
+            android:id="@+id/rl_process_manager"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_process_manager"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <TextView
+                android:text="@string/process_manager"
+                android:textColor="@color/title_color"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_battery_info"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_bt"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <TextView
+                android:text="@string/battery_info"
+                android:textColor="@color/title_color"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="65dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_speaker"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/ic_speaker"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <TextView
+                android:text="@string/speaker_cleaner"
+                android:textColor="@color/title_color"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_app"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/ic_appmanager"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <TextView
+                android:text="@string/app_manager"
+                android:textColor="@color/title_color"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_tool"
+        android:layout_below="@id/ll2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    
+
+
+</RelativeLayout>

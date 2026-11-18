@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F1F3F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NetworkSpeedActivity">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@drawable/top_bg_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ic_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/network_speed"
+                android:textColor="@color/title_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_network_type_hint"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="@string/network_type"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/ll_back"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_network_type_value"
+            android:textSize="18sp"
+            android:textColor="@color/title_color"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_back"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp">
+        </TextView>
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:background="#33121212"
+            android:layout_below="@id/tv_network_type_hint"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_network_name"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_name"
+            android:paddingLeft="25dp"
+            android:layout_below="@id/tv_network_type_hint"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_wifi_name_value"
+            android:textSize="18sp"
+            android:textColor="@color/title_color"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_network_type_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp">
+        </TextView>
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:background="#33121212"
+            android:layout_below="@id/tv_wifi_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:text="@string/ip"
+            android:paddingLeft="25dp"
+            android:layout_below="@id/tv_wifi_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_ip_value"
+            android:textSize="18sp"
+            android:textColor="@color/title_color"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_wifi_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp">
+        </TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_below="@id/rl"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:clipChildren="false"
+            android:background="@drawable/dialog_shape"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_download"
+                android:src="@mipmap/ic_download"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_color"
+                    android:text="@string/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_download_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/title_color"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mbps"
+                    android:textColor="@color/theme_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/dialog_shape"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:src="@mipmap/ic_upload"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="45dp"
+                android:layout_height="45dp">
+            </ImageView>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/hint_color"
+                    android:text="@string/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_upload_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/title_color"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mbps"
+                    android:textColor="@color/theme_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_stage_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/ll"
+        android:textColor="@color/main_caption"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_run_speed_test"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/tv_stage_hint"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/network_speed_run_test"
+        android:textAllCaps="false"
+        android:textColor="@color/text_seletor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
