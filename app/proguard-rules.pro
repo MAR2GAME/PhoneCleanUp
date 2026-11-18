@@ -95,11 +95,6 @@
 -keep class com.cleanphone.freespace.utility.utils.SafeChecker {*;}
 -keep class com.airbnb.lottie.** { *; } # Lottie 如果仍然崩溃，可以保留；否则建议也删掉
 
-# ThinkingData (数数科技) - 建议查阅其官方最新文档获取精准规则
-# 如果删掉后统计不上报，请按官方文档添加特定的类，而不是全包保留
--keep class cn.thinkingdata.android.** { *; }
--keep class com.thinkingdata.analytics.** { *; }
-
 # ==========================================
 # 移除 Release 包的日志
 # ==========================================
@@ -145,5 +140,4 @@
 -dontwarn com.applovin.**
 -dontwarn com.google.android.ump.**
 
-# Singular SDK (精简保留，如果追踪失效请查官方文档)
--keep class com.singular.sdk.** { *; }
+# Mar2SDK and its analytics/ad dependencies provide consumer rules in their AARs.

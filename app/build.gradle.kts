@@ -1,13 +1,9 @@
 import java.util.Properties
-import org.gradle.kotlin.dsl.annotationProcessor
-import org.gradle.kotlin.dsl.implementation
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
-    id("org.jetbrains.kotlin.plugin.serialization") version "2.2.20"
 }
 val localAdvProperties = Properties().apply {
     val localPropertiesFile = rootProject.file("local.properties")
@@ -25,26 +21,18 @@ fun Project.advStringProperty(name: String, fallback: String): String {
     return fromLocal?.takeIf { it.isNotBlank() } ?: fallback
 }
 
-fun Project.advStringProperty(propertyName: String, envName: String, fallback: String): String {
-    val fromGradle = providers.gradleProperty(propertyName).orNull
-    if (!fromGradle.isNullOrBlank()) return fromGradle
-    val fromLocal = localAdvProperties.getProperty(propertyName)
-    if (!fromLocal.isNullOrBlank()) return fromLocal
-    val fromEnv = providers.environmentVariable(envName).orNull
-    if (!fromEnv.isNullOrBlank()) return fromEnv
-    val fromLegacyLocal = localAdvProperties.getProperty(envName)
-    return fromLegacyLocal?.takeIf { it.isNotBlank() } ?: fallback
-}
-
 fun String.asBuildConfigString(): String =
     "\"${replace("\\", "\\\\").replace("\"", "\\\"").replace("\r", "\\r").replace("\n", "\\n")}\""
 
 
 android {
     namespace = "com.cleanphone.freespace.utility"
-    compileSdk = 36
-    packagingOptions {
-        merge ("META-INF/DEPENDENCIES")
+    compileSdk {
+        version = release(37) { minorApiLevel = 0 }
+    }
+    ndkVersion = "27.0.12077973"
+    packaging {
+        resources.merges += "META-INF/DEPENDENCIES"
     }
     defaultConfig {
         applicationId = "com.cleanphone.freespace.utility"
@@ -70,26 +58,7 @@ android {
         buildConfigField("String", "ADV_ADMOB_OPEN_ID", advStringProperty("ADV_ADMOB_OPEN_ID", "ca-app-pub-3106003114382927/1408775389").asBuildConfigString())
         buildConfigField("String", "ADV_ADMOB_NATIVE_ID", advStringProperty("ADV_ADMOB_NATIVE_ID", "").asBuildConfigString())
         buildConfigField("String", "ADV_ADMOB_REWARDED_ID", advStringProperty("ADV_ADMOB_REWARDED_ID", "").asBuildConfigString())
-        buildConfigField("String", "ADV_DEFAULT_TOPIC", advStringProperty("ADV_DEFAULT_TOPIC", "phone-cleanup-debug").asBuildConfigString())
-        buildConfigField("String", "ADV_AD_DEBUG_OVERRIDE_MODE", advStringProperty("adv.adDebugOverride.mode", "ADV_AD_DEBUG_OVERRIDE_MODE", "POLICY").asBuildConfigString())
-
-        val advFacebookAppId = advStringProperty("ADV_FACEBOOK_APP_ID", "")
-        val advFacebookClientToken = advStringProperty("ADV_FACEBOOK_CLIENT_TOKEN", "")
-        buildConfigField("String", "ADV_FACEBOOK_APP_ID", advFacebookAppId.asBuildConfigString())
-        buildConfigField("String", "ADV_FACEBOOK_CLIENT_TOKEN", advFacebookClientToken.asBuildConfigString())
-        buildConfigField(
-            "String",
-            "ADV_REMOTE_CONFIG_ENCRYPTION_KEY",
-            advStringProperty("ADV_REMOTE_CONFIG_ENCRYPTION_KEY", "").asBuildConfigString(),
-        )
-        buildConfigField(
-            "String",
-            "ADV_REMOTE_CONFIG_ENCRYPTION_KEY_ID",
-            advStringProperty("ADV_REMOTE_CONFIG_ENCRYPTION_KEY_ID", "rc_phonecleanup_freespace_20260806").asBuildConfigString(),
-        )
         manifestPlaceholders["advAdmobAppId"] = advAdmobAppId
-        manifestPlaceholders["advFacebookAppId"] = advFacebookAppId
-        manifestPlaceholders["advFacebookClientToken"] = advFacebookClientToken
     }
     externalNativeBuild {
         cmake {
@@ -128,8 +97,10 @@ android {
                 signingConfig = signingConfigs.getByName("release")
             }
             isDebuggable=false
-            isMinifyEnabled = true
-            isShrinkResources=true
+            optimization {
+                enable = true
+                keepRules { includeDefault = true }
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -139,9 +110,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
     }
     buildFeatures {
         buildConfig = true
@@ -168,7 +136,9 @@ dependencies {
     api(libs.androidx.lifecycle.livedata)
     implementation(libs.eventbus)
     implementation(libs.androidx.databinding.runtime)
-    implementation("com.pdffox:advertise:1.0.12")
+    implementation(libs.mar2.sdk.core)
+    implementation(libs.mar2.sdk.impl)
+    debugImplementation(libs.mar2.sdk.debug)
     implementation(libs.app.update)
     implementation(libs.app.update.ktx)
     implementation(libs.roundedimageview)

@@ -5,4 +5,15 @@ RELEASE_STORE_FILE=phonecleanup.jks
 RELEASE_STORE_PASSWORD=
 RELEASE_KEY_ALIAS=
 RELEASE_KEY_PASSWORD=
-ADV_REMOTE_CONFIG_ENCRYPTION_KEY=
+# Optional AdMob overrides; defaults retain this application's production IDs.
+ADV_ADMOB_APP_ID=
+ADV_ADMOB_INTERSTITIAL_ID=
+ADV_ADMOB_OPEN_ID=
+ADV_ADMOB_BANNER_ID=
+ADV_ADMOB_NATIVE_ID=
+ADV_ADMOB_REWARDED_ID=
+
+# Put GitHub Packages credentials in the USER Gradle properties file, never here:
+# %USERPROFILE%/.gradle/gradle.properties: gpr.user / gpr.key (read:packages).
+# Environment alternatives: GITHUB_ACTOR and GITHUB_TOKEN (or GH_TOKEN).
+# Gradle 9.5 runs on JDK 21; Java/Kotlin app bytecode still targets JVM 11.

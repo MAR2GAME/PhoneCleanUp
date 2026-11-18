@@ -2,7 +2,7 @@ package com.cleanphone.freespace.utility.base.activity
 
 import android.content.Context
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import com.cleanphone.freespace.utility.advertise.AdvertisePageMediator
 import com.cleanphone.freespace.utility.advertise.AdvertiseUserAttributes
 import com.cleanphone.freespace.utility.base.command.checkNotificationPermission
 import com.cleanphone.freespace.utility.base.command.hasStoragePermission
@@ -10,7 +10,7 @@ import com.cleanphone.freespace.utility.utils.ActivityManagerUtils
 import com.cleanphone.freespace.utility.view.ProgressDialog
 
 
-open class BaseActivity : AppCompatActivity() {
+open class BaseActivity : com.mar2sdk.impl.BaseActivity() {
 
 
     var progressDialog: ProgressDialog? = null
@@ -29,6 +29,16 @@ open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         ActivityManagerUtils.addActivity(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        AdvertisePageMediator.updateForegroundHostState(this, isResumed = true)
+    }
+
+    override fun onPause() {
+        AdvertisePageMediator.updateForegroundHostState(this, isResumed = false)
+        super.onPause()
     }
 
     override fun onDestroy() {

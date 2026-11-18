@@ -48,8 +48,6 @@ import com.cleanphone.freespace.utility.view.NotificationDialog
 import com.cleanphone.freespace.utility.view.RateUsDialog
 import com.cleanphone.freespace.utility.view.RequestPermissionDialog
 import com.google.android.play.core.install.model.AppUpdateType
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.adv.AppOpenHelper
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.greenrobot.eventbus.EventBus
@@ -77,7 +75,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding> (){
     ) { isGranted ->
         if (isGranted) {
             log("agree_push_permission")
-           // AdvertiseSdk.ensurePersistentNotificationServiceRunning(this)
+           // com.mar2sdk.core.notify.NotificationUtil.startFGS()
         } else {
             log("disagree_push_permission")
             Toast.makeText(this, getString(R.string.notification_dialog_hint), Toast.LENGTH_SHORT)
@@ -125,7 +123,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding> (){
     fun toScanActivity() {
         if (!hasStoragePermission()) {
             showStoragePermissionDialog(getString(R.string.remove_junk)) {
-                AppOpenHelper.spSwitch=true
+                AdvertisePageMediator.suppressNextForegroundOpenAd()
                 lifecycleScope.launch {
                     delay(200)
                     readyGo(TransparentActivity::class.java)
@@ -345,7 +343,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding> (){
 
     private fun ensurePersistentNotificationRunning() {
         if (checkNotificationPermission(this)){
-            AdvertiseSdk.ensurePersistentNotificationServiceRunning(this)
+            com.mar2sdk.core.notify.NotificationUtil.startFGS()
         }
 
     }
@@ -369,7 +367,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding> (){
     fun toLoadActivity(tag:String){
         if (!hasStoragePermission()) {
             showStoragePermissionDialog(tag) {
-                AppOpenHelper.spSwitch=true
+                AdvertisePageMediator.suppressNextForegroundOpenAd()
                 lifecycleScope.launch {
                     delay(200)
                     readyGo(TransparentActivity::class.java)

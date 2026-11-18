@@ -1,0 +1,51 @@
+{
+  "isSend": true,
+  "isForegroundSend": true,
+  "isScreenOffSend": true,
+  "isScreenLockSend": true,
+  "interval_second": 0,
+  "24HMaxBatch": 2147483647,
+  "1HMaxBatch": 2147483647,
+  "24HMaxItem": 2147483647,
+  "1HMaxItem": 2147483647,
+  "busyBatchPolicy": "delay",
+  "busyBatchDelaySeconds": 30,
+  "ChannelCount": 3,
+  "triggers": {
+    "delete_photos": {
+      "first_delay": 600,
+      "delay": 0,
+      "count": 1,
+      "styles": [
+        1
+      ],
+      "interval_batch": 3600,
+      "interval_item": 0
+    },
+    "delete_videos": {
+      "first_delay": 600,
+      "delay": 0,
+      "count": 1,
+      "styles": [
+        1
+      ],
+      "interval_batch": 3600,
+      "interval_item": 0
+    },
+    "delete_files": {
+      "first_delay": 600,
+      "delay": 0,
+      "count": 1,
+      "styles": [
+        1
+      ],
+      "interval_batch": 3600,
+      "interval_item": 0
+    }
+  },
+  "timer": {},
+  "groups": {
+    "interval_between_groups": 0,
+    "list": []
+  }
+}

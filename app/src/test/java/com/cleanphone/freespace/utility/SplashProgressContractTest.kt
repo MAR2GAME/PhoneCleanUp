@@ -25,9 +25,7 @@ class SplashProgressContractTest {
 
     @Test
     fun `smooth progress keeps ad wait and final completion behavior`() {
-        assertTrue(splashSource.contains("OPEN_AD_LOAD_WAIT_TIMEOUT_MS = 10_000L"))
-        assertTrue(splashSource.contains("OPEN_AD_OFFLINE_LOAD_WAIT_TIMEOUT_MS = 2_500L"))
         assertTrue(splashSource.contains("completeProgressQuickly()"))
-        assertTrue(splashSource.contains("AdvertisePageMediator.showCachedLaunchOpenAd"))
+        assertTrue(splashSource.contains("AdvertisePageMediator.showLaunchOpenAd"))
     }
 }

@@ -54,7 +54,6 @@ import com.cleanphone.freespace.utility.databinding.ActivityScanPhoneBinding
 import com.cleanphone.freespace.utility.utils.AppPrefsUtils
 import com.cleanphone.freespace.utility.utils.SizeUtil
 import com.google.android.gms.ads.appopen.AppOpenAd
-import com.pdffox.adv.adv.AppOpenHelper
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -255,7 +254,7 @@ class ScanPhoneActivity : BaseViewActivity<ActivityScanPhoneBinding>(){
                 if (hasStoragePermission()) {
                     onGetPermission()
                 }else{
-                    AppOpenHelper.spSwitch=true
+                    AdvertisePageMediator.suppressNextForegroundOpenAd()
                     checkAndRequestPermissions(Manifest.permission.READ_EXTERNAL_STORAGE, {
                         lifecycleScope.launch {
                             delay(200)

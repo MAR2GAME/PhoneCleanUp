@@ -1,730 +1,3589 @@
-[
-  {
-    "Id": 843,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_1",
-    "Title": "Unused Apps Detected",
-    "Content": "You have apps you haven't used in months. Remove them to save space.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Aplicaciones no utilizadas detectadas\",\"content\":\"Tienes aplicaciones que no has usado en meses. Elimínalas para ahorrar espacio.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Applications inutilisées détectées\",\"content\":\"Vous avez des applications que vous n'avez pas utilisées depuis des mois. Supprimez-les pour libérer de l'espace.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Nicht verwendete Apps erkannt\",\"content\":\"Sie haben Apps, die Sie seit Monaten nicht mehr benutzt haben. Löschen Sie sie, um Speicherplatz freizugeben.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"未使用のアプリを検出\",\"content\":\"数か月間使っていないアプリがあります。削除して空き容量を増やしましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"사용하지 않는 앱 감지\",\"content\":\"몇 달 동안 사용하지 않은 앱이 있습니다. 삭제하여 저장 공간을 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"发现未使用的应用\",\"content\":\"有些应用已数月未使用。删除它们以释放空间。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"發現未使用的應用程式\",\"content\":\"有些應用程式已數月未使用。移除它們以釋放空間。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 844,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_2",
-    "Title": "Your RAM is Clogged Up",
-    "Content": "Free up memory for a smoother experience. Close unnecessary tasks.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Tu RAM está obstruida\",\"content\":\"Libera memoria para una experiencia más fluida. Cierra tareas innecesarias.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Votre mémoire RAM est saturée.\",\"content\":\"Libérez de la mémoire pour une expérience plus fluide. Fermez les tâches inutiles.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Ihr Arbeitsspeicher ist überlastet.\",\"content\":\"Speicherplatz freigeben für eine flüssigere Nutzung. Nicht benötigte Prozesse schließen.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"RAMが圧迫されています\",\"content\":\"メモリを解放して動作をスムーズにしましょう。不要なタスクを終了してください。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"RAM 사용량이 높습니다\",\"content\":\"메모리를 확보하여 더 원활하게 사용하세요. 불필요한 작업을 종료하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"RAM 占用过高\",\"content\":\"释放内存，让运行更流畅。关闭不必要的任务。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"RAM 佔用過高\",\"content\":\"釋放記憶體，讓操作更流暢。結束不必要的處理程序。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  },
-  {
-    "Id": 845,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_3",
-    "Title": "Is Your Battery Healthy?",
-    "Content": "Get a full analysis of your battery's condition and capacity.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Está su batería en buen estado?\",\"content\":\"Obtenga un análisis completo del estado y la capacidad de su batería.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Votre batterie est-elle en bon état ?\",\"content\":\"Obtenez une analyse complète de l'état et de la capacité de votre batterie.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Ist Ihr Akku in Ordnung?\",\"content\":\"Erhalten Sie eine vollständige Analyse des Zustands und der Kapazität Ihrer Batterie.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"バッテリーの状態は良好ですか？\",\"content\":\"バッテリーの状態と容量を詳しく分析します。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"배터리 상태가 양호한가요?\",\"content\":\"배터리 상태와 용량을 자세히 분석해 보세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"电池健康状况如何？\",\"content\":\"全面分析电池状态和容量。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"電池健康狀況如何？\",\"content\":\"完整分析電池狀態與容量。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 846,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_4",
-    "Title": "Duplicate Screenshots?",
-    "Content": "We found similar screenshots you can delete to save space.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Capturas de pantalla duplicadas?\",\"content\":\"Encontramos capturas de pantalla similares que puedes eliminar para ahorrar espacio.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Captures d'écran en double ?\",\"content\":\"Nous avons trouvé des captures d'écran similaires que vous pouvez supprimer pour gagner de l'espace.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Doppelte Screenshots?\",\"content\":\"Wir haben ähnliche Screenshots gefunden, die Sie löschen können, um Speicherplatz zu sparen.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"重複したスクリーンショット？\",\"content\":\"似たスクリーンショットが見つかりました。削除して空き容量を増やせます。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"중복 스크린샷이 있나요?\",\"content\":\"비슷한 스크린샷을 찾았습니다. 삭제하여 저장 공간을 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"有重复截图？\",\"content\":\"发现相似截图，删除后可释放空间。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"有重複的螢幕截圖？\",\"content\":\"發現相似的螢幕截圖，刪除即可釋放空間。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 847,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_5",
-    "Title": "Running Out of Room?",
-    "Content": "Your giant files might be the culprit. Sort and delete them easily.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Se está quedando sin espacio?\",\"content\":\"Tus archivos gigantes podrían ser los culpables. Ordénalos y elimínalos fácilmente.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Vous manquez de place ?\",\"content\":\"Vos fichiers volumineux sont peut-être la cause du problème. Triez-les et supprimez-les facilement.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Platzmangel?\",\"content\":\"Möglicherweise sind Ihre riesigen Dateien die Ursache. Sortieren und löschen Sie sie einfach.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"空き容量が足りませんか？\",\"content\":\"大容量ファイルが原因かもしれません。簡単に並べ替えて削除できます。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"저장 공간이 부족한가요?\",\"content\":\"대용량 파일이 원인일 수 있습니다. 쉽게 정렬하고 삭제하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"存储空间不足？\",\"content\":\"超大文件可能是元凶。轻松排序并删除它们。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"儲存空間不足？\",\"content\":\"超大檔案可能是原因。輕鬆排序並刪除它們。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 848,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_6",
-    "Title": "Storage Cleanup Alert!",
-    "Content": "Your phone has 1.2 GB of junk files. Free up space now!",
-    "Button": "Scan",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¡Alerta de limpieza de almacenamiento!\",\"content\":\"Tu teléfono tiene 1,2 GB de archivos basura. ¡Libera espacio ya!\",\"img\":\"\",\"button\":\"Escanear\"},{\"language\":\"fr\",\"title\":\"Alerte nettoyage de votre entrepôt !\",\"content\":\"Votre téléphone contient 1,2 Go de fichiers inutiles. Libérez de l'espace dès maintenant !\",\"img\":\"\",\"button\":\"Balayage\"},{\"language\":\"de\",\"title\":\"Aufräumalarm!\",\"content\":\"Ihr Telefon enthält 1,2 GB unnötige Dateien. Geben Sie jetzt Speicherplatz frei!\",\"img\":\"\",\"button\":\"Scan\"},{\"language\":\"ja\",\"title\":\"ストレージクリーンアップのお知らせ！\",\"content\":\"端末に1.2 GBの不要ファイルがあります。今すぐ空き容量を増やしましょう！\",\"img\":\"\",\"button\":\"スキャン\"},{\"language\":\"ko\",\"title\":\"저장 공간 정리 알림!\",\"content\":\"휴대전화에 1.2GB의 정크 파일이 있습니다. 지금 공간을 확보하세요!\",\"img\":\"\",\"button\":\"스캔\"},{\"language\":\"zh\",\"title\":\"存储清理提醒！\",\"content\":\"手机中有 1.2 GB 垃圾文件。立即释放空间！\",\"img\":\"\",\"button\":\"扫描\"},{\"language\":\"zh-TW\",\"title\":\"儲存空間清理提醒！\",\"content\":\"手機中有 1.2 GB 垃圾檔案。立即釋放空間！\",\"img\":\"\",\"button\":\"掃描\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 849,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_7",
-    "Title": "Time for a Speaker Check-up",
-    "Content": "Ensure your music and calls are crystal clear. Clean it now.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Es hora de hacer una revisión del orador\",\"content\":\"Asegúrate de que tu música y llamadas tengan una nitidez impecable. Límpialo ahora.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Il est temps de faire vérifier les haut-parleurs.\",\"content\":\"Assurez-vous que votre musique et vos appels soient d'une clarté cristalline. Nettoyez-le maintenant.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Zeit für einen Lautsprecher-Check\",\"content\":\"Sorgen Sie für kristallklare Musik und Anrufe. Reinigen Sie Ihr Gerät jetzt.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"スピーカーをチェック\",\"content\":\"音楽や通話をクリアに保つため、今すぐクリーニングしましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"스피커 점검 시간\",\"content\":\"음악과 통화 소리를 선명하게 유지하세요. 지금 스피커를 청소해 보세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"该检查扬声器了\",\"content\":\"确保音乐和通话清晰。立即清理。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"該檢查揚聲器了\",\"content\":\"確保音樂和通話清晰。立即清理。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 850,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_8",
-    "Title": "Declutter Your Home Screen",
-    "Content": "Make your phone feel new by uninstalling apps you don't need.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Despeja tu pantalla de inicio\",\"content\":\"Haz que tu teléfono se sienta como nuevo desinstalando aplicaciones que no necesitas.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Désencombrez votre écran d'accueil\",\"content\":\"Redonnez un coup de neuf à votre téléphone en désinstallant les applications dont vous n'avez pas besoin.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Räumen Sie Ihren Startbildschirm auf\",\"content\":\"Verleihen Sie Ihrem Smartphone ein neues Gefühl, indem Sie Apps deinstallieren, die Sie nicht benötigen.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"ホーム画面をすっきり\",\"content\":\"不要なアプリをアンインストールして、端末をすっきりさせましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"홈 화면을 깔끔하게\",\"content\":\"필요 없는 앱을 제거하여 휴대전화를 새것처럼 정리하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"整理主屏幕\",\"content\":\"卸载不需要的应用，让手机焕然一新。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"整理主畫面\",\"content\":\"解除安裝不需要的應用程式，讓手機煥然一新。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 851,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_9",
-    "Title": "Battery Drain Detected",
-    "Content": "Background apps are using power. Manage them to save battery.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Se detectó descarga de batería\",\"content\":\"Las aplicaciones en segundo plano consumen energía. Adminístralas para ahorrar batería.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Décharge de la batterie détectée\",\"content\":\"Les applications en arrière-plan consomment de l'énergie. Gérez-les pour économiser la batterie.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Batterieentladung festgestellt\",\"content\":\"Hintergrund-Apps verbrauchen Strom. Verwalten Sie diese, um Akku zu sparen.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"バッテリー消費を検出\",\"content\":\"バックグラウンドアプリが電力を使用しています。管理してバッテリーを節約しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"배터리 소모 감지\",\"content\":\"백그라운드 앱이 전력을 사용 중입니다. 관리하여 배터리를 절약하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"检测到耗电问题\",\"content\":\"后台应用正在耗电。管理它们以节省电量。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"偵測到耗電問題\",\"content\":\"背景應用程式正在耗電。管理它們以節省電量。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  },
-  {
-    "Id": 852,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_10",
-    "Title": "Free Up Gigabytes",
-    "Content": "Find forgotten large files and get massive storage back.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Liberar gigabytes\",\"content\":\"Encuentre archivos grandes olvidados y recupere un almacenamiento masivo.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Libérez des gigaoctets\",\"content\":\"Retrouvez vos fichiers volumineux oubliés et récupérez un espace de stockage considérable.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Gigabytes freigeben\",\"content\":\"Finden Sie vergessene große Dateien und gewinnen Sie massiv Speicherplatz zurück.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"数GBの空き容量を確保\",\"content\":\"忘れていた大容量ファイルを見つけて、ストレージの空き容量を大幅に増やしましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"수 GB의 공간 확보\",\"content\":\"잊고 있던 대용량 파일을 찾아 저장 공간을 크게 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"释放数 GB 空间\",\"content\":\"找出遗忘的大文件，释放大量存储空间。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"釋放數 GB 空間\",\"content\":\"找出被遺忘的大型檔案，釋放大量儲存空間。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 853,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_11",
-    "Title": "Time for a Screenshot Review",
-    "Content": "Keep the important ones, delete the rest. It's quick and easy!",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Es hora de una revisión de capturas de pantalla\",\"content\":\"Conserva lo importante y borra el resto. ¡Es rápido y fácil!\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Il est temps de faire une analyse de capture d'écran.\",\"content\":\"Gardez les plus importantes, supprimez les autres. C'est rapide et facile !\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Zeit für eine Screenshot-Analyse\",\"content\":\"Behalte die wichtigen Nachrichten, lösche den Rest. Es geht schnell und einfach!\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"スクリーンショットを見直す\",\"content\":\"必要なものだけ残して、残りは削除。すばやく簡単に整理できます！\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"스크린샷 검토 시간\",\"content\":\"중요한 것만 남기고 나머지는 삭제하세요. 빠르고 간단합니다!\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"该检查截图了\",\"content\":\"保留重要截图，删除其余截图。快速又简单！\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"該檢查螢幕截圖了\",\"content\":\"保留重要的螢幕截圖，刪除其餘的。快速又簡單！\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 854,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_12",
-    "Title": "Screenshot Clutter Alert!",
-    "Content": "You have 50+ screenshots. Clear out the blurry and old ones.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¡Alerta de desorden en la captura de pantalla!\",\"content\":\"Tienes más de 50 capturas de pantalla. Borra las borrosas y antiguas.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Alerte au bazar de captures d'écran !\",\"content\":\"Vous avez plus de 50 captures d'écran. Supprimez celles qui sont floues ou anciennes.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Screenshot-Chaos-Alarm!\",\"content\":\"Du hast über 50 Screenshots. Lösche die unscharfen und alten.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"スクリーンショットがたまっています！\",\"content\":\"50枚以上のスクリーンショットがあります。ぼやけたものや古いものを整理しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"스크린샷 정리 알림!\",\"content\":\"스크린샷이 50개 넘게 있습니다. 흐리거나 오래된 항목을 정리하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"截图过多提醒！\",\"content\":\"截图已超过 50 张。清理模糊和过时的截图。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"螢幕截圖過多提醒！\",\"content\":\"螢幕截圖已超過 50 張。清理模糊和過時的截圖。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 855,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_13",
-    "Title": "Ready for a Fresh Start?",
-    "Content": "Uninstall multiple apps at once and free up significant storage.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Listo para un nuevo comienzo?\",\"content\":\"Desinstale varias aplicaciones a la vez y libere una cantidad significativa de almacenamiento.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Prêt pour un nouveau départ ?\",\"content\":\"Désinstallez plusieurs applications simultanément et libérez un espace de stockage considérable.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Bereit für einen Neuanfang?\",\"content\":\"Deinstallieren Sie mehrere Apps gleichzeitig und geben Sie so erheblich Speicherplatz frei.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"すっきり整理しませんか？\",\"content\":\"複数のアプリをまとめてアンインストールし、空き容量を大幅に増やせます。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"새롭게 정리해 볼까요?\",\"content\":\"여러 앱을 한 번에 제거하여 저장 공간을 크게 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"准备好焕然一新？\",\"content\":\"一次卸载多个应用，释放大量存储空间。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"準備好煥然一新？\",\"content\":\"一次解除安裝多個應用程式，釋放大量儲存空間。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 856,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_14",
-    "Title": "Your Phone Needs a Sweep",
-    "Content": "Don't let junk files slow you down. Clean them up in seconds.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Tu teléfono necesita una limpieza\",\"content\":\"No dejes que los archivos basura te frenen. Elimínalos en segundos.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"Votre téléphone a besoin d'un nettoyage\",\"content\":\"Ne laissez pas les fichiers inutiles vous ralentir. Supprimez-les en quelques secondes.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"Ihr Telefon muss gereinigt werden\",\"content\":\"Lassen Sie sich nicht von unnötigen Dateien ausbremsen. Bereinigen Sie sie in Sekundenschnelle.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"端末をお掃除しましょう\",\"content\":\"不要ファイルで動作が遅くなる前に、数秒でクリーンアップしましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"휴대전화 정리가 필요해요\",\"content\":\"정크 파일 때문에 느려지기 전에 몇 초 만에 정리하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"手机需要大扫除\",\"content\":\"别让垃圾文件拖慢手机。几秒即可清理。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"手機需要大掃除\",\"content\":\"別讓垃圾檔案拖慢手機。幾秒即可清理。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 857,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_15",
-    "Title": "Is Your Speaker Muffled?",
-    "Content": "Improve your phone's sound with a quick, safe speaker clean.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Su altavoz está amortiguado?\",\"content\":\"Mejore el sonido de su teléfono con una limpieza de altavoz rápida y segura.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Votre haut-parleur est-il étouffé ?\",\"content\":\"Améliorez le son de votre téléphone grâce à un nettoyage rapide et sûr du haut-parleur.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Ist Ihr Lautsprecher dumpf?\",\"content\":\"Verbessern Sie den Klang Ihres Telefons mit einer schnellen und sicheren Lautsprecherreinigung.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"スピーカーの音がこもっていますか？\",\"content\":\"すばやく安全にクリーニングして、端末の音を改善しましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"스피커 소리가 답답한가요?\",\"content\":\"빠르고 안전하게 스피커를 청소하여 소리를 개선하세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"扬声器声音发闷？\",\"content\":\"快速安全地清理扬声器，改善手机音质。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"揚聲器聲音沉悶？\",\"content\":\"快速安全地清理揚聲器，改善手機音質。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 858,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_16",
-    "Title": "Time for a Quick Clean?",
-    "Content": "Cache and temp files are piling up. Tap to scan and remove them.",
-    "Button": "Scan",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Es hora de una limpieza rápida?\",\"content\":\"Los archivos de caché y temporales se están acumulando. Toca para escanearlos y eliminarlos.\",\"img\":\"\",\"button\":\"Escanear\"},{\"language\":\"fr\",\"title\":\"Besoin d'un petit nettoyage ?\",\"content\":\"Les fichiers cache et temporaires s'accumulent. Appuyez pour les analyser et les supprimer.\",\"img\":\"\",\"button\":\"Balayage\"},{\"language\":\"de\",\"title\":\"Zeit für eine schnelle Reinigung?\",\"content\":\"Cache- und temporäre Dateien sammeln sich an. Tippen Sie, um sie zu scannen und zu entfernen.\",\"img\":\"\",\"button\":\"Scan\"},{\"language\":\"ja\",\"title\":\"すばやくお掃除しませんか？\",\"content\":\"キャッシュと一時ファイルがたまっています。スキャンして削除しましょう。\",\"img\":\"\",\"button\":\"スキャン\"},{\"language\":\"ko\",\"title\":\"빠르게 정리할까요?\",\"content\":\"캐시와 임시 파일이 쌓이고 있습니다. 탭하여 스캔하고 삭제하세요.\",\"img\":\"\",\"button\":\"스캔\"},{\"language\":\"zh\",\"title\":\"要快速清理吗？\",\"content\":\"缓存和临时文件正在堆积。点击扫描并删除。\",\"img\":\"\",\"button\":\"扫描\"},{\"language\":\"zh-TW\",\"title\":\"要快速清理嗎？\",\"content\":\"快取和暫存檔案正在累積。點按即可掃描並刪除。\",\"img\":\"\",\"button\":\"掃描\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 859,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_17",
-    "Title": "Check Your Battery Health",
-    "Content": "Is your battery draining fast? Get a detailed report and tips.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Comprueba el estado de tu batería\",\"content\":\"¿Se te descarga la batería rápidamente? Obtén un informe detallado y consejos.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Vérifiez l'état de votre batterie\",\"content\":\"Votre batterie se décharge rapidement ? Obtenez un rapport détaillé et des conseils.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Überprüfen Sie den Zustand Ihres Akkus.\",\"content\":\"Entlädt sich Ihr Akku schnell? Erhalten Sie einen detaillierten Bericht und Tipps.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"バッテリーの状態を確認\",\"content\":\"バッテリーの減りが早いですか？詳しいレポートとヒントを確認しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"배터리 상태 확인\",\"content\":\"배터리가 빨리 닳나요? 자세한 보고서와 팁을 확인하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"检查电池健康状况\",\"content\":\"电池耗电快？查看详细报告和建议。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"檢查電池健康狀況\",\"content\":\"電池耗電很快？查看詳細報告與建議。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 860,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_18",
-    "Title": "Simplify Your Phone",
-    "Content": "Less is more. Get rid of app clutter with our easy uninstaller.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Simplifica tu teléfono\",\"content\":\"Menos es más. Elimina el desorden de aplicaciones con nuestro sencillo desinstalador.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"Simplifiez votre téléphone\",\"content\":\"Moins, c'est mieux. Débarrassez-vous des applications inutiles grâce à notre désinstalleur facile à utiliser.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"Vereinfachen Sie Ihr Telefon\",\"content\":\"Weniger ist mehr. Befreien Sie sich von unnötigen Apps mit unserem benutzerfreundlichen Deinstallationsprogramm.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"端末をシンプルに\",\"content\":\"必要なものだけに。かんたんアンインストーラーでアプリを整理しましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"휴대전화를 깔끔하게\",\"content\":\"적을수록 좋습니다. 간편한 제거 도구로 앱을 정리하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"精简手机\",\"content\":\"少即是多。使用便捷卸载工具清理多余应用。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"精簡手機\",\"content\":\"少即是多。使用便利的解除安裝工具清理多餘應用程式。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 861,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_19",
-    "Title": "Free Up Space Instantly",
-    "Content": "Get more room for photos and apps with a single tap.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Libere espacio al instante\",\"content\":\"Obtén más espacio para fotos y aplicaciones con un solo toque.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Libérez de l'espace instantanément\",\"content\":\"Gagnez de l'espace pour vos photos et applications en un seul clic.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Sofort Speicherplatz freigeben\",\"content\":\"Mehr Speicherplatz für Fotos und Apps mit einem einzigen Fingertipp.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"今すぐ空き容量を確保\",\"content\":\"1回のタップで写真やアプリ用の空き容量を増やせます。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"즉시 공간 확보\",\"content\":\"한 번의 탭으로 사진과 앱을 위한 공간을 더 확보하세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"立即释放空间\",\"content\":\"一键为照片和应用腾出更多空间。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"立即釋放空間\",\"content\":\"一鍵為相片和應用程式騰出更多空間。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 862,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_20",
-    "Title": "Low on Storage?",
-    "Content": "We found unnecessary files you can safely delete. Check it out!",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¿Te queda poco espacio de almacenamiento?\",\"content\":\"Encontramos archivos innecesarios que puedes eliminar sin problemas. ¡Échales un vistazo!\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Manque de stockage ?\",\"content\":\"Nous avons trouvé des fichiers inutiles que vous pouvez supprimer sans risque. Jetez-y un œil !\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Wenig Speicherplatz?\",\"content\":\"Wir haben unnötige Dateien gefunden, die Sie bedenkenlos löschen können. Schauen Sie mal rein!\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"ストレージ不足ですか？\",\"content\":\"安全に削除できる不要ファイルが見つかりました。確認しましょう！\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"저장 공간이 부족한가요?\",\"content\":\"안전하게 삭제할 수 있는 불필요한 파일을 찾았습니다. 확인해 보세요!\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"存储空间不足？\",\"content\":\"发现可安全删除的多余文件。快来看看！\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"儲存空間不足？\",\"content\":\"發現可安全刪除的多餘檔案。快來看看！\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 863,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_21",
-    "Title": "🧹 Screenshot Cleanup Time",
-    "Content": "Found 25 old screenshots. Free up space by removing ones you don't need.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🧹 Hora de limpiar capturas de pantalla\",\"content\":\"Se encontraron 25 capturas de pantalla antiguas. Libera espacio eliminando las que no necesites.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"🧹 Temps de nettoyage des captures d'écran\",\"content\":\"25 anciennes captures d'écran ont été trouvées. Libérez de l'espace en supprimant celles dont vous n'avez plus besoin.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"🧹 Screenshot-Bereinigungszeit\",\"content\":\"Es wurden 25 alte Screenshots gefunden. Schaffen Sie Speicherplatz, indem Sie nicht benötigte Screenshots löschen.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"🧹 スクリーンショットを整理\",\"content\":\"古いスクリーンショットが25枚見つかりました。不要なものを削除して空き容量を増やしましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"🧹 스크린샷 정리 시간\",\"content\":\"오래된 스크린샷 25개를 찾았습니다. 필요 없는 항목을 삭제하여 공간을 확보하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"🧹 该清理截图了\",\"content\":\"发现 25 张旧截图。删除不需要的截图以释放空间。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"🧹 該清理螢幕截圖了\",\"content\":\"發現 25 張舊的螢幕截圖。刪除不需要的項目以釋放空間。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 864,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_22",
-    "Title": "💪 Tame Large Files",
-    "Content": "Found some old large files you might not need anymore. Want to check?",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"💪 Domina archivos grandes\",\"content\":\"Encontré algunos archivos antiguos y grandes que quizá ya no necesites. ¿Quieres revisarlos?\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"💪 Dompter les fichiers volumineux\",\"content\":\"J'ai trouvé de vieux fichiers volumineux dont vous n'aurez peut-être plus besoin. Voulez-vous vérifier ?\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"💪 Große Dateien bändigen\",\"content\":\"Ich habe einige alte, große Dateien gefunden, die Sie möglicherweise nicht mehr benötigen. Möchten Sie sie überprüfen?\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"💪 大容量ファイルを整理\",\"content\":\"古い大容量ファイルが見つかりました。不要かどうか確認しますか？\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"💪 대용량 파일 정리\",\"content\":\"더 이상 필요 없을 수 있는 오래된 대용량 파일을 찾았습니다. 확인할까요?\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"💪 整理大文件\",\"content\":\"发现一些可能不再需要的旧大文件。要检查吗？\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"💪 整理大型檔案\",\"content\":\"發現一些可能不再需要的舊大型檔案。要檢查嗎？\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 865,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_23",
-    "Title": "🚀 Storage Almost Full",
-    "Content": "Your phone storage is running low. Clean junk files to make room.",
-    "Button": "Scan",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🚀 Almacenamiento casi lleno\",\"content\":\"El almacenamiento de tu teléfono se está agotando. Limpia los archivos basura para liberar espacio.\",\"img\":\"\",\"button\":\"Escanear\"},{\"language\":\"fr\",\"title\":\"🚀 Stockage presque plein\",\"content\":\"L'espace de stockage de votre téléphone est presque plein. Supprimez les fichiers inutiles pour libérer de la place.\",\"img\":\"\",\"button\":\"Balayage\"},{\"language\":\"de\",\"title\":\"🚀 Lagerraum fast voll\",\"content\":\"Der Speicherplatz auf Ihrem Telefon ist fast voll. Löschen Sie unnötige Dateien, um Platz zu schaffen.\",\"img\":\"\",\"button\":\"Scan\"},{\"language\":\"ja\",\"title\":\"🚀 ストレージがもうすぐいっぱい\",\"content\":\"端末の空き容量が残りわずかです。不要ファイルを削除して空きを作りましょう。\",\"img\":\"\",\"button\":\"スキャン\"},{\"language\":\"ko\",\"title\":\"🚀 저장 공간이 거의 가득 참\",\"content\":\"휴대전화 저장 공간이 부족합니다. 정크 파일을 정리하여 공간을 확보하세요.\",\"img\":\"\",\"button\":\"스캔\"},{\"language\":\"zh\",\"title\":\"🚀 存储空间即将用尽\",\"content\":\"手机存储空间不足。清理垃圾文件以腾出空间。\",\"img\":\"\",\"button\":\"扫描\"},{\"language\":\"zh-TW\",\"title\":\"🚀 儲存空間即將用盡\",\"content\":\"手機儲存空間不足。清理垃圾檔案以騰出空間。\",\"img\":\"\",\"button\":\"掃描\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 866,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_24",
-    "Title": "📈 Battery Report Ready",
-    "Content": "View your detailed battery information, including current charge level.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Informe de batería listo\",\"content\":\"Vea información detallada de la batería, incluido el nivel de carga actual.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"📈 Rapport de batterie prêt\",\"content\":\"Consultez les informations détaillées de votre batterie, y compris son niveau de charge actuel.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"📈 Akkubericht verfügbar\",\"content\":\"Sehen Sie sich Ihre detaillierten Batterieinformationen an, einschließlich des aktuellen Ladezustands.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"📈 バッテリーレポートの準備完了\",\"content\":\"現在の充電レベルなど、詳しいバッテリー情報を確認できます。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"📈 배터리 보고서 준비 완료\",\"content\":\"현재 충전량을 포함한 자세한 배터리 정보를 확인하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"📈 电池报告已就绪\",\"content\":\"查看详细电池信息，包括当前电量。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"📈 電池報告已就緒\",\"content\":\"查看詳細電池資訊，包括目前電量。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 867,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_25",
-    "Title": "🧹 Speaker Maintenance",
-    "Content": "Keep your speaker clear. Use the sound wave tool to assist with dust removal.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Mantenimiento de altavoces\",\"content\":\"Mantenga el altavoz limpio. Utilice la herramienta de ondas de sonido para eliminar el polvo.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"🧹 Entretien des haut-parleurs\",\"content\":\"Veillez à ce que votre haut-parleur soit propre. Utilisez l'outil de nettoyage des ondes sonores pour faciliter l'élimination de la poussière.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"🧹 Lautsprecherwartung\",\"content\":\"Halten Sie Ihre Lautsprecher sauber. Verwenden Sie das Schallwellen-Tool, um Staub zu entfernen.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"🧹 スピーカーのメンテナンス\",\"content\":\"スピーカーをきれいに保ちましょう。音波ツールでほこりの除去をサポートします。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"🧹 스피커 관리\",\"content\":\"스피커를 깨끗하게 유지하세요. 음파 도구가 먼지 제거를 도와줍니다.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"🧹 扬声器维护\",\"content\":\"保持扬声器清洁。使用声波工具辅助清除灰尘。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"🧹 揚聲器維護\",\"content\":\"保持揚聲器清潔。使用聲波工具協助清除灰塵。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 868,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_26",
-    "Title": "🧹 Simplify Your Phone",
-    "Content": "Make space by removing apps you no longer use. We've highlighted some candidates.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🧹 Simplifica tu teléfono\",\"content\":\"Libera espacio eliminando las apps que ya no usas. Hemos destacado algunas opciones.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"🧹 Simplifiez votre téléphone\",\"content\":\"Libérez de l'espace en supprimant les applications que vous n'utilisez plus. Nous en avons sélectionné quelques-unes.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"🧹 Vereinfache dein Handy\",\"content\":\"Schaffen Sie Speicherplatz, indem Sie Apps deinstallieren, die Sie nicht mehr verwenden. Wir haben einige Kandidaten hervorgehoben.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"🧹 端末をすっきり\",\"content\":\"使わなくなったアプリを削除して空き容量を増やしましょう。候補をいくつか表示しています。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"🧹 휴대전화 간소화\",\"content\":\"더 이상 사용하지 않는 앱을 제거하여 공간을 확보하세요. 몇 가지 후보를 표시했습니다.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"🧹 精简手机\",\"content\":\"删除不再使用的应用以腾出空间。我们已标出一些候选项。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"🧹 精簡手機\",\"content\":\"移除不再使用的應用程式以騰出空間。我們已標出一些候選項目。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 869,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_27",
-    "Title": "🧠 Boost Available Memory",
-    "Content": "Stop a few background processes to free up RAM for a smoother experience.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🧠 Aumenta la memoria disponible\",\"content\":\"Detenga algunos procesos en segundo plano para liberar RAM y disfrutar de una experiencia más fluida.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"🧠 Augmenter la mémoire disponible\",\"content\":\"Arrêtez quelques processus en arrière-plan pour libérer de la RAM et profiter d'une expérience plus fluide.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"🧠 Verfügbaren Speicher erhöhen\",\"content\":\"Um Arbeitsspeicher freizugeben und so ein flüssigeres Nutzungserlebnis zu gewährleisten, sollten einige Hintergrundprozesse beendet werden.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"🧠 利用可能なメモリを増やす\",\"content\":\"いくつかのバックグラウンドプロセスを停止し、RAMを解放して動作をスムーズにしましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"🧠 사용 가능한 메모리 늘리기\",\"content\":\"일부 백그라운드 프로세스를 중지하여 RAM을 확보하고 더 원활하게 사용하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"🧠 提升可用内存\",\"content\":\"停止部分后台进程以释放 RAM，让运行更流畅。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"🧠 提升可用記憶體\",\"content\":\"停止部分背景處理程序以釋放 RAM，讓操作更流暢。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  },
-  {
-    "Id": 870,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_28",
-    "Title": "🖼️ Manage Your Screenshots",
-    "Content": "Your screenshot folder is getting full. Review and clean them up easily.",
-    "Button": "Scan",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🖼️ Administra tus capturas de pantalla\",\"content\":\"Tu carpeta de capturas de pantalla se está llenando. Revísalas y límpialas fácilmente.\",\"img\":\"\",\"button\":\"Escanear\"},{\"language\":\"fr\",\"title\":\"🖼️ Gérez vos captures d'écran\",\"content\":\"Votre dossier de captures d'écran est presque plein. Consultez-le et nettoyez-le facilement.\",\"img\":\"\",\"button\":\"Balayage\"},{\"language\":\"de\",\"title\":\"🖼️ Screenshots verwalten\",\"content\":\"Ihr Screenshot-Ordner ist fast voll. Sehen Sie Ihre Screenshots an und räumen Sie sie ganz einfach auf.\",\"img\":\"\",\"button\":\"Scan\"},{\"language\":\"ja\",\"title\":\"🖼️ スクリーンショットを管理\",\"content\":\"スクリーンショットフォルダーがいっぱいになってきました。簡単に確認して整理できます。\",\"img\":\"\",\"button\":\"スキャン\"},{\"language\":\"ko\",\"title\":\"🖼️ 스크린샷 관리\",\"content\":\"스크린샷 폴더가 가득 차고 있습니다. 쉽게 검토하고 정리하세요.\",\"img\":\"\",\"button\":\"스캔\"},{\"language\":\"zh\",\"title\":\"🖼️ 管理截图\",\"content\":\"截图文件夹快满了。轻松检查并清理。\",\"img\":\"\",\"button\":\"扫描\"},{\"language\":\"zh-TW\",\"title\":\"🖼️ 管理螢幕截圖\",\"content\":\"螢幕截圖資料夾快滿了。輕鬆檢查並清理。\",\"img\":\"\",\"button\":\"掃描\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 871,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_29",
-    "Title": "📁 Your Storage Giants",
-    "Content": "See which files are taking up the most space on your device. Manage them here.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"📁 Tus gigantes del almacenamiento\",\"content\":\"Consulta qué archivos ocupan más espacio en tu dispositivo. Adminístralos aquí.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"📁 Vos géants du stockage\",\"content\":\"Découvrez quels fichiers occupent le plus d'espace sur votre appareil. Gérez-les ici.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"📁 Ihre Lagergiganten\",\"content\":\"Sehen Sie, welche Dateien den meisten Speicherplatz auf Ihrem Gerät belegen. Verwalten Sie sie hier.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"📁 ストレージを圧迫する大容量ファイル\",\"content\":\"端末で最も容量を使っているファイルを確認し、ここで管理できます。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"📁 저장 공간을 많이 차지하는 대용량 파일\",\"content\":\"기기에서 가장 많은 공간을 차지하는 파일을 확인하고 관리하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"📁 占用存储空间的大型文件\",\"content\":\"查看哪些文件占用最多空间，并在此管理。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"📁 佔用儲存空間的大型檔案\",\"content\":\"查看哪些檔案佔用最多空間，並在此管理。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 872,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_30",
-    "Title": "📱 Quick Clean-Up?",
-    "Content": "A quick scan can free up space. Clean junk files in just one tap.",
-    "Button": "Scan",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"📱¿Limpieza rápida?\",\"content\":\"Un análisis rápido puede liberar espacio. Limpia archivos basura con un solo toque.\",\"img\":\"\",\"button\":\"Escanear\"},{\"language\":\"fr\",\"title\":\"📱 Nettoyage rapide ?\",\"content\":\"Une analyse rapide permet de libérer de l'espace. Supprimez les fichiers inutiles en un seul clic.\",\"img\":\"\",\"button\":\"Balayage\"},{\"language\":\"de\",\"title\":\"📱 Schnelles Aufräumen?\",\"content\":\"Ein schneller Scan kann Speicherplatz freigeben. Bereinigen Sie überflüssige Dateien mit nur einem Fingertipp.\",\"img\":\"\",\"button\":\"Scan\"},{\"language\":\"ja\",\"title\":\"📱 すばやくお掃除しますか？\",\"content\":\"簡単なスキャンで空き容量を増やせます。1回のタップで不要ファイルを削除しましょう。\",\"img\":\"\",\"button\":\"スキャン\"},{\"language\":\"ko\",\"title\":\"📱 빠르게 정리할까요?\",\"content\":\"빠른 스캔으로 공간을 확보할 수 있습니다. 한 번의 탭으로 정크 파일을 정리하세요.\",\"img\":\"\",\"button\":\"스캔\"},{\"language\":\"zh\",\"title\":\"📱 快速清理？\",\"content\":\"快速扫描即可释放空间。一键清理垃圾文件。\",\"img\":\"\",\"button\":\"扫描\"},{\"language\":\"zh-TW\",\"title\":\"📱 快速清理？\",\"content\":\"快速掃描即可釋放空間。一鍵清理垃圾檔案。\",\"img\":\"\",\"button\":\"掃描\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 873,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_31",
-    "Title": "🔋 Your Battery Health",
-    "Content": "Check your battery's current health status and temperature.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🔋 La salud de tu batería\",\"content\":\"Verifique el estado actual y la temperatura de su batería.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"🔋 État de votre batterie\",\"content\":\"Vérifiez l'état et la température actuels de votre batterie.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"🔋 Ihr Batteriezustand\",\"content\":\"Überprüfen Sie den aktuellen Gesundheitszustand und die Temperatur Ihrer Batterie.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"🔋 バッテリーの状態\",\"content\":\"バッテリーの現在の状態と温度を確認しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"🔋 배터리 상태\",\"content\":\"현재 배터리 상태와 온도를 확인하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"🔋 电池健康状况\",\"content\":\"检查电池当前健康状态和温度。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"🔋 電池健康狀況\",\"content\":\"檢查電池目前健康狀態與溫度。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 874,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_32",
-    "Title": "🔊 Clean Speaker Grille?",
-    "Content": "Notice muffled sound? Try our tool to help loosen dust from your speaker.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🔊 ¿Limpiar la rejilla del altavoz?\",\"content\":\"¿Notas un sonido apagado? Prueba nuestra herramienta para quitar el polvo de tu altavoz.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"🔊 Nettoyer la grille du haut-parleur ?\",\"content\":\"Vous remarquez un son étouffé ? Essayez notre outil pour déloger la poussière de votre haut-parleur.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"🔊 Saubere Lautsprecherabdeckung?\",\"content\":\"Klingt der Ton dumpf? Probieren Sie unser Werkzeug, um Staub von Ihrem Lautsprecher zu entfernen.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"🔊 スピーカーグリルを掃除しますか？\",\"content\":\"音がこもっていますか？ツールを使ってスピーカーのほこりを取り除きやすくしましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"🔊 스피커 그릴을 청소할까요?\",\"content\":\"소리가 먹먹한가요? 스피커의 먼지를 떨어내는 데 도움이 되는 도구를 사용해 보세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"🔊 要清理扬声器网罩吗？\",\"content\":\"声音发闷？试试我们的工具，帮助松动扬声器中的灰尘。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"🔊 要清理揚聲器網罩嗎？\",\"content\":\"聲音沉悶？試試我們的工具，協助鬆動揚聲器中的灰塵。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 875,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_33",
-    "Title": "📦 Unused Apps Found",
-    "Content": "You have 5 apps that haven't been used in over a month. Consider uninstalling them.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"📦 Se encontraron aplicaciones no utilizadas\",\"content\":\"Tienes 5 aplicaciones que no has usado en más de un mes. Considera desinstalarlas.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"📦 Applications inutilisées trouvées\",\"content\":\"Vous avez 5 applications que vous n'avez pas utilisées depuis plus d'un mois. Envisagez de les désinstaller.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"📦 Unbenutzte Apps gefunden\",\"content\":\"Sie haben 5 Apps, die seit über einem Monat nicht mehr benutzt wurden. Überlegen Sie, ob Sie diese deinstallieren sollten.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"📦 未使用のアプリを検出\",\"content\":\"1か月以上使っていないアプリが5個あります。アンインストールを検討しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"📦 사용하지 않는 앱 발견\",\"content\":\"한 달 넘게 사용하지 않은 앱이 5개 있습니다. 제거를 고려해 보세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"📦 发现未使用的应用\",\"content\":\"有 5 个应用已超过一个月未使用。建议卸载。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"📦 發現未使用的應用程式\",\"content\":\"有 5 個應用程式已超過一個月未使用。建議解除安裝。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "app_manager"
-  },
-  {
-    "Id": 876,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_34",
-    "Title": "📊 RAM Usage is High",
-    "Content": "3 background apps are using a lot of memory. See which ones and free it up.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"📊 El uso de RAM es alto\",\"content\":\"Tres aplicaciones en segundo plano consumen mucha memoria. Identifica cuáles y libéralas.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"📊 Utilisation de la RAM élevée\",\"content\":\"Trois applications en arrière-plan consomment beaucoup de mémoire. Identifiez-les et libérez de l'espace.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"📊 Hohe RAM-Auslastung\",\"content\":\"Drei Hintergrund-Apps belegen viel Arbeitsspeicher. Finden Sie heraus, welche das sind, und geben Sie Speicherplatz frei.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"📊 RAM使用率が高くなっています\",\"content\":\"3つのバックグラウンドアプリが多くのメモリを使用しています。確認して解放しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"📊 RAM 사용량이 높습니다\",\"content\":\"백그라운드 앱 3개가 많은 메모리를 사용 중입니다. 확인하고 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"📊 RAM 使用率过高\",\"content\":\"3 个后台应用占用了大量内存。查看并释放内存。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"📊 RAM 使用率過高\",\"content\":\"3 個背景應用程式佔用了大量記憶體。查看並釋放記憶體。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  },
-  {
-    "Id": 877,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_35",
-    "Title": "📸 Screenshot Album Ready",
-    "Content": "You have 12 new screenshots. Organize or delete them to declutter your gallery.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Álbum de capturas de pantalla listo\",\"content\":\"Tienes 12 capturas de pantalla nuevas. Organízalas o elimínalas para organizar tu galería.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"📸 Album de captures d'écran prêt\",\"content\":\"Vous avez 12 nouvelles captures d'écran. Organisez-les ou supprimez-les pour désencombrer votre galerie.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"📸 Screenshot-Album bereit\",\"content\":\"Sie haben 12 neue Screenshots. Ordnen oder löschen Sie diese, um Ihre Galerie aufzuräumen.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"📸 スクリーンショットアルバムの準備完了\",\"content\":\"新しいスクリーンショットが12枚あります。整理または削除してギャラリーをすっきりさせましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"📸 스크린샷 앨범 준비 완료\",\"content\":\"새 스크린샷이 12개 있습니다. 정리하거나 삭제하여 갤러리를 깔끔하게 유지하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"📸 截图相册已就绪\",\"content\":\"有 12 张新截图。整理或删除它们，让图库更整洁。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"📸 螢幕截圖相簿已就緒\",\"content\":\"有 12 張新的螢幕截圖。整理或刪除它們，讓圖庫更整潔。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 878,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_36",
-    "Title": "🎥 Large Videos Found",
-    "Content": "3 videos are taking over 4.5 GB of your space. Review and manage them.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🎥 Se encontraron videos grandes\",\"content\":\"Hay 3 videos que ocupan más de 4,5 GB de espacio. Revísalos y adminístralos.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"🎥 Vidéos volumineuses trouvées\",\"content\":\"3 vidéos occupent plus de 4,5 Go d'espace. Veuillez les vérifier et les gérer.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"🎥 Große Videos gefunden\",\"content\":\"Drei Videos belegen über 4,5 GB Speicherplatz. Überprüfen und verwalten Sie diese.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"🎥 大容量の動画を検出\",\"content\":\"3本の動画が4.5 GB以上を占めています。確認して管理しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"🎥 대용량 동영상 발견\",\"content\":\"동영상 3개가 4.5GB 넘는 공간을 차지합니다. 검토하고 관리하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"🎥 发现大型视频\",\"content\":\"3 个视频占用超过 4.5 GB 空间。查看并管理。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"🎥 發現大型影片\",\"content\":\"3 部影片佔用超過 4.5 GB 空間。查看並管理。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 879,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_37",
-    "Title": "🗑️ Junk Files Found",
-    "Content": "We found 1.2 GB of temporary files and cache. Tap to clean up and free up space.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"🗑️ Archivos basura encontrados\",\"content\":\"Encontramos 1,2 GB de archivos temporales y caché. Pulsa para limpiar y liberar espacio.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"🗑️ Fichiers indésirables trouvés\",\"content\":\"Nous avons trouvé 1,2 Go de fichiers temporaires et de cache. Appuyez pour les supprimer et libérer de l'espace.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"🗑️ Junk-Dateien gefunden\",\"content\":\"Wir haben 1,2 GB an temporären Dateien und Cache gefunden. Tippen Sie hier, um diese zu bereinigen und Speicherplatz freizugeben.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"🗑️ 不要ファイルを検出\",\"content\":\"1.2 GBの一時ファイルとキャッシュが見つかりました。タップして削除し、空き容量を増やしましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"🗑️ 정크 파일 발견\",\"content\":\"1.2GB의 임시 파일과 캐시가 발견되었습니다. 탭하여 정리하고 공간을 확보하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"🗑️ 发现垃圾文件\",\"content\":\"发现 1.2 GB 临时文件和缓存。点击清理并释放空间。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"🗑️ 發現垃圾檔案\",\"content\":\"發現 1.2 GB 暫存檔案與快取。點按即可清理並釋放空間。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 880,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_38",
-    "Title": "Free up storage space by cleaning useless files!",
-    "Content": "",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¡Libera espacio de almacenamiento limpiando archivos inútiles!\",\"content\":\"\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"Libérez de l'espace de stockage en supprimant les fichiers inutiles !\",\"content\":\"\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"Schaffen Sie Speicherplatz, indem Sie unnötige Dateien löschen!\",\"content\":\"\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"不要なファイルを削除して空き容量を増やしましょう！\",\"content\":\"\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"불필요한 파일을 정리하여 저장 공간을 확보하세요!\",\"content\":\"\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"清理无用文件，释放存储空间！\",\"content\":\"\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"清理無用檔案，釋放儲存空間！\",\"content\":\"\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "home"
-  },
-  {
-    "Id": 881,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_39",
-    "Title": "Uninstalled successfully.",
-    "Content": "Clean up residual junk files for more space.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Desinstalado exitosamente.\",\"content\":\"Limpia los archivos basura residuales para obtener más espacio.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"Désinstallation réussie.\",\"content\":\"Supprimez les fichiers inutiles résiduels pour libérer de l'espace.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"Erfolgreich deinstalliert.\",\"content\":\"Entfernen Sie verbliebene Datenmülldateien, um mehr Speicherplatz zu schaffen.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"アンインストールしました。\",\"content\":\"残った不要ファイルを削除して、空き容量をさらに増やしましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"제거 완료\",\"content\":\"남은 정크 파일을 정리하여 공간을 더 확보하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"卸载成功。\",\"content\":\"清理残留垃圾文件，释放更多空间。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"解除安裝成功。\",\"content\":\"清理殘留垃圾檔案，釋放更多空間。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "junk_files"
-  },
-  {
-    "Id": 882,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_40",
-    "Title": "Sound Quality Boost",
-    "Content": "Clear your speaker from dust and lint for clearer audio.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Mejora de la calidad del sonido\",\"content\":\"Limpie el polvo y la pelusa de su altavoz para disfrutar de un audio más claro.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Amélioration de la qualité sonore\",\"content\":\"Nettoyez votre haut-parleur de la poussière et des peluches pour un son plus clair.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Klangqualitätsverbesserung\",\"content\":\"Für einen klareren Klang sollten Sie Ihre Lautsprecher von Staub und Flusen befreien.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"音質を向上\",\"content\":\"スピーカーのほこりや糸くずを取り除き、音をクリアにしましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"음질 향상\",\"content\":\"스피커의 먼지와 보풀을 제거하여 더 선명한 소리를 즐기세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"提升音质\",\"content\":\"清除扬声器中的灰尘和绒屑，让声音更清晰。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"提升音質\",\"content\":\"清除揚聲器中的灰塵與棉絮，讓聲音更清晰。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 883,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_41",
-    "Title": "Manage Your Heavy Files",
-    "Content": "Organize your videos, archives, and documents by size.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Administre sus archivos pesados\",\"content\":\"Organiza tus vídeos, archivos y documentos por tamaño.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Gérez vos fichiers volumineux\",\"content\":\"Organisez vos vidéos, archives et documents par taille.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Verwalten Sie Ihre großen Dateien\",\"content\":\"Organisieren Sie Ihre Videos, Archive und Dokumente nach Größe.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"大容量ファイルを管理\",\"content\":\"動画、アーカイブ、ドキュメントをサイズ順に整理しましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"대용량 파일 관리\",\"content\":\"동영상, 압축 파일, 문서를 크기별로 정리하세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"管理大型文件\",\"content\":\"按大小整理视频、压缩包和文档。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"管理大型檔案\",\"content\":\"依大小整理影片、壓縮檔與文件。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 884,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_42",
-    "Title": "Charging is completed, battery power reaches 100%",
-    "Content": "",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"La carga está completa y la batería alcanza el 100%.\",\"content\":\"\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"La charge est terminée, la batterie est chargée à 100 %.\",\"content\":\"\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Der Ladevorgang ist abgeschlossen, die Batterieleistung hat 100 % erreicht.\",\"content\":\"\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"充電が完了し、バッテリーが100%になりました\",\"content\":\"\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"충전이 완료되어 배터리가 100%입니다\",\"content\":\"\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"充电完成，电量已达到 100%\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"充電完成，電量已達 100%\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 885,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_43",
-    "Title": "Boost Your Volume",
-    "Content": "Remove audio blockage for a better listening experience.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Aumenta tu volumen\",\"content\":\"Elimina el bloqueo de audio para una mejor experiencia auditiva.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Augmentez votre volume\",\"content\":\"Éliminez les blocages audio pour une meilleure expérience d'écoute.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Erhöhen Sie Ihre Lautstärke\",\"content\":\"Beseitigen Sie Audioblockaden für ein besseres Hörerlebnis.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"音量をアップ\",\"content\":\"スピーカーの詰まりを解消して、音をより快適に楽しみましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"볼륨 향상\",\"content\":\"소리를 막는 이물질을 제거하여 더 나은 음질을 즐기세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"提升音量\",\"content\":\"清除扬声器中的堵塞物，获得更好的聆听体验。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"提升音量\",\"content\":\"清除揚聲器中的阻塞物，獲得更好的聆聽體驗。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 886,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_44",
-    "Title": "Large Files Taking Space",
-    "Content": "You have large videos and files eating up your storage. Review them?",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Archivos grandes que ocupan espacio\",\"content\":\"Tienes videos y archivos grandes que ocupan tu espacio de almacenamiento. ¿Quieres revisarlos?\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Fichiers volumineux occupant de l'espace\",\"content\":\"Vous avez des vidéos et des fichiers volumineux qui occupent tout votre espace de stockage. Êtes-vous prêt à les examiner ?\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Große Dateien belegen Speicherplatz\",\"content\":\"Sie haben große Videos und Dateien, die Ihren Speicherplatz belegen. Wollen Sie diese überprüfen?\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"大容量ファイルが容量を圧迫\",\"content\":\"大きな動画やファイルがストレージを占めています。確認しますか？\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"대용량 파일이 공간을 차지합니다\",\"content\":\"큰 동영상과 파일이 저장 공간을 차지하고 있습니다. 검토할까요?\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"大文件占用空间\",\"content\":\"大型视频和文件正在占用存储空间。要查看吗？\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"大型檔案佔用空間\",\"content\":\"大型影片與檔案正在佔用儲存空間。要查看嗎？\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 887,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_45",
-    "Title": "Battery power: 50%, check battery info now!",
-    "Content": "",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Carga de la batería: 50%, ¡verifique la información de la batería ahora!\",\"content\":\"\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Niveau de batterie : 50 %, vérifiez les informations sur la batterie maintenant !\",\"content\":\"\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Akkustand: 50 %, Akkuinformationen jetzt prüfen!\",\"content\":\"\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"バッテリー残量50%。今すぐバッテリー情報を確認しましょう！\",\"content\":\"\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"배터리 잔량 50%. 지금 배터리 정보를 확인하세요!\",\"content\":\"\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"电量 50%，立即查看电池信息！\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"電量 50%，立即查看電池資訊！\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 888,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_46",
-    "Title": "Performance Boost Available",
-    "Content": "Tap to optimize running processes and improve your phone's speed.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Mejora del rendimiento disponible\",\"content\":\"Toque para optimizar los procesos en ejecución y mejorar la velocidad de su teléfono.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Amélioration des performances disponible\",\"content\":\"Appuyez pour optimiser les processus en cours et améliorer la vitesse de votre téléphone.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Leistungssteigerung verfügbar\",\"content\":\"Tippen Sie, um laufende Prozesse zu optimieren und die Geschwindigkeit Ihres Telefons zu verbessern.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"パフォーマンスを改善できます\",\"content\":\"タップして実行中のプロセスを最適化し、端末の速度を改善しましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"성능을 높일 수 있습니다\",\"content\":\"탭하여 실행 중인 프로세스를 최적화하고 휴대전화 속도를 높이세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"可提升性能\",\"content\":\"点击优化运行中的进程，提升手机速度。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"可提升效能\",\"content\":\"點按以最佳化執行中的處理程序，提升手機速度。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  },
-  {
-    "Id": 889,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_47",
-    "Title": "Declutter Your Photos",
-    "Content": "Start by cleaning up unnecessary screenshots. Free up space fast.",
-    "Button": "Clean",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Ordena tus fotos\",\"content\":\"Empieza por eliminar capturas de pantalla innecesarias. Libera espacio rápidamente.\",\"img\":\"\",\"button\":\"Limpio\"},{\"language\":\"fr\",\"title\":\"Désencombrez vos photos\",\"content\":\"Commencez par supprimer les captures d'écran inutiles. Libérez rapidement de l'espace.\",\"img\":\"\",\"button\":\"Faire le ménage\"},{\"language\":\"de\",\"title\":\"Räume deine Fotos auf\",\"content\":\"Beginnen Sie damit, unnötige Screenshots zu löschen. So schaffen Sie schnell Speicherplatz.\",\"img\":\"\",\"button\":\"Sauber\"},{\"language\":\"ja\",\"title\":\"写真をすっきり整理\",\"content\":\"まず不要なスクリーンショットを削除して、すばやく空き容量を増やしましょう。\",\"img\":\"\",\"button\":\"クリーンアップ\"},{\"language\":\"ko\",\"title\":\"사진 정리\",\"content\":\"불필요한 스크린샷부터 정리하여 빠르게 공간을 확보하세요.\",\"img\":\"\",\"button\":\"정리\"},{\"language\":\"zh\",\"title\":\"整理照片\",\"content\":\"先清理不必要的截图，快速释放空间。\",\"img\":\"\",\"button\":\"清理\"},{\"language\":\"zh-TW\",\"title\":\"整理相片\",\"content\":\"先清理不必要的螢幕截圖，快速釋放空間。\",\"img\":\"\",\"button\":\"清理\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 890,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_48",
-    "Title": "Clean Speaker, Clear Sound",
-    "Content": "Get the best sound quality from your device with one tap.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Altavoz limpio, sonido claro\",\"content\":\"Obtenga la mejor calidad de sonido de su dispositivo con un solo toque.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Haut-parleur propre, son clair\",\"content\":\"Obtenez la meilleure qualité sonore de votre appareil en un seul clic.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Sauberer Lautsprecher, klarer Klang\",\"content\":\"Holen Sie mit einem Fingertipp die beste Klangqualität aus Ihrem Gerät heraus.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"スピーカーを掃除してクリアな音に\",\"content\":\"1回のタップで端末の音質を最大限に引き出しましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"스피커를 깨끗하게, 소리는 선명하게\",\"content\":\"한 번의 탭으로 기기에서 최상의 음질을 즐기세요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"清理扬声器，声音更清晰\",\"content\":\"一键获得设备的最佳音质。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"清理揚聲器，聲音更清晰\",\"content\":\"一鍵獲得裝置的最佳音質。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "speaker_cleaner"
-  },
-  {
-    "Id": 891,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_49",
-    "Title": "Tidy Up Your Gallery",
-    "Content": "Your gallery is full of screenshots. Let's organize them for you.",
-    "Button": "Go",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Pon en orden tu galería\",\"content\":\"Tu galería está llena de capturas de pantalla. Vamos a organizarlas.\",\"img\":\"\",\"button\":\"Ir\"},{\"language\":\"fr\",\"title\":\"Rangez votre galerie\",\"content\":\"Votre galerie regorge de captures d'écran. Laissez-nous les organiser pour vous.\",\"img\":\"\",\"button\":\"Aller\"},{\"language\":\"de\",\"title\":\"Räume deine Galerie auf\",\"content\":\"Ihre Galerie ist voller Screenshots. Lassen Sie uns diese für Sie organisieren.\",\"img\":\"\",\"button\":\"Gehen\"},{\"language\":\"ja\",\"title\":\"ギャラリーをすっきり\",\"content\":\"ギャラリーがスクリーンショットでいっぱいです。整理しましょう。\",\"img\":\"\",\"button\":\"開く\"},{\"language\":\"ko\",\"title\":\"갤러리 정리\",\"content\":\"갤러리가 스크린샷으로 가득합니다. 깔끔하게 정리해 드릴게요.\",\"img\":\"\",\"button\":\"열기\"},{\"language\":\"zh\",\"title\":\"整理图库\",\"content\":\"图库中满是截图。让我们帮你整理。\",\"img\":\"\",\"button\":\"打开\"},{\"language\":\"zh-TW\",\"title\":\"整理圖庫\",\"content\":\"圖庫中滿是螢幕截圖。讓我們幫你整理。\",\"img\":\"\",\"button\":\"開啟\"}]}",
-    "Route": "screenshots"
-  },
-  {
-    "Id": 892,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_50",
-    "Title": "Find Your Space Hogs",
-    "Content": "Identify and manage your largest files to free up gigabytes.",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"Encuentra tus acaparadores de espacio\",\"content\":\"Identifique y administre sus archivos más grandes para liberar gigabytes.\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Trouvez vos gros consommateurs d'espace\",\"content\":\"Identifiez et gérez vos fichiers les plus volumineux pour libérer des gigaoctets.\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Finde deine Weltraumfresser\",\"content\":\"Identifizieren und verwalten Sie Ihre größten Dateien, um Gigabytes freizugeben.\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"容量を圧迫するファイルを発見\",\"content\":\"最も大きなファイルを特定して管理し、数GBの空き容量を増やしましょう。\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"공간을 많이 차지하는 파일 찾기\",\"content\":\"가장 큰 파일을 찾아 관리하고 수 GB의 공간을 확보하세요.\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"找出空间占用大户\",\"content\":\"找出并管理最大的文件，释放数 GB 空间。\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"找出空間佔用大戶\",\"content\":\"找出並管理最大的檔案，釋放數 GB 空間。\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "large_files"
-  },
-  {
-    "Id": 893,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_51",
-    "Title": "View the phone battery consumption recently!",
-    "Content": "",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"¡Mira el consumo reciente de batería del teléfono!\",\"content\":\"\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"Consultez la consommation récente de la batterie de votre téléphone !\",\"content\":\"\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Sehen Sie sich den aktuellen Akkuverbrauch Ihres Telefons an!\",\"content\":\"\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"最近のバッテリー消費を確認しましょう！\",\"content\":\"\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"최근 휴대전화 배터리 사용량을 확인하세요!\",\"content\":\"\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"查看手机近期耗电情况！\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"查看手機近期耗電情況！\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "battery_info"
-  },
-  {
-    "Id": 894,
-    "AppName": "Phone Clean Up",
-    "AppPackage": "com.cleanphone.freespace.utility",
-    "Policy": 1,
-    "NoticeId": "clean_52",
-    "Title": "RAM used 83%, check the apps running in the background.",
-    "Content": "",
-    "Button": "Check",
-    "Icon": "",
-    "Img": "",
-    "Languages": "{\"keys\":[{\"language\":\"es\",\"title\":\"RAM utilizada 83%, verifique las aplicaciones ejecutándose en segundo plano.\",\"content\":\"\",\"img\":\"\",\"button\":\"Controlar\"},{\"language\":\"fr\",\"title\":\"La mémoire vive est utilisée à 83 %, vérifiez les applications qui s'exécutent en arrière-plan.\",\"content\":\"\",\"img\":\"\",\"button\":\"Vérifier\"},{\"language\":\"de\",\"title\":\"Der Arbeitsspeicher ist zu 83 % ausgelastet. Überprüfen Sie die im Hintergrund laufenden Apps.\",\"content\":\"\",\"img\":\"\",\"button\":\"Überprüfen\"},{\"language\":\"ja\",\"title\":\"RAM使用率は83%です。バックグラウンドで実行中のアプリを確認しましょう。\",\"content\":\"\",\"img\":\"\",\"button\":\"確認\"},{\"language\":\"ko\",\"title\":\"RAM 사용량 83%. 백그라운드에서 실행 중인 앱을 확인하세요.\",\"content\":\"\",\"img\":\"\",\"button\":\"확인\"},{\"language\":\"zh\",\"title\":\"RAM 已使用 83%，请查看后台运行的应用。\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"},{\"language\":\"zh-TW\",\"title\":\"RAM 已使用 83%，請查看背景執行的應用程式。\",\"content\":\"\",\"img\":\"\",\"button\":\"查看\"}]}",
-    "Route": "process_manager"
-  }
-]
+{
+  "contents": [
+    {
+      "Title": "Unused Apps Detected",
+      "Content": "You have apps you haven't used in months. Remove them to save space.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Aplicaciones no utilizadas detectadas",
+          "content": "Tienes aplicaciones que no has usado en meses. Elimínalas para ahorrar espacio.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Applications inutilisées détectées",
+          "content": "Vous avez des applications que vous n'avez pas utilisées depuis des mois. Supprimez-les pour libérer de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Nicht verwendete Apps erkannt",
+          "content": "Sie haben Apps, die Sie seit Monaten nicht mehr benutzt haben. Löschen Sie sie, um Speicherplatz freizugeben.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "未使用のアプリを検出",
+          "content": "数か月間使っていないアプリがあります。削除して空き容量を増やしましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "사용하지 않는 앱 감지",
+          "content": "몇 달 동안 사용하지 않은 앱이 있습니다. 삭제하여 저장 공간을 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "发现未使用的应用",
+          "content": "有些应用已数月未使用。删除它们以释放空间。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "發現未使用的應用程式",
+          "content": "有些應用程式已數月未使用。移除它們以釋放空間。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Your RAM is Clogged Up",
+      "Content": "Free up memory for a smoother experience. Close unnecessary tasks.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Tu RAM está obstruida",
+          "content": "Libera memoria para una experiencia más fluida. Cierra tareas innecesarias.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Votre mémoire RAM est saturée.",
+          "content": "Libérez de la mémoire pour une expérience plus fluide. Fermez les tâches inutiles.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Ihr Arbeitsspeicher ist überlastet.",
+          "content": "Speicherplatz freigeben für eine flüssigere Nutzung. Nicht benötigte Prozesse schließen.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "RAMが圧迫されています",
+          "content": "メモリを解放して動作をスムーズにしましょう。不要なタスクを終了してください。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "RAM 사용량이 높습니다",
+          "content": "메모리를 확보하여 더 원활하게 사용하세요. 불필요한 작업을 종료하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "RAM 占用过高",
+          "content": "释放内存，让运行更流畅。关闭不必要的任务。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "RAM 佔用過高",
+          "content": "釋放記憶體，讓操作更流暢。結束不必要的處理程序。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Battery Healthy?",
+      "Content": "Get a full analysis of your battery's condition and capacity.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "¿Está su batería en buen estado?",
+          "content": "Obtenga un análisis completo del estado y la capacidad de su batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Votre batterie est-elle en bon état ?",
+          "content": "Obtenez une analyse complète de l'état et de la capacité de votre batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Ist Ihr Akku in Ordnung?",
+          "content": "Erhalten Sie eine vollständige Analyse des Zustands und der Kapazität Ihrer Batterie.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "バッテリーの状態は良好ですか？",
+          "content": "バッテリーの状態と容量を詳しく分析します。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "배터리 상태가 양호한가요?",
+          "content": "배터리 상태와 용량을 자세히 분석해 보세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "电池健康状况如何？",
+          "content": "全面分析电池状态和容量。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "電池健康狀況如何？",
+          "content": "完整分析電池狀態與容量。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Duplicate Screenshots?",
+      "Content": "We found similar screenshots you can delete to save space.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "¿Capturas de pantalla duplicadas?",
+          "content": "Encontramos capturas de pantalla similares que puedes eliminar para ahorrar espacio.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Captures d'écran en double ?",
+          "content": "Nous avons trouvé des captures d'écran similaires que vous pouvez supprimer pour gagner de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Doppelte Screenshots?",
+          "content": "Wir haben ähnliche Screenshots gefunden, die Sie löschen können, um Speicherplatz zu sparen.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "重複したスクリーンショット？",
+          "content": "似たスクリーンショットが見つかりました。削除して空き容量を増やせます。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "중복 스크린샷이 있나요?",
+          "content": "비슷한 스크린샷을 찾았습니다. 삭제하여 저장 공간을 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "有重复截图？",
+          "content": "发现相似截图，删除后可释放空间。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "有重複的螢幕截圖？",
+          "content": "發現相似的螢幕截圖，刪除即可釋放空間。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Running Out of Room?",
+      "Content": "Your giant files might be the culprit. Sort and delete them easily.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "¿Se está quedando sin espacio?",
+          "content": "Tus archivos gigantes podrían ser los culpables. Ordénalos y elimínalos fácilmente.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Vous manquez de place ?",
+          "content": "Vos fichiers volumineux sont peut-être la cause du problème. Triez-les et supprimez-les facilement.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Platzmangel?",
+          "content": "Möglicherweise sind Ihre riesigen Dateien die Ursache. Sortieren und löschen Sie sie einfach.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "空き容量が足りませんか？",
+          "content": "大容量ファイルが原因かもしれません。簡単に並べ替えて削除できます。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "저장 공간이 부족한가요?",
+          "content": "대용량 파일이 원인일 수 있습니다. 쉽게 정렬하고 삭제하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "存储空间不足？",
+          "content": "超大文件可能是元凶。轻松排序并删除它们。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "儲存空間不足？",
+          "content": "超大檔案可能是原因。輕鬆排序並刪除它們。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Storage Cleanup Alert!",
+      "Content": "Your phone has 1.2 GB of junk files. Free up space now!",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¡Alerta de limpieza de almacenamiento!",
+          "content": "Tu teléfono tiene 1,2 GB de archivos basura. ¡Libera espacio ya!",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "Alerte nettoyage de votre entrepôt !",
+          "content": "Votre téléphone contient 1,2 Go de fichiers inutiles. Libérez de l'espace dès maintenant !",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "Aufräumalarm!",
+          "content": "Ihr Telefon enthält 1,2 GB unnötige Dateien. Geben Sie jetzt Speicherplatz frei!",
+          "button": "Scan"
+        },
+        "ja": {
+          "title": "ストレージクリーンアップのお知らせ！",
+          "content": "端末に1.2 GBの不要ファイルがあります。今すぐ空き容量を増やしましょう！",
+          "button": "スキャン"
+        },
+        "ko": {
+          "title": "저장 공간 정리 알림!",
+          "content": "휴대전화에 1.2GB의 정크 파일이 있습니다. 지금 공간을 확보하세요!",
+          "button": "스캔"
+        },
+        "zh": {
+          "title": "存储清理提醒！",
+          "content": "手机中有 1.2 GB 垃圾文件。立即释放空间！",
+          "button": "扫描"
+        },
+        "zh-TW": {
+          "title": "儲存空間清理提醒！",
+          "content": "手機中有 1.2 GB 垃圾檔案。立即釋放空間！",
+          "button": "掃描"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Speaker Check-up",
+      "Content": "Ensure your music and calls are crystal clear. Clean it now.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Es hora de hacer una revisión del orador",
+          "content": "Asegúrate de que tu música y llamadas tengan una nitidez impecable. Límpialo ahora.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Il est temps de faire vérifier les haut-parleurs.",
+          "content": "Assurez-vous que votre musique et vos appels soient d'une clarté cristalline. Nettoyez-le maintenant.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Zeit für einen Lautsprecher-Check",
+          "content": "Sorgen Sie für kristallklare Musik und Anrufe. Reinigen Sie Ihr Gerät jetzt.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "スピーカーをチェック",
+          "content": "音楽や通話をクリアに保つため、今すぐクリーニングしましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "스피커 점검 시간",
+          "content": "음악과 통화 소리를 선명하게 유지하세요. 지금 스피커를 청소해 보세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "该检查扬声器了",
+          "content": "确保音乐和通话清晰。立即清理。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "該檢查揚聲器了",
+          "content": "確保音樂和通話清晰。立即清理。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Declutter Your Home Screen",
+      "Content": "Make your phone feel new by uninstalling apps you don't need.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Despeja tu pantalla de inicio",
+          "content": "Haz que tu teléfono se sienta como nuevo desinstalando aplicaciones que no necesitas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Désencombrez votre écran d'accueil",
+          "content": "Redonnez un coup de neuf à votre téléphone en désinstallant les applications dont vous n'avez pas besoin.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Räumen Sie Ihren Startbildschirm auf",
+          "content": "Verleihen Sie Ihrem Smartphone ein neues Gefühl, indem Sie Apps deinstallieren, die Sie nicht benötigen.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "ホーム画面をすっきり",
+          "content": "不要なアプリをアンインストールして、端末をすっきりさせましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "홈 화면을 깔끔하게",
+          "content": "필요 없는 앱을 제거하여 휴대전화를 새것처럼 정리하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "整理主屏幕",
+          "content": "卸载不需要的应用，让手机焕然一新。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "整理主畫面",
+          "content": "解除安裝不需要的應用程式，讓手機煥然一新。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Battery Drain Detected",
+      "Content": "Background apps are using power. Manage them to save battery.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Se detectó descarga de batería",
+          "content": "Las aplicaciones en segundo plano consumen energía. Adminístralas para ahorrar batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Décharge de la batterie détectée",
+          "content": "Les applications en arrière-plan consomment de l'énergie. Gérez-les pour économiser la batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Batterieentladung festgestellt",
+          "content": "Hintergrund-Apps verbrauchen Strom. Verwalten Sie diese, um Akku zu sparen.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "バッテリー消費を検出",
+          "content": "バックグラウンドアプリが電力を使用しています。管理してバッテリーを節約しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "배터리 소모 감지",
+          "content": "백그라운드 앱이 전력을 사용 중입니다. 관리하여 배터리를 절약하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "检测到耗电问题",
+          "content": "后台应用正在耗电。管理它们以节省电量。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "偵測到耗電問題",
+          "content": "背景應用程式正在耗電。管理它們以節省電量。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Free Up Gigabytes",
+      "Content": "Find forgotten large files and get massive storage back.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Liberar gigabytes",
+          "content": "Encuentre archivos grandes olvidados y recupere un almacenamiento masivo.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Libérez des gigaoctets",
+          "content": "Retrouvez vos fichiers volumineux oubliés et récupérez un espace de stockage considérable.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Gigabytes freigeben",
+          "content": "Finden Sie vergessene große Dateien und gewinnen Sie massiv Speicherplatz zurück.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "数GBの空き容量を確保",
+          "content": "忘れていた大容量ファイルを見つけて、ストレージの空き容量を大幅に増やしましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "수 GB의 공간 확보",
+          "content": "잊고 있던 대용량 파일을 찾아 저장 공간을 크게 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "释放数 GB 空间",
+          "content": "找出遗忘的大文件，释放大量存储空间。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "釋放數 GB 空間",
+          "content": "找出被遺忘的大型檔案，釋放大量儲存空間。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Screenshot Review",
+      "Content": "Keep the important ones, delete the rest. It's quick and easy!",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Es hora de una revisión de capturas de pantalla",
+          "content": "Conserva lo importante y borra el resto. ¡Es rápido y fácil!",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Il est temps de faire une analyse de capture d'écran.",
+          "content": "Gardez les plus importantes, supprimez les autres. C'est rapide et facile !",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Zeit für eine Screenshot-Analyse",
+          "content": "Behalte die wichtigen Nachrichten, lösche den Rest. Es geht schnell und einfach!",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "スクリーンショットを見直す",
+          "content": "必要なものだけ残して、残りは削除。すばやく簡単に整理できます！",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "스크린샷 검토 시간",
+          "content": "중요한 것만 남기고 나머지는 삭제하세요. 빠르고 간단합니다!",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "该检查截图了",
+          "content": "保留重要截图，删除其余截图。快速又简单！",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "該檢查螢幕截圖了",
+          "content": "保留重要的螢幕截圖，刪除其餘的。快速又簡單！",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Screenshot Clutter Alert!",
+      "Content": "You have 50+ screenshots. Clear out the blurry and old ones.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "¡Alerta de desorden en la captura de pantalla!",
+          "content": "Tienes más de 50 capturas de pantalla. Borra las borrosas y antiguas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Alerte au bazar de captures d'écran !",
+          "content": "Vous avez plus de 50 captures d'écran. Supprimez celles qui sont floues ou anciennes.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Screenshot-Chaos-Alarm!",
+          "content": "Du hast über 50 Screenshots. Lösche die unscharfen und alten.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "スクリーンショットがたまっています！",
+          "content": "50枚以上のスクリーンショットがあります。ぼやけたものや古いものを整理しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "스크린샷 정리 알림!",
+          "content": "스크린샷이 50개 넘게 있습니다. 흐리거나 오래된 항목을 정리하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "截图过多提醒！",
+          "content": "截图已超过 50 张。清理模糊和过时的截图。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "螢幕截圖過多提醒！",
+          "content": "螢幕截圖已超過 50 張。清理模糊和過時的截圖。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Ready for a Fresh Start?",
+      "Content": "Uninstall multiple apps at once and free up significant storage.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "¿Listo para un nuevo comienzo?",
+          "content": "Desinstale varias aplicaciones a la vez y libere una cantidad significativa de almacenamiento.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Prêt pour un nouveau départ ?",
+          "content": "Désinstallez plusieurs applications simultanément et libérez un espace de stockage considérable.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Bereit für einen Neuanfang?",
+          "content": "Deinstallieren Sie mehrere Apps gleichzeitig und geben Sie so erheblich Speicherplatz frei.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "すっきり整理しませんか？",
+          "content": "複数のアプリをまとめてアンインストールし、空き容量を大幅に増やせます。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "새롭게 정리해 볼까요?",
+          "content": "여러 앱을 한 번에 제거하여 저장 공간을 크게 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "准备好焕然一新？",
+          "content": "一次卸载多个应用，释放大量存储空间。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "準備好煥然一新？",
+          "content": "一次解除安裝多個應用程式，釋放大量儲存空間。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Your Phone Needs a Sweep",
+      "Content": "Don't let junk files slow you down. Clean them up in seconds.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Tu teléfono necesita una limpieza",
+          "content": "No dejes que los archivos basura te frenen. Elimínalos en segundos.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Votre téléphone a besoin d'un nettoyage",
+          "content": "Ne laissez pas les fichiers inutiles vous ralentir. Supprimez-les en quelques secondes.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Ihr Telefon muss gereinigt werden",
+          "content": "Lassen Sie sich nicht von unnötigen Dateien ausbremsen. Bereinigen Sie sie in Sekundenschnelle.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "端末をお掃除しましょう",
+          "content": "不要ファイルで動作が遅くなる前に、数秒でクリーンアップしましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "휴대전화 정리가 필요해요",
+          "content": "정크 파일 때문에 느려지기 전에 몇 초 만에 정리하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "手机需要大扫除",
+          "content": "别让垃圾文件拖慢手机。几秒即可清理。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "手機需要大掃除",
+          "content": "別讓垃圾檔案拖慢手機。幾秒即可清理。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Speaker Muffled?",
+      "Content": "Improve your phone's sound with a quick, safe speaker clean.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "¿Su altavoz está amortiguado?",
+          "content": "Mejore el sonido de su teléfono con una limpieza de altavoz rápida y segura.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Votre haut-parleur est-il étouffé ?",
+          "content": "Améliorez le son de votre téléphone grâce à un nettoyage rapide et sûr du haut-parleur.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Ist Ihr Lautsprecher dumpf?",
+          "content": "Verbessern Sie den Klang Ihres Telefons mit einer schnellen und sicheren Lautsprecherreinigung.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "スピーカーの音がこもっていますか？",
+          "content": "すばやく安全にクリーニングして、端末の音を改善しましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "스피커 소리가 답답한가요?",
+          "content": "빠르고 안전하게 스피커를 청소하여 소리를 개선하세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "扬声器声音发闷？",
+          "content": "快速安全地清理扬声器，改善手机音质。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "揚聲器聲音沉悶？",
+          "content": "快速安全地清理揚聲器，改善手機音質。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Quick Clean?",
+      "Content": "Cache and temp files are piling up. Tap to scan and remove them.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¿Es hora de una limpieza rápida?",
+          "content": "Los archivos de caché y temporales se están acumulando. Toca para escanearlos y eliminarlos.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "Besoin d'un petit nettoyage ?",
+          "content": "Les fichiers cache et temporaires s'accumulent. Appuyez pour les analyser et les supprimer.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "Zeit für eine schnelle Reinigung?",
+          "content": "Cache- und temporäre Dateien sammeln sich an. Tippen Sie, um sie zu scannen und zu entfernen.",
+          "button": "Scan"
+        },
+        "ja": {
+          "title": "すばやくお掃除しませんか？",
+          "content": "キャッシュと一時ファイルがたまっています。スキャンして削除しましょう。",
+          "button": "スキャン"
+        },
+        "ko": {
+          "title": "빠르게 정리할까요?",
+          "content": "캐시와 임시 파일이 쌓이고 있습니다. 탭하여 스캔하고 삭제하세요.",
+          "button": "스캔"
+        },
+        "zh": {
+          "title": "要快速清理吗？",
+          "content": "缓存和临时文件正在堆积。点击扫描并删除。",
+          "button": "扫描"
+        },
+        "zh-TW": {
+          "title": "要快速清理嗎？",
+          "content": "快取和暫存檔案正在累積。點按即可掃描並刪除。",
+          "button": "掃描"
+        }
+      }
+    },
+    {
+      "Title": "Check Your Battery Health",
+      "Content": "Is your battery draining fast? Get a detailed report and tips.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Comprueba el estado de tu batería",
+          "content": "¿Se te descarga la batería rápidamente? Obtén un informe detallado y consejos.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Vérifiez l'état de votre batterie",
+          "content": "Votre batterie se décharge rapidement ? Obtenez un rapport détaillé et des conseils.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Überprüfen Sie den Zustand Ihres Akkus.",
+          "content": "Entlädt sich Ihr Akku schnell? Erhalten Sie einen detaillierten Bericht und Tipps.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "バッテリーの状態を確認",
+          "content": "バッテリーの減りが早いですか？詳しいレポートとヒントを確認しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "배터리 상태 확인",
+          "content": "배터리가 빨리 닳나요? 자세한 보고서와 팁을 확인하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "检查电池健康状况",
+          "content": "电池耗电快？查看详细报告和建议。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "檢查電池健康狀況",
+          "content": "電池耗電很快？查看詳細報告與建議。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Simplify Your Phone",
+      "Content": "Less is more. Get rid of app clutter with our easy uninstaller.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Simplifica tu teléfono",
+          "content": "Menos es más. Elimina el desorden de aplicaciones con nuestro sencillo desinstalador.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Simplifiez votre téléphone",
+          "content": "Moins, c'est mieux. Débarrassez-vous des applications inutiles grâce à notre désinstalleur facile à utiliser.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Vereinfachen Sie Ihr Telefon",
+          "content": "Weniger ist mehr. Befreien Sie sich von unnötigen Apps mit unserem benutzerfreundlichen Deinstallationsprogramm.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "端末をシンプルに",
+          "content": "必要なものだけに。かんたんアンインストーラーでアプリを整理しましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "휴대전화를 깔끔하게",
+          "content": "적을수록 좋습니다. 간편한 제거 도구로 앱을 정리하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "精简手机",
+          "content": "少即是多。使用便捷卸载工具清理多余应用。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "精簡手機",
+          "content": "少即是多。使用便利的解除安裝工具清理多餘應用程式。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Free Up Space Instantly",
+      "Content": "Get more room for photos and apps with a single tap.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Libere espacio al instante",
+          "content": "Obtén más espacio para fotos y aplicaciones con un solo toque.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Libérez de l'espace instantanément",
+          "content": "Gagnez de l'espace pour vos photos et applications en un seul clic.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Sofort Speicherplatz freigeben",
+          "content": "Mehr Speicherplatz für Fotos und Apps mit einem einzigen Fingertipp.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "今すぐ空き容量を確保",
+          "content": "1回のタップで写真やアプリ用の空き容量を増やせます。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "즉시 공간 확보",
+          "content": "한 번의 탭으로 사진과 앱을 위한 공간을 더 확보하세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "立即释放空间",
+          "content": "一键为照片和应用腾出更多空间。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "立即釋放空間",
+          "content": "一鍵為相片和應用程式騰出更多空間。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Low on Storage?",
+      "Content": "We found unnecessary files you can safely delete. Check it out!",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¿Te queda poco espacio de almacenamiento?",
+          "content": "Encontramos archivos innecesarios que puedes eliminar sin problemas. ¡Échales un vistazo!",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Manque de stockage ?",
+          "content": "Nous avons trouvé des fichiers inutiles que vous pouvez supprimer sans risque. Jetez-y un œil !",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Wenig Speicherplatz?",
+          "content": "Wir haben unnötige Dateien gefunden, die Sie bedenkenlos löschen können. Schauen Sie mal rein!",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "ストレージ不足ですか？",
+          "content": "安全に削除できる不要ファイルが見つかりました。確認しましょう！",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "저장 공간이 부족한가요?",
+          "content": "안전하게 삭제할 수 있는 불필요한 파일을 찾았습니다. 확인해 보세요!",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "存储空间不足？",
+          "content": "发现可安全删除的多余文件。快来看看！",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "儲存空間不足？",
+          "content": "發現可安全刪除的多餘檔案。快來看看！",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Screenshot Cleanup Time",
+      "Content": "Found 25 old screenshots. Free up space by removing ones you don't need.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "🧹 Hora de limpiar capturas de pantalla",
+          "content": "Se encontraron 25 capturas de pantalla antiguas. Libera espacio eliminando las que no necesites.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "🧹 Temps de nettoyage des captures d'écran",
+          "content": "25 anciennes captures d'écran ont été trouvées. Libérez de l'espace en supprimant celles dont vous n'avez plus besoin.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "🧹 Screenshot-Bereinigungszeit",
+          "content": "Es wurden 25 alte Screenshots gefunden. Schaffen Sie Speicherplatz, indem Sie nicht benötigte Screenshots löschen.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "🧹 スクリーンショットを整理",
+          "content": "古いスクリーンショットが25枚見つかりました。不要なものを削除して空き容量を増やしましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "🧹 스크린샷 정리 시간",
+          "content": "오래된 스크린샷 25개를 찾았습니다. 필요 없는 항목을 삭제하여 공간을 확보하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "🧹 该清理截图了",
+          "content": "发现 25 张旧截图。删除不需要的截图以释放空间。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "🧹 該清理螢幕截圖了",
+          "content": "發現 25 張舊的螢幕截圖。刪除不需要的項目以釋放空間。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "💪 Tame Large Files",
+      "Content": "Found some old large files you might not need anymore. Want to check?",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "💪 Domina archivos grandes",
+          "content": "Encontré algunos archivos antiguos y grandes que quizá ya no necesites. ¿Quieres revisarlos?",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "💪 Dompter les fichiers volumineux",
+          "content": "J'ai trouvé de vieux fichiers volumineux dont vous n'aurez peut-être plus besoin. Voulez-vous vérifier ?",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "💪 Große Dateien bändigen",
+          "content": "Ich habe einige alte, große Dateien gefunden, die Sie möglicherweise nicht mehr benötigen. Möchten Sie sie überprüfen?",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "💪 大容量ファイルを整理",
+          "content": "古い大容量ファイルが見つかりました。不要かどうか確認しますか？",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "💪 대용량 파일 정리",
+          "content": "더 이상 필요 없을 수 있는 오래된 대용량 파일을 찾았습니다. 확인할까요?",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "💪 整理大文件",
+          "content": "发现一些可能不再需要的旧大文件。要检查吗？",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "💪 整理大型檔案",
+          "content": "發現一些可能不再需要的舊大型檔案。要檢查嗎？",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🚀 Storage Almost Full",
+      "Content": "Your phone storage is running low. Clean junk files to make room.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "🚀 Almacenamiento casi lleno",
+          "content": "El almacenamiento de tu teléfono se está agotando. Limpia los archivos basura para liberar espacio.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "🚀 Stockage presque plein",
+          "content": "L'espace de stockage de votre téléphone est presque plein. Supprimez les fichiers inutiles pour libérer de la place.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "🚀 Lagerraum fast voll",
+          "content": "Der Speicherplatz auf Ihrem Telefon ist fast voll. Löschen Sie unnötige Dateien, um Platz zu schaffen.",
+          "button": "Scan"
+        },
+        "ja": {
+          "title": "🚀 ストレージがもうすぐいっぱい",
+          "content": "端末の空き容量が残りわずかです。不要ファイルを削除して空きを作りましょう。",
+          "button": "スキャン"
+        },
+        "ko": {
+          "title": "🚀 저장 공간이 거의 가득 참",
+          "content": "휴대전화 저장 공간이 부족합니다. 정크 파일을 정리하여 공간을 확보하세요.",
+          "button": "스캔"
+        },
+        "zh": {
+          "title": "🚀 存储空间即将用尽",
+          "content": "手机存储空间不足。清理垃圾文件以腾出空间。",
+          "button": "扫描"
+        },
+        "zh-TW": {
+          "title": "🚀 儲存空間即將用盡",
+          "content": "手機儲存空間不足。清理垃圾檔案以騰出空間。",
+          "button": "掃描"
+        }
+      }
+    },
+    {
+      "Title": "📈 Battery Report Ready",
+      "Content": "View your detailed battery information, including current charge level.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Informe de batería listo",
+          "content": "Vea información detallada de la batería, incluido el nivel de carga actual.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📈 Rapport de batterie prêt",
+          "content": "Consultez les informations détaillées de votre batterie, y compris son niveau de charge actuel.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📈 Akkubericht verfügbar",
+          "content": "Sehen Sie sich Ihre detaillierten Batterieinformationen an, einschließlich des aktuellen Ladezustands.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "📈 バッテリーレポートの準備完了",
+          "content": "現在の充電レベルなど、詳しいバッテリー情報を確認できます。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "📈 배터리 보고서 준비 완료",
+          "content": "현재 충전량을 포함한 자세한 배터리 정보를 확인하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "📈 电池报告已就绪",
+          "content": "查看详细电池信息，包括当前电量。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "📈 電池報告已就緒",
+          "content": "查看詳細電池資訊，包括目前電量。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Speaker Maintenance",
+      "Content": "Keep your speaker clear. Use the sound wave tool to assist with dust removal.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Mantenimiento de altavoces",
+          "content": "Mantenga el altavoz limpio. Utilice la herramienta de ondas de sonido para eliminar el polvo.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "🧹 Entretien des haut-parleurs",
+          "content": "Veillez à ce que votre haut-parleur soit propre. Utilisez l'outil de nettoyage des ondes sonores pour faciliter l'élimination de la poussière.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "🧹 Lautsprecherwartung",
+          "content": "Halten Sie Ihre Lautsprecher sauber. Verwenden Sie das Schallwellen-Tool, um Staub zu entfernen.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "🧹 スピーカーのメンテナンス",
+          "content": "スピーカーをきれいに保ちましょう。音波ツールでほこりの除去をサポートします。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "🧹 스피커 관리",
+          "content": "스피커를 깨끗하게 유지하세요. 음파 도구가 먼지 제거를 도와줍니다.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "🧹 扬声器维护",
+          "content": "保持扬声器清洁。使用声波工具辅助清除灰尘。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "🧹 揚聲器維護",
+          "content": "保持揚聲器清潔。使用聲波工具協助清除灰塵。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Simplify Your Phone",
+      "Content": "Make space by removing apps you no longer use. We've highlighted some candidates.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "🧹 Simplifica tu teléfono",
+          "content": "Libera espacio eliminando las apps que ya no usas. Hemos destacado algunas opciones.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🧹 Simplifiez votre téléphone",
+          "content": "Libérez de l'espace en supprimant les applications que vous n'utilisez plus. Nous en avons sélectionné quelques-unes.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🧹 Vereinfache dein Handy",
+          "content": "Schaffen Sie Speicherplatz, indem Sie Apps deinstallieren, die Sie nicht mehr verwenden. Wir haben einige Kandidaten hervorgehoben.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "🧹 端末をすっきり",
+          "content": "使わなくなったアプリを削除して空き容量を増やしましょう。候補をいくつか表示しています。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "🧹 휴대전화 간소화",
+          "content": "더 이상 사용하지 않는 앱을 제거하여 공간을 확보하세요. 몇 가지 후보를 표시했습니다.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "🧹 精简手机",
+          "content": "删除不再使用的应用以腾出空间。我们已标出一些候选项。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "🧹 精簡手機",
+          "content": "移除不再使用的應用程式以騰出空間。我們已標出一些候選項目。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🧠 Boost Available Memory",
+      "Content": "Stop a few background processes to free up RAM for a smoother experience.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "🧠 Aumenta la memoria disponible",
+          "content": "Detenga algunos procesos en segundo plano para liberar RAM y disfrutar de una experiencia más fluida.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🧠 Augmenter la mémoire disponible",
+          "content": "Arrêtez quelques processus en arrière-plan pour libérer de la RAM et profiter d'une expérience plus fluide.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🧠 Verfügbaren Speicher erhöhen",
+          "content": "Um Arbeitsspeicher freizugeben und so ein flüssigeres Nutzungserlebnis zu gewährleisten, sollten einige Hintergrundprozesse beendet werden.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "🧠 利用可能なメモリを増やす",
+          "content": "いくつかのバックグラウンドプロセスを停止し、RAMを解放して動作をスムーズにしましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "🧠 사용 가능한 메모리 늘리기",
+          "content": "일부 백그라운드 프로세스를 중지하여 RAM을 확보하고 더 원활하게 사용하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "🧠 提升可用内存",
+          "content": "停止部分后台进程以释放 RAM，让运行更流畅。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "🧠 提升可用記憶體",
+          "content": "停止部分背景處理程序以釋放 RAM，讓操作更流暢。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🖼️ Manage Your Screenshots",
+      "Content": "Your screenshot folder is getting full. Review and clean them up easily.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "🖼️ Administra tus capturas de pantalla",
+          "content": "Tu carpeta de capturas de pantalla se está llenando. Revísalas y límpialas fácilmente.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "🖼️ Gérez vos captures d'écran",
+          "content": "Votre dossier de captures d'écran est presque plein. Consultez-le et nettoyez-le facilement.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "🖼️ Screenshots verwalten",
+          "content": "Ihr Screenshot-Ordner ist fast voll. Sehen Sie Ihre Screenshots an und räumen Sie sie ganz einfach auf.",
+          "button": "Scan"
+        },
+        "ja": {
+          "title": "🖼️ スクリーンショットを管理",
+          "content": "スクリーンショットフォルダーがいっぱいになってきました。簡単に確認して整理できます。",
+          "button": "スキャン"
+        },
+        "ko": {
+          "title": "🖼️ 스크린샷 관리",
+          "content": "스크린샷 폴더가 가득 차고 있습니다. 쉽게 검토하고 정리하세요.",
+          "button": "스캔"
+        },
+        "zh": {
+          "title": "🖼️ 管理截图",
+          "content": "截图文件夹快满了。轻松检查并清理。",
+          "button": "扫描"
+        },
+        "zh-TW": {
+          "title": "🖼️ 管理螢幕截圖",
+          "content": "螢幕截圖資料夾快滿了。輕鬆檢查並清理。",
+          "button": "掃描"
+        }
+      }
+    },
+    {
+      "Title": "📁 Your Storage Giants",
+      "Content": "See which files are taking up the most space on your device. Manage them here.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "📁 Tus gigantes del almacenamiento",
+          "content": "Consulta qué archivos ocupan más espacio en tu dispositivo. Adminístralos aquí.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📁 Vos géants du stockage",
+          "content": "Découvrez quels fichiers occupent le plus d'espace sur votre appareil. Gérez-les ici.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📁 Ihre Lagergiganten",
+          "content": "Sehen Sie, welche Dateien den meisten Speicherplatz auf Ihrem Gerät belegen. Verwalten Sie sie hier.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "📁 ストレージを圧迫する大容量ファイル",
+          "content": "端末で最も容量を使っているファイルを確認し、ここで管理できます。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "📁 저장 공간을 많이 차지하는 대용량 파일",
+          "content": "기기에서 가장 많은 공간을 차지하는 파일을 확인하고 관리하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "📁 占用存储空间的大型文件",
+          "content": "查看哪些文件占用最多空间，并在此管理。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "📁 佔用儲存空間的大型檔案",
+          "content": "查看哪些檔案佔用最多空間，並在此管理。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "📱 Quick Clean-Up?",
+      "Content": "A quick scan can free up space. Clean junk files in just one tap.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "📱¿Limpieza rápida?",
+          "content": "Un análisis rápido puede liberar espacio. Limpia archivos basura con un solo toque.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "📱 Nettoyage rapide ?",
+          "content": "Une analyse rapide permet de libérer de l'espace. Supprimez les fichiers inutiles en un seul clic.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "📱 Schnelles Aufräumen?",
+          "content": "Ein schneller Scan kann Speicherplatz freigeben. Bereinigen Sie überflüssige Dateien mit nur einem Fingertipp.",
+          "button": "Scan"
+        },
+        "ja": {
+          "title": "📱 すばやくお掃除しますか？",
+          "content": "簡単なスキャンで空き容量を増やせます。1回のタップで不要ファイルを削除しましょう。",
+          "button": "スキャン"
+        },
+        "ko": {
+          "title": "📱 빠르게 정리할까요?",
+          "content": "빠른 스캔으로 공간을 확보할 수 있습니다. 한 번의 탭으로 정크 파일을 정리하세요.",
+          "button": "스캔"
+        },
+        "zh": {
+          "title": "📱 快速清理？",
+          "content": "快速扫描即可释放空间。一键清理垃圾文件。",
+          "button": "扫描"
+        },
+        "zh-TW": {
+          "title": "📱 快速清理？",
+          "content": "快速掃描即可釋放空間。一鍵清理垃圾檔案。",
+          "button": "掃描"
+        }
+      }
+    },
+    {
+      "Title": "🔋 Your Battery Health",
+      "Content": "Check your battery's current health status and temperature.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "🔋 La salud de tu batería",
+          "content": "Verifique el estado actual y la temperatura de su batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🔋 État de votre batterie",
+          "content": "Vérifiez l'état et la température actuels de votre batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🔋 Ihr Batteriezustand",
+          "content": "Überprüfen Sie den aktuellen Gesundheitszustand und die Temperatur Ihrer Batterie.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "🔋 バッテリーの状態",
+          "content": "バッテリーの現在の状態と温度を確認しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "🔋 배터리 상태",
+          "content": "현재 배터리 상태와 온도를 확인하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "🔋 电池健康状况",
+          "content": "检查电池当前健康状态和温度。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "🔋 電池健康狀況",
+          "content": "檢查電池目前健康狀態與溫度。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🔊 Clean Speaker Grille?",
+      "Content": "Notice muffled sound? Try our tool to help loosen dust from your speaker.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "🔊 ¿Limpiar la rejilla del altavoz?",
+          "content": "¿Notas un sonido apagado? Prueba nuestra herramienta para quitar el polvo de tu altavoz.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "🔊 Nettoyer la grille du haut-parleur ?",
+          "content": "Vous remarquez un son étouffé ? Essayez notre outil pour déloger la poussière de votre haut-parleur.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "🔊 Saubere Lautsprecherabdeckung?",
+          "content": "Klingt der Ton dumpf? Probieren Sie unser Werkzeug, um Staub von Ihrem Lautsprecher zu entfernen.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "🔊 スピーカーグリルを掃除しますか？",
+          "content": "音がこもっていますか？ツールを使ってスピーカーのほこりを取り除きやすくしましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "🔊 스피커 그릴을 청소할까요?",
+          "content": "소리가 먹먹한가요? 스피커의 먼지를 떨어내는 데 도움이 되는 도구를 사용해 보세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "🔊 要清理扬声器网罩吗？",
+          "content": "声音发闷？试试我们的工具，帮助松动扬声器中的灰尘。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "🔊 要清理揚聲器網罩嗎？",
+          "content": "聲音沉悶？試試我們的工具，協助鬆動揚聲器中的灰塵。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "📦 Unused Apps Found",
+      "Content": "You have 5 apps that haven't been used in over a month. Consider uninstalling them.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "📦 Se encontraron aplicaciones no utilizadas",
+          "content": "Tienes 5 aplicaciones que no has usado en más de un mes. Considera desinstalarlas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📦 Applications inutilisées trouvées",
+          "content": "Vous avez 5 applications que vous n'avez pas utilisées depuis plus d'un mois. Envisagez de les désinstaller.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📦 Unbenutzte Apps gefunden",
+          "content": "Sie haben 5 Apps, die seit über einem Monat nicht mehr benutzt wurden. Überlegen Sie, ob Sie diese deinstallieren sollten.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "📦 未使用のアプリを検出",
+          "content": "1か月以上使っていないアプリが5個あります。アンインストールを検討しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "📦 사용하지 않는 앱 발견",
+          "content": "한 달 넘게 사용하지 않은 앱이 5개 있습니다. 제거를 고려해 보세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "📦 发现未使用的应用",
+          "content": "有 5 个应用已超过一个月未使用。建议卸载。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "📦 發現未使用的應用程式",
+          "content": "有 5 個應用程式已超過一個月未使用。建議解除安裝。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "📊 RAM Usage is High",
+      "Content": "3 background apps are using a lot of memory. See which ones and free it up.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "📊 El uso de RAM es alto",
+          "content": "Tres aplicaciones en segundo plano consumen mucha memoria. Identifica cuáles y libéralas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📊 Utilisation de la RAM élevée",
+          "content": "Trois applications en arrière-plan consomment beaucoup de mémoire. Identifiez-les et libérez de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📊 Hohe RAM-Auslastung",
+          "content": "Drei Hintergrund-Apps belegen viel Arbeitsspeicher. Finden Sie heraus, welche das sind, und geben Sie Speicherplatz frei.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "📊 RAM使用率が高くなっています",
+          "content": "3つのバックグラウンドアプリが多くのメモリを使用しています。確認して解放しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "📊 RAM 사용량이 높습니다",
+          "content": "백그라운드 앱 3개가 많은 메모리를 사용 중입니다. 확인하고 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "📊 RAM 使用率过高",
+          "content": "3 个后台应用占用了大量内存。查看并释放内存。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "📊 RAM 使用率過高",
+          "content": "3 個背景應用程式佔用了大量記憶體。查看並釋放記憶體。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "📸 Screenshot Album Ready",
+      "Content": "You have 12 new screenshots. Organize or delete them to declutter your gallery.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Álbum de capturas de pantalla listo",
+          "content": "Tienes 12 capturas de pantalla nuevas. Organízalas o elimínalas para organizar tu galería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📸 Album de captures d'écran prêt",
+          "content": "Vous avez 12 nouvelles captures d'écran. Organisez-les ou supprimez-les pour désencombrer votre galerie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📸 Screenshot-Album bereit",
+          "content": "Sie haben 12 neue Screenshots. Ordnen oder löschen Sie diese, um Ihre Galerie aufzuräumen.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "📸 スクリーンショットアルバムの準備完了",
+          "content": "新しいスクリーンショットが12枚あります。整理または削除してギャラリーをすっきりさせましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "📸 스크린샷 앨범 준비 완료",
+          "content": "새 스크린샷이 12개 있습니다. 정리하거나 삭제하여 갤러리를 깔끔하게 유지하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "📸 截图相册已就绪",
+          "content": "有 12 张新截图。整理或删除它们，让图库更整洁。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "📸 螢幕截圖相簿已就緒",
+          "content": "有 12 張新的螢幕截圖。整理或刪除它們，讓圖庫更整潔。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🎥 Large Videos Found",
+      "Content": "3 videos are taking over 4.5 GB of your space. Review and manage them.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "🎥 Se encontraron videos grandes",
+          "content": "Hay 3 videos que ocupan más de 4,5 GB de espacio. Revísalos y adminístralos.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🎥 Vidéos volumineuses trouvées",
+          "content": "3 vidéos occupent plus de 4,5 Go d'espace. Veuillez les vérifier et les gérer.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🎥 Große Videos gefunden",
+          "content": "Drei Videos belegen über 4,5 GB Speicherplatz. Überprüfen und verwalten Sie diese.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "🎥 大容量の動画を検出",
+          "content": "3本の動画が4.5 GB以上を占めています。確認して管理しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "🎥 대용량 동영상 발견",
+          "content": "동영상 3개가 4.5GB 넘는 공간을 차지합니다. 검토하고 관리하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "🎥 发现大型视频",
+          "content": "3 个视频占用超过 4.5 GB 空间。查看并管理。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "🎥 發現大型影片",
+          "content": "3 部影片佔用超過 4.5 GB 空間。查看並管理。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "🗑️ Junk Files Found",
+      "Content": "We found 1.2 GB of temporary files and cache. Tap to clean up and free up space.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "🗑️ Archivos basura encontrados",
+          "content": "Encontramos 1,2 GB de archivos temporales y caché. Pulsa para limpiar y liberar espacio.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "🗑️ Fichiers indésirables trouvés",
+          "content": "Nous avons trouvé 1,2 Go de fichiers temporaires et de cache. Appuyez pour les supprimer et libérer de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "🗑️ Junk-Dateien gefunden",
+          "content": "Wir haben 1,2 GB an temporären Dateien und Cache gefunden. Tippen Sie hier, um diese zu bereinigen und Speicherplatz freizugeben.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "🗑️ 不要ファイルを検出",
+          "content": "1.2 GBの一時ファイルとキャッシュが見つかりました。タップして削除し、空き容量を増やしましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "🗑️ 정크 파일 발견",
+          "content": "1.2GB의 임시 파일과 캐시가 발견되었습니다. 탭하여 정리하고 공간을 확보하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "🗑️ 发现垃圾文件",
+          "content": "发现 1.2 GB 临时文件和缓存。点击清理并释放空间。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "🗑️ 發現垃圾檔案",
+          "content": "發現 1.2 GB 暫存檔案與快取。點按即可清理並釋放空間。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Free up storage space by cleaning useless files!",
+      "Content": "",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "home",
+      "Languages": {
+        "es": {
+          "title": "¡Libera espacio de almacenamiento limpiando archivos inútiles!",
+          "content": "",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Libérez de l'espace de stockage en supprimant les fichiers inutiles !",
+          "content": "",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Schaffen Sie Speicherplatz, indem Sie unnötige Dateien löschen!",
+          "content": "",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "不要なファイルを削除して空き容量を増やしましょう！",
+          "content": "",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "불필요한 파일을 정리하여 저장 공간을 확보하세요!",
+          "content": "",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "清理无用文件，释放存储空间！",
+          "content": "",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "清理無用檔案，釋放儲存空間！",
+          "content": "",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Uninstalled successfully.",
+      "Content": "Clean up residual junk files for more space.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Desinstalado exitosamente.",
+          "content": "Limpia los archivos basura residuales para obtener más espacio.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Désinstallation réussie.",
+          "content": "Supprimez les fichiers inutiles résiduels pour libérer de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Erfolgreich deinstalliert.",
+          "content": "Entfernen Sie verbliebene Datenmülldateien, um mehr Speicherplatz zu schaffen.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "アンインストールしました。",
+          "content": "残った不要ファイルを削除して、空き容量をさらに増やしましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "제거 완료",
+          "content": "남은 정크 파일을 정리하여 공간을 더 확보하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "卸载成功。",
+          "content": "清理残留垃圾文件，释放更多空间。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "解除安裝成功。",
+          "content": "清理殘留垃圾檔案，釋放更多空間。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Sound Quality Boost",
+      "Content": "Clear your speaker from dust and lint for clearer audio.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Mejora de la calidad del sonido",
+          "content": "Limpie el polvo y la pelusa de su altavoz para disfrutar de un audio más claro.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Amélioration de la qualité sonore",
+          "content": "Nettoyez votre haut-parleur de la poussière et des peluches pour un son plus clair.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Klangqualitätsverbesserung",
+          "content": "Für einen klareren Klang sollten Sie Ihre Lautsprecher von Staub und Flusen befreien.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "音質を向上",
+          "content": "スピーカーのほこりや糸くずを取り除き、音をクリアにしましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "음질 향상",
+          "content": "스피커의 먼지와 보풀을 제거하여 더 선명한 소리를 즐기세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "提升音质",
+          "content": "清除扬声器中的灰尘和绒屑，让声音更清晰。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "提升音質",
+          "content": "清除揚聲器中的灰塵與棉絮，讓聲音更清晰。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Manage Your Heavy Files",
+      "Content": "Organize your videos, archives, and documents by size.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Administre sus archivos pesados",
+          "content": "Organiza tus vídeos, archivos y documentos por tamaño.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Gérez vos fichiers volumineux",
+          "content": "Organisez vos vidéos, archives et documents par taille.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Verwalten Sie Ihre großen Dateien",
+          "content": "Organisieren Sie Ihre Videos, Archive und Dokumente nach Größe.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "大容量ファイルを管理",
+          "content": "動画、アーカイブ、ドキュメントをサイズ順に整理しましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "대용량 파일 관리",
+          "content": "동영상, 압축 파일, 문서를 크기별로 정리하세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "管理大型文件",
+          "content": "按大小整理视频、压缩包和文档。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "管理大型檔案",
+          "content": "依大小整理影片、壓縮檔與文件。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Charging is completed, battery power reaches 100%",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "La carga está completa y la batería alcanza el 100%.",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "La charge est terminée, la batterie est chargée à 100 %.",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Der Ladevorgang ist abgeschlossen, die Batterieleistung hat 100 % erreicht.",
+          "content": "",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "充電が完了し、バッテリーが100%になりました",
+          "content": "",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "충전이 완료되어 배터리가 100%입니다",
+          "content": "",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "充电完成，电量已达到 100%",
+          "content": "",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "充電完成，電量已達 100%",
+          "content": "",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Boost Your Volume",
+      "Content": "Remove audio blockage for a better listening experience.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Aumenta tu volumen",
+          "content": "Elimina el bloqueo de audio para una mejor experiencia auditiva.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Augmentez votre volume",
+          "content": "Éliminez les blocages audio pour une meilleure expérience d'écoute.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Erhöhen Sie Ihre Lautstärke",
+          "content": "Beseitigen Sie Audioblockaden für ein besseres Hörerlebnis.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "音量をアップ",
+          "content": "スピーカーの詰まりを解消して、音をより快適に楽しみましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "볼륨 향상",
+          "content": "소리를 막는 이물질을 제거하여 더 나은 음질을 즐기세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "提升音量",
+          "content": "清除扬声器中的堵塞物，获得更好的聆听体验。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "提升音量",
+          "content": "清除揚聲器中的阻塞物，獲得更好的聆聽體驗。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Large Files Taking Space",
+      "Content": "You have large videos and files eating up your storage. Review them?",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Archivos grandes que ocupan espacio",
+          "content": "Tienes videos y archivos grandes que ocupan tu espacio de almacenamiento. ¿Quieres revisarlos?",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Fichiers volumineux occupant de l'espace",
+          "content": "Vous avez des vidéos et des fichiers volumineux qui occupent tout votre espace de stockage. Êtes-vous prêt à les examiner ?",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Große Dateien belegen Speicherplatz",
+          "content": "Sie haben große Videos und Dateien, die Ihren Speicherplatz belegen. Wollen Sie diese überprüfen?",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "大容量ファイルが容量を圧迫",
+          "content": "大きな動画やファイルがストレージを占めています。確認しますか？",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "대용량 파일이 공간을 차지합니다",
+          "content": "큰 동영상과 파일이 저장 공간을 차지하고 있습니다. 검토할까요?",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "大文件占用空间",
+          "content": "大型视频和文件正在占用存储空间。要查看吗？",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "大型檔案佔用空間",
+          "content": "大型影片與檔案正在佔用儲存空間。要查看嗎？",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Battery power: 50%, check battery info now!",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Carga de la batería: 50%, ¡verifique la información de la batería ahora!",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Niveau de batterie : 50 %, vérifiez les informations sur la batterie maintenant !",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Akkustand: 50 %, Akkuinformationen jetzt prüfen!",
+          "content": "",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "バッテリー残量50%。今すぐバッテリー情報を確認しましょう！",
+          "content": "",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "배터리 잔량 50%. 지금 배터리 정보를 확인하세요!",
+          "content": "",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "电量 50%，立即查看电池信息！",
+          "content": "",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "電量 50%，立即查看電池資訊！",
+          "content": "",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Performance Boost Available",
+      "Content": "Tap to optimize running processes and improve your phone's speed.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Mejora del rendimiento disponible",
+          "content": "Toque para optimizar los procesos en ejecución y mejorar la velocidad de su teléfono.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Amélioration des performances disponible",
+          "content": "Appuyez pour optimiser les processus en cours et améliorer la vitesse de votre téléphone.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Leistungssteigerung verfügbar",
+          "content": "Tippen Sie, um laufende Prozesse zu optimieren und die Geschwindigkeit Ihres Telefons zu verbessern.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "パフォーマンスを改善できます",
+          "content": "タップして実行中のプロセスを最適化し、端末の速度を改善しましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "성능을 높일 수 있습니다",
+          "content": "탭하여 실행 중인 프로세스를 최적화하고 휴대전화 속도를 높이세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "可提升性能",
+          "content": "点击优化运行中的进程，提升手机速度。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "可提升效能",
+          "content": "點按以最佳化執行中的處理程序，提升手機速度。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Declutter Your Photos",
+      "Content": "Start by cleaning up unnecessary screenshots. Free up space fast.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Ordena tus fotos",
+          "content": "Empieza por eliminar capturas de pantalla innecesarias. Libera espacio rápidamente.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Désencombrez vos photos",
+          "content": "Commencez par supprimer les captures d'écran inutiles. Libérez rapidement de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Räume deine Fotos auf",
+          "content": "Beginnen Sie damit, unnötige Screenshots zu löschen. So schaffen Sie schnell Speicherplatz.",
+          "button": "Sauber"
+        },
+        "ja": {
+          "title": "写真をすっきり整理",
+          "content": "まず不要なスクリーンショットを削除して、すばやく空き容量を増やしましょう。",
+          "button": "クリーンアップ"
+        },
+        "ko": {
+          "title": "사진 정리",
+          "content": "불필요한 스크린샷부터 정리하여 빠르게 공간을 확보하세요.",
+          "button": "정리"
+        },
+        "zh": {
+          "title": "整理照片",
+          "content": "先清理不必要的截图，快速释放空间。",
+          "button": "清理"
+        },
+        "zh-TW": {
+          "title": "整理相片",
+          "content": "先清理不必要的螢幕截圖，快速釋放空間。",
+          "button": "清理"
+        }
+      }
+    },
+    {
+      "Title": "Clean Speaker, Clear Sound",
+      "Content": "Get the best sound quality from your device with one tap.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Altavoz limpio, sonido claro",
+          "content": "Obtenga la mejor calidad de sonido de su dispositivo con un solo toque.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Haut-parleur propre, son clair",
+          "content": "Obtenez la meilleure qualité sonore de votre appareil en un seul clic.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Sauberer Lautsprecher, klarer Klang",
+          "content": "Holen Sie mit einem Fingertipp die beste Klangqualität aus Ihrem Gerät heraus.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "スピーカーを掃除してクリアな音に",
+          "content": "1回のタップで端末の音質を最大限に引き出しましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "스피커를 깨끗하게, 소리는 선명하게",
+          "content": "한 번의 탭으로 기기에서 최상의 음질을 즐기세요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "清理扬声器，声音更清晰",
+          "content": "一键获得设备的最佳音质。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "清理揚聲器，聲音更清晰",
+          "content": "一鍵獲得裝置的最佳音質。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Tidy Up Your Gallery",
+      "Content": "Your gallery is full of screenshots. Let's organize them for you.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Pon en orden tu galería",
+          "content": "Tu galería está llena de capturas de pantalla. Vamos a organizarlas.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Rangez votre galerie",
+          "content": "Votre galerie regorge de captures d'écran. Laissez-nous les organiser pour vous.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Räume deine Galerie auf",
+          "content": "Ihre Galerie ist voller Screenshots. Lassen Sie uns diese für Sie organisieren.",
+          "button": "Gehen"
+        },
+        "ja": {
+          "title": "ギャラリーをすっきり",
+          "content": "ギャラリーがスクリーンショットでいっぱいです。整理しましょう。",
+          "button": "開く"
+        },
+        "ko": {
+          "title": "갤러리 정리",
+          "content": "갤러리가 스크린샷으로 가득합니다. 깔끔하게 정리해 드릴게요.",
+          "button": "열기"
+        },
+        "zh": {
+          "title": "整理图库",
+          "content": "图库中满是截图。让我们帮你整理。",
+          "button": "打开"
+        },
+        "zh-TW": {
+          "title": "整理圖庫",
+          "content": "圖庫中滿是螢幕截圖。讓我們幫你整理。",
+          "button": "開啟"
+        }
+      }
+    },
+    {
+      "Title": "Find Your Space Hogs",
+      "Content": "Identify and manage your largest files to free up gigabytes.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Encuentra tus acaparadores de espacio",
+          "content": "Identifique y administre sus archivos más grandes para liberar gigabytes.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Trouvez vos gros consommateurs d'espace",
+          "content": "Identifiez et gérez vos fichiers les plus volumineux pour libérer des gigaoctets.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Finde deine Weltraumfresser",
+          "content": "Identifizieren und verwalten Sie Ihre größten Dateien, um Gigabytes freizugeben.",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "容量を圧迫するファイルを発見",
+          "content": "最も大きなファイルを特定して管理し、数GBの空き容量を増やしましょう。",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "공간을 많이 차지하는 파일 찾기",
+          "content": "가장 큰 파일을 찾아 관리하고 수 GB의 공간을 확보하세요.",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "找出空间占用大户",
+          "content": "找出并管理最大的文件，释放数 GB 空间。",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "找出空間佔用大戶",
+          "content": "找出並管理最大的檔案，釋放數 GB 空間。",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "View the phone battery consumption recently!",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "¡Mira el consumo reciente de batería del teléfono!",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Consultez la consommation récente de la batterie de votre téléphone !",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Sehen Sie sich den aktuellen Akkuverbrauch Ihres Telefons an!",
+          "content": "",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "最近のバッテリー消費を確認しましょう！",
+          "content": "",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "최근 휴대전화 배터리 사용량을 확인하세요!",
+          "content": "",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "查看手机近期耗电情况！",
+          "content": "",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "查看手機近期耗電情況！",
+          "content": "",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "RAM used 83%, check the apps running in the background.",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "screen_on_a",
+        "screen_on_b",
+        "screen_on_c",
+        "screen_off_locked",
+        "power_connected",
+        "return_to_home",
+        "ad_click",
+        "app_exit",
+        "package_added",
+        "package_removed",
+        "volume_changed",
+        "network_changed",
+        "boot_restore",
+        "media_changed",
+        "phone_pickup",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "RAM utilizada 83%, verifique las aplicaciones ejecutándose en segundo plano.",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "La mémoire vive est utilisée à 83 %, vérifiez les applications qui s'exécutent en arrière-plan.",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Der Arbeitsspeicher ist zu 83 % ausgelastet. Überprüfen Sie die im Hintergrund laufenden Apps.",
+          "content": "",
+          "button": "Überprüfen"
+        },
+        "ja": {
+          "title": "RAM使用率は83%です。バックグラウンドで実行中のアプリを確認しましょう。",
+          "content": "",
+          "button": "確認"
+        },
+        "ko": {
+          "title": "RAM 사용량 83%. 백그라운드에서 실행 중인 앱을 확인하세요.",
+          "content": "",
+          "button": "확인"
+        },
+        "zh": {
+          "title": "RAM 已使用 83%，请查看后台运行的应用。",
+          "content": "",
+          "button": "查看"
+        },
+        "zh-TW": {
+          "title": "RAM 已使用 83%，請查看背景執行的應用程式。",
+          "content": "",
+          "button": "查看"
+        }
+      }
+    },
+    {
+      "Title": "Photos cleaned",
+      "Content": "Tap to review more files.",
+      "Button": "",
+      "Scenes": [
+        "delete_photos"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "en": {
+          "title": "Photos cleaned",
+          "content": "Tap to review more files.",
+          "button": ""
+        },
+        "de": {
+          "title": "Fotos bereinigt",
+          "content": "Tippen Sie, um weitere Dateien zu prüfen.",
+          "button": ""
+        },
+        "es": {
+          "title": "Fotos limpiadas",
+          "content": "Toca para revisar más archivos.",
+          "button": ""
+        },
+        "fr": {
+          "title": "Photos nettoyées",
+          "content": "Appuyez pour examiner d’autres fichiers.",
+          "button": ""
+        },
+        "ja": {
+          "title": "写真をクリーンアップしました",
+          "content": "タップして他のファイルを確認します。",
+          "button": ""
+        },
+        "ko": {
+          "title": "사진을 정리했습니다",
+          "content": "탭하여 다른 파일을 확인하세요.",
+          "button": ""
+        },
+        "zh": {
+          "title": "照片已清理",
+          "content": "点按以查看更多文件。",
+          "button": ""
+        },
+        "zh-TW": {
+          "title": "相片已清理",
+          "content": "輕觸以查看更多檔案。",
+          "button": ""
+        }
+      }
+    },
+    {
+      "Title": "Videos cleaned",
+      "Content": "Open CleanPartner to continue.",
+      "Button": "",
+      "Scenes": [
+        "delete_videos"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "en": {
+          "title": "Videos cleaned",
+          "content": "Open CleanPartner to continue.",
+          "button": ""
+        },
+        "de": {
+          "title": "Videos bereinigt",
+          "content": "Öffnen Sie CleanPartner, um fortzufahren.",
+          "button": ""
+        },
+        "es": {
+          "title": "Vídeos limpiados",
+          "content": "Abre CleanPartner para continuar.",
+          "button": ""
+        },
+        "fr": {
+          "title": "Vidéos nettoyées",
+          "content": "Ouvrez CleanPartner pour continuer.",
+          "button": ""
+        },
+        "ja": {
+          "title": "動画をクリーンアップしました",
+          "content": "CleanPartnerを開いて続行します。",
+          "button": ""
+        },
+        "ko": {
+          "title": "동영상을 정리했습니다",
+          "content": "계속하려면 CleanPartner를 여세요.",
+          "button": ""
+        },
+        "zh": {
+          "title": "视频已清理",
+          "content": "打开 CleanPartner 以继续。",
+          "button": ""
+        },
+        "zh-TW": {
+          "title": "影片已清理",
+          "content": "開啟 CleanPartner 以繼續。",
+          "button": ""
+        }
+      }
+    },
+    {
+      "Title": "Files cleaned",
+      "Content": "Check what else can be cleaned.",
+      "Button": "",
+      "Scenes": [
+        "delete_files"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "en": {
+          "title": "Files cleaned",
+          "content": "Check what else can be cleaned.",
+          "button": ""
+        },
+        "de": {
+          "title": "Dateien bereinigt",
+          "content": "Prüfen Sie, was noch bereinigt werden kann.",
+          "button": ""
+        },
+        "es": {
+          "title": "Archivos limpiados",
+          "content": "Comprueba qué más se puede limpiar.",
+          "button": ""
+        },
+        "fr": {
+          "title": "Fichiers nettoyés",
+          "content": "Vérifiez ce qui peut encore être nettoyé.",
+          "button": ""
+        },
+        "ja": {
+          "title": "ファイルをクリーンアップしました",
+          "content": "他にクリーンアップできる項目を確認します。",
+          "button": ""
+        },
+        "ko": {
+          "title": "파일을 정리했습니다",
+          "content": "추가로 정리할 항목을 확인하세요.",
+          "button": ""
+        },
+        "zh": {
+          "title": "文件已清理",
+          "content": "查看还有哪些内容可以清理。",
+          "button": ""
+        },
+        "zh-TW": {
+          "title": "檔案已清理",
+          "content": "查看還有哪些內容可以清理。",
+          "button": ""
+        }
+      }
+    }
+  ]
+}

@@ -10,35 +10,23 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.text.SpannableString
 import android.text.TextPaint
-import android.text.TextUtils
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
-import android.util.Log
 import android.view.View
+import android.view.ViewTreeObserver
 import androidx.activity.OnBackPressedCallback
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat.requestPermissions
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.databinding.DataBindingUtil.setContentView
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ProcessLifecycleOwner
-import androidx.lifecycle.SavedStateViewModelFactory
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
+import androidx.lifecycle.withResumed
 import com.cleanphone.freespace.utility.R
 import com.cleanphone.freespace.utility.advertise.AdvertisePageMediator
 import com.cleanphone.freespace.utility.advertise.AdvertiseUserAttributes
-import com.cleanphone.freespace.utility.base.activity.BaseActivity
-import com.cleanphone.freespace.utility.base.activity.BaseMvvmActivity
+import com.cleanphone.freespace.utility.advertise.CommercialNotificationRouter
 import com.cleanphone.freespace.utility.base.activity.BaseViewActivity
-import com.cleanphone.freespace.utility.base.command.REQUEST_CODE_NOTIFICATION
 import com.cleanphone.freespace.utility.base.command.getDetailCurrentTime
 import com.cleanphone.freespace.utility.base.command.getFunctionBundle
 import com.cleanphone.freespace.utility.base.command.hasStoragePermission
-import com.cleanphone.freespace.utility.base.command.isNetworkAvailable
 import com.cleanphone.freespace.utility.base.command.log
 import com.cleanphone.freespace.utility.base.command.readyGoThenKill
 import com.cleanphone.freespace.utility.base.config.AppConfig
@@ -46,24 +34,24 @@ import com.cleanphone.freespace.utility.base.config.AppConfig.PARAM_SCENE
 import com.cleanphone.freespace.utility.base.config.AppConfig.PRIVACY_URL
 import com.cleanphone.freespace.utility.base.config.AppConfig.TERMS_URL
 import com.cleanphone.freespace.utility.databinding.ActivitySplashBinding
-import com.cleanphone.freespace.utility.ui.splash.LaunchOpenAdPreloadScheduler
 import com.cleanphone.freespace.utility.utils.AppPrefsUtils
 import com.cleanphone.freespace.utility.utils.NotificationBarStore
 import com.cleanphone.freespace.utility.utils.SdkInitUtils
-import com.cleanphone.freespace.utility.viewmodel.SplashViewModel
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.log.LogUtil
+import com.mar2sdk.core.Core
+import com.mar2sdk.core.ad.ConsentFlow
+import com.mar2sdk.core.common.UserInfo
+import com.mar2sdk.core.log.LogUtil
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.selects.select
+import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.withTimeoutOrNull
-import org.json.JSONObject
 import kotlin.jvm.java
+import kotlin.coroutines.resume
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
@@ -79,15 +67,8 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         private const val SPLASH_CONSENT_FORM_TIMEOUT_MS = 30_000L
         private const val STARTUP_PROGRESS_DURATION_MS = 4_000L
         private const val WAITING_PROGRESS_DURATION_MS = 8_000L
-        private const val OPEN_AD_LOAD_WAIT_TIMEOUT_MS = 10_000L
-        private const val OPEN_AD_OFFLINE_LOAD_WAIT_TIMEOUT_MS = 2_500L
         private const val OPEN_AD_FOREGROUND_WAIT_TIMEOUT_MS = 6_000L
-        private const val OPEN_AD_SHOW_TIMEOUT_MS = 30_000L
-        private const val OPEN_AD_POLL_INTERVAL_MS = 100L
-        private const val OPEN_AD_PRELOAD_RETRY_INTERVAL_MS = 500L
         private const val REQUEST_CODE_POST_NOTIFICATIONS = 1001
-        private const val APP_SHORTCUTS_REFERRER = "app_shortcuts"
-        private const val OPEN_REFERRER = "open"
 
         const val APP_OPEN_FROM_SHORTCUT = "shortcut"
     }
@@ -106,17 +87,17 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     private var isShowingSplashConsent = false
 
     private var scene: String = ""
-    private var startTime: Long = 0L
 
 
 
     private val notificationPermissionFinished = CompletableDeferred<Unit>()
     private val consentInitFinished = CompletableDeferred<Boolean>()
-    private val launchOpenAdPreloadScheduler =
-        LaunchOpenAdPreloadScheduler(OPEN_AD_PRELOAD_RETRY_INTERVAL_MS)
+    private var consentFlow: ConsentFlow? = null
+    private var consentFormFinished: CompletableDeferred<Unit>? = null
 
     private var startElapsedRealtime: Long = 0L
     override fun initializeActivity() {
+        CommercialNotificationRouter.normalizeIntent(intent)
         super.initializeActivity()
         startElapsedRealtime = SystemClock.elapsedRealtime()
         setupBackPressHandler()
@@ -129,13 +110,20 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     }
 
 
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        CommercialNotificationRouter.normalizeIntent(intent)
+    }
+
     private fun startStartupFlow() {
         if (startupJob?.isActive == true) return
-        beginEarlyConsentInitialization()
-        tryBeginLaunchOpenAdPreload()
         startupJob = lifecycleScope.launch {
             try {
                 notificationPermissionFinished.await()
+                lifecycle.withResumed { }
+                SdkInitUtils.awaitInitialization()
+                beginEarlyConsentInitialization()
                 startProgressLoop()
                 handleLaunchOpenAdStage()
             } catch (e: CancellationException) {
@@ -160,7 +148,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         val notificationRoute = intent.getStringExtra("Route").orEmpty()
 
         if (notificationRoute.isNotBlank() && navigateFromNotificationRoute(notificationRoute)) {
-            AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to "app_push"))
+            setTrafficSource("app_push")
             scene = intent.extras?.getString("id").orEmpty()
             LogUtil.log("notification_app_clicked", mapOf("scene" to scene))
             return
@@ -174,10 +162,15 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
 
     }
 
+    private fun setTrafficSource(source: String) {
+        UserInfo.trafficSource = source
+        Core.setEventAttr("traffic_source", source)
+    }
+
     private fun navigateFromShortcut() {
         val nextAction = intent.extras?.getString(AppConfig.NEXT_TAG).orEmpty()
         scene = intent.extras?.getString("id").orEmpty()
-        AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to "app_shortcuts"))
+        setTrafficSource("app_shortcuts")
         LogUtil.log("notification_app_clicked", mapOf("scene" to scene))
         when (nextAction) {
             getString(R.string.remove_junk) -> navigateToJunkFiles()
@@ -189,7 +182,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     }
 
     private fun navigateFromNormalLaunch() {
-        AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to null))
+        Core.setEventAttr("traffic_source", UserInfo.trafficSource)
         val destination = if (AppPrefsUtils.getBoolean(AppConfig.IS_SCAN_PHONE)) {
             MainActivity::class.java
         } else {
@@ -311,58 +304,64 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     }
 
 
-    private suspend fun finishLaunchOpenAdStage(hasLaunchOpenAd: Boolean) {
+    private suspend fun finishLaunchOpenAdStage(eligible: Boolean) {
         if (isFinishing || isDestroyed) return
-        if (hasReturnedFromBackgroundDuringSplash) {
-            completeProgressQuickly()
-            continueToNextStep()
-            return
-        }
+        val remainingVisualTime = STARTUP_PROGRESS_DURATION_MS -
+            (SystemClock.elapsedRealtime() - progressStartTime)
+        if (remainingVisualTime > 0L) delay(remainingVisualTime)
         completeProgressQuickly()
-        if (!hasLaunchOpenAd || !waitUntilForegroundForOpenAd()) {
+        if (!eligible || hasReturnedFromBackgroundDuringSplash || !waitUntilForegroundForOpenAd()) {
+            lifecycle.withResumed { }
+            awaitWindowFocus()
             continueToNextStep()
             return
         }
-        if (hasReturnedFromBackgroundDuringSplash) {
-            continueToNextStep()
-            return
-        }
-        isShowingLaunchOpenAd = true
-        val adClosed = CompletableDeferred<Unit>()
-        val showingAd = AdvertisePageMediator.showCachedLaunchOpenAd(this) {
-            if (!adClosed.isCompleted) adClosed.complete(Unit)
-        }
-        if (!showingAd) {
+        try {
+            AdvertisePageMediator.showLaunchOpenAd(
+                this,
+                onLaunched = { isShowingLaunchOpenAd = true },
+                onContinue = {},
+            ).join()
+        } finally {
             isShowingLaunchOpenAd = false
-            continueToNextStep()
-            return
-        }
-
-        val closedBySdk = withTimeoutOrNull(OPEN_AD_SHOW_TIMEOUT_MS) {
-            adClosed.await()
-            true
-        } == true
-        isShowingLaunchOpenAd = false
-        if (!closedBySdk) {
-            LogUtil.log("splash_open_ad_close_timeout", emptyMap())
         }
         continueToNextStep()
     }
 
-    private suspend fun waitUntilForegroundForOpenAd(): Boolean {
-        val deadline = SystemClock.elapsedRealtime() + OPEN_AD_FOREGROUND_WAIT_TIMEOUT_MS
-        while (!isFinishing && !isDestroyed && SystemClock.elapsedRealtime() < deadline) {
-            if (isForegroundForOpenAd()) return true
-            delay(OPEN_AD_POLL_INTERVAL_MS)
+    private suspend fun waitUntilForegroundForOpenAd(): Boolean =
+        withTimeoutOrNull(OPEN_AD_FOREGROUND_WAIT_TIMEOUT_MS) {
+            lifecycle.withResumed { }
+            awaitWindowFocus()
+            isForegroundForOpenAd()
+        } == true
+
+    private suspend fun awaitWindowFocus() {
+        if (hasWindowFocus()) return
+        suspendCancellableCoroutine<Unit> { continuation ->
+            val observer = binding.root.viewTreeObserver
+            val listener = object : ViewTreeObserver.OnWindowFocusChangeListener {
+                override fun onWindowFocusChanged(hasFocus: Boolean) {
+                    if (!hasFocus || !continuation.isActive) return
+                    if (observer.isAlive) observer.removeOnWindowFocusChangeListener(this)
+                    continuation.resume(Unit)
+                }
+            }
+            observer.addOnWindowFocusChangeListener(listener)
+            continuation.invokeOnCancellation {
+                if (observer.isAlive) observer.removeOnWindowFocusChangeListener(listener)
+            }
+            if (hasWindowFocus() && continuation.isActive) {
+                if (observer.isAlive) observer.removeOnWindowFocusChangeListener(listener)
+                continuation.resume(Unit)
+            }
         }
-        return isForegroundForOpenAd()
     }
 
     private fun isForegroundForOpenAd(): Boolean {
         return lifecycle.currentState.isAtLeast(Lifecycle.State.RESUMED) &&
-                ProcessLifecycleOwner.get().lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)
+            ProcessLifecycleOwner.get().lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED) &&
+            hasWindowFocus()
     }
-
 
     private suspend fun handleLaunchOpenAdStage() {
         if (isFinishing || isDestroyed) return
@@ -370,42 +369,23 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     }
 
     private suspend fun prepareLaunchOpenAd(): Boolean {
-        val consentPreparationDeadline =
-            SystemClock.elapsedRealtime() + CONSENT_PREPARATION_TIMEOUT_MS
-        if (waitForConsentInitialization(consentPreparationDeadline)) {
-            showSplashConsentForStartup(consentPreparationDeadline)
+        if (!SdkInitUtils.isInitialized()) return false
+        val deadline = SystemClock.elapsedRealtime() + CONSENT_PREPARATION_TIMEOUT_MS
+        var completedNormally = false
+        try {
+            if (waitForConsentInitialization(deadline)) {
+                lifecycle.withResumed { }
+                showSplashConsentForStartup(deadline)
+            }
+            completedNormally = true
+        } finally {
+            consentFlow?.let { Core.endConsentFlow(it, cancelled = !completedNormally) }
+            consentFlow = null
         }
         if (isFinishing || isDestroyed || hasReturnedFromBackgroundDuringSplash) return false
-        if (AdvertisePageMediator.hasCachedLaunchOpenAd()) return true
-
-        tryBeginLaunchOpenAdPreload()
-        return waitForLaunchOpenAd()
-    }
-
-    private suspend fun waitForLaunchOpenAd(): Boolean {
-        val loadWaitTimeout = if (isNetworkAvailable(this)) {
-            OPEN_AD_LOAD_WAIT_TIMEOUT_MS
-        } else {
-            OPEN_AD_OFFLINE_LOAD_WAIT_TIMEOUT_MS
-        }
-        val deadline = SystemClock.elapsedRealtime() + loadWaitTimeout
-        while (!isFinishing && !isDestroyed && SystemClock.elapsedRealtime() < deadline) {
-            if (AdvertisePageMediator.hasCachedLaunchOpenAd()) return true
-            tryBeginLaunchOpenAdPreload()
-            delay(OPEN_AD_POLL_INTERVAL_MS)
-        }
-        val hasCachedAd = AdvertisePageMediator.hasCachedLaunchOpenAd()
-        if (!hasCachedAd) {
-            LogUtil.log(
-                "splash_open_ad_load_timeout",
-                mapOf(
-                    "attempts" to launchOpenAdPreloadScheduler.attemptCount,
-                    "can_request_ads" to AdvertisePageMediator.canRequestAds(this),
-                    "is_loading" to AdvertisePageMediator.isLaunchOpenAdLoading(),
-                ),
-            )
-        }
-        return hasCachedAd
+        beginEarlyLaunchOpenAdPreload()
+        // AdActivity owns loading, timeout, display, and close; the host does not poll its pools.
+        return true
     }
 
     private suspend fun waitForConsentInitialization(consentPreparationDeadline: Long): Boolean {
@@ -427,10 +407,12 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         if (isFinishing || isDestroyed) return
         val formShown = CompletableDeferred<Unit>()
         val consentCompleted = CompletableDeferred<Unit>()
+        consentFormFinished = consentCompleted
         var consentFormDisplayCancelled = false
 
         AdvertisePageMediator.showSplashConsent(
             this@SplashActivity,
+            flow = consentFlow,
             onWillShowForm = {
                 if (consentFormDisplayCancelled || isFinishing || isDestroyed) {
                     false
@@ -467,6 +449,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
             }
         } finally {
             consentFormDisplayCancelled = true
+            consentFormFinished = null
             isShowingSplashConsent = false
         }
     }
@@ -499,10 +482,13 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
 
     override fun onStop() {
         super.onStop()
-        if (isShowingLaunchOpenAd || isWaitingForNotificationPermission || isShowingSplashConsent) {
-            return
-        }
+        if (isShowingLaunchOpenAd || isWaitingForNotificationPermission) return
         if (!hasContinuedToNextStep && !isFinishing && !isDestroyed) {
+            // Ending the shared flow prevents a late UMP load from opening on the next page.
+            // A form already submitted to UMP still reports its actual close result in the SDK.
+            consentFlow?.let { Core.endConsentFlow(it, cancelled = true) }
+            consentFormFinished?.complete(Unit)
+            completeConsentInitialization(false)
             hasReturnedFromBackgroundDuringSplash = true
             suppressForegroundOpenAdAfterSplashBackground()
         }
@@ -544,7 +530,12 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     private fun beginEarlyConsentInitialization() {
         if (hasStartedConsentInit) return
         hasStartedConsentInit = true
-        AdvertisePageMediator.initSplashConsent(this) { success ->
+        if (!SdkInitUtils.isInitialized()) {
+            completeConsentInitialization(false)
+            return
+        }
+        consentFlow = Core.beginConsentFlow(scene = "startup")
+        AdvertisePageMediator.initSplashConsent(this, consentFlow) { success ->
             completeConsentInitialization(success)
         }
     }
@@ -553,21 +544,6 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         if (!consentInitFinished.isCompleted) {
             consentInitFinished.complete(success)
         }
-    }
-
-    private fun tryBeginLaunchOpenAdPreload() {
-        val hasCachedAd = AdvertisePageMediator.hasCachedLaunchOpenAd()
-        val isLoading = preloadOpenAdJob?.isActive == true ||
-            AdvertisePageMediator.isLaunchOpenAdLoading()
-        if (!launchOpenAdPreloadScheduler.tryAcquire(
-                nowMs = SystemClock.elapsedRealtime(),
-                hasCachedAd = hasCachedAd,
-                isLoading = isLoading,
-            )
-        ) {
-            return
-        }
-        beginEarlyLaunchOpenAdPreload()
     }
 
     private fun beginEarlyLaunchOpenAdPreload() {
@@ -579,7 +555,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
                     LogUtil.log(
                         "splash_open_ad_preload_attempt",
                         mapOf(
-                            "attempt" to launchOpenAdPreloadScheduler.attemptCount,
+                            "attempt" to 1,
                             "result" to "sdk_unavailable",
                         ),
                     )
@@ -589,7 +565,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
                 LogUtil.log(
                     "splash_open_ad_preload_attempt",
                     mapOf(
-                        "attempt" to launchOpenAdPreloadScheduler.attemptCount,
+                        "attempt" to 1,
                         "result" to result.name.lowercase(),
                     ),
                 )
@@ -734,6 +710,8 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         progressJob?.cancel()
         startupJob?.cancel()
         preloadOpenAdJob?.cancel()
+        consentFlow?.let { Core.endConsentFlow(it, cancelled = true) }
+        consentFlow = null
         isShowingLaunchOpenAd = false
         super.onDestroy()
     }

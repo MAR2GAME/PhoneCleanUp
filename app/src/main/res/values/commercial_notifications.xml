@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_notification_action_1">Clean</string>
+    <string name="common_notification_action_2">File</string>
+    <string name="common_notification_action_3">App</string>
+    <string name="common_notification_action_4">Battery</string>
+
+    <item name="notification_photos" type="drawable">@mipmap/ic_removejunk</item>
+    <item name="notification_files" type="drawable">@mipmap/ic_file_push</item>
+    <item name="notification_videos" type="drawable">@mipmap/ic_app</item>
+    <item name="notification_recovered" type="drawable">@mipmap/ic_battery</item>
+    <item name="nlogo" type="drawable">@mipmap/ic_launcher</item>
+</resources>

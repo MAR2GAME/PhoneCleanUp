@@ -1,0 +1,42 @@
+{
+  "openConfig": {
+    "id": "ca-app-pub-3106003114382927/1408775389",
+    "timeout": 3600000,
+    "poolSize": 1,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": []
+    }
+  },
+  "interConfig": {
+    "id": "ca-app-pub-3106003114382927/8987616577",
+    "timeout": 3600000,
+    "poolSize": 1,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": []
+    }
+  },
+  "videoConfig": {
+    "id": "",
+    "timeout": 3600000,
+    "poolSize": 0,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": []
+    }
+  },
+  "bannerConfig": {
+    "id": ""
+  },
+  "nativeConfig": {
+    "timeout": 30000,
+    "ads": []
+  }
+}

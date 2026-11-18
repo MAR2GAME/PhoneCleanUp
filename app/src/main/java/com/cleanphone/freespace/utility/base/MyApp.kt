@@ -50,7 +50,7 @@ class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
         _instance = this
-        SdkInitUtils.initSDKAsync(this)
+        SdkInitUtils.initSDK(this)
         initShortcutsSafe(this)
         launchSecurityChecks()
     }

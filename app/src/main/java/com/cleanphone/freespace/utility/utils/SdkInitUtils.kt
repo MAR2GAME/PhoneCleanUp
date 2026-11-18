@@ -1,95 +1,77 @@
 package com.cleanphone.freespace.utility.utils
 
 import android.app.Application
-import android.os.Build
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import com.cleanphone.freespace.utility.BuildConfig
 import com.cleanphone.freespace.utility.R
-import com.cleanphone.freespace.utility.advertise.AdvertiseConfigFactory
-import com.cleanphone.freespace.utility.advertise.AdvertiseRuntimeCapabilities
-import com.pdffox.adv.notification.NotificationManager as AdvertiseNotificationManager
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.notification.NotificationManager
-import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import com.cleanphone.freespace.utility.advertise.CommercialNotificationRouter
+import com.mar2sdk.core.AppMod
+import com.mar2sdk.core.Core
+import com.mar2sdk.core.ad.impl.admob.AdmobConfig
+import com.mar2sdk.core.ad.impl.admob.NativeAdConfig
+import com.mar2sdk.impl.AppOpenAdManager
+import kotlinx.coroutines.CompletableJob
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
-import java.util.concurrent.atomic.AtomicBoolean
+import org.json.JSONObject
 
 object SdkInitUtils {
-    private const val TAG = "SdkInit"
+    private var initializationJob: CompletableJob? = null
+    private var initialized = false
 
-    private val isInitializing = AtomicBoolean(false)
-    private val isInitialized = AtomicBoolean(false)
-    private var initializationJob: Job? = null
-    private val initializationScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
-
-    fun initSDKAsync(context: Application): Job {
-        if (isInitializing.getAndSet(true)) {
-            return initializationJob ?: Job().apply { complete() }
+    // Initialize lifecycle observers and platform SDKs before the first Activity.
+    fun initSDK(context: Application) {
+        if (initializationJob != null) return
+        val job = Job()
+        initializationJob = job
+        try {
+            Core.init(context, if (BuildConfig.DEBUG) AppMod.DEBUG else AppMod.RELEASE)
+            applyAdUnitOverrides()
+            CommercialNotificationRouter.install(context)
+            AppOpenAdManager.init(context)
+            initialized = true
+        } catch (exception: Exception) {
+            Log.e("SdkInit", "Mar2SDK initialization failed", exception)
+        } finally {
+            job.complete()
         }
-        initializationJob = initializationScope.launch {
-            try {
-                AdvertiseSdk.init(
-                    context = context,
-                    isTest = BuildConfig.DEBUG,
-                    sdkConfig = AdvertiseConfigFactory.create(context),
-                )
-                loadLocalNotificationContentIfNeeded(context)
-                isInitialized.set(true)
-            } catch (exception: CancellationException) {
-                throw exception
-            } catch (exception: Exception) {
-                Log.e(TAG, "Advertise SDK initialization failed; continue app startup", exception)
-                isInitialized.set(false)
-            } finally {
-                isInitializing.set(false)
-            }
-        }
-        return initializationJob!!
     }
 
-
-    private fun loadLocalNotificationContentIfNeeded(context: Application) {
-        if (!AdvertiseRuntimeCapabilities.NOTIFICATIONS_ENABLED) return
-        runCatching {
-            context.resources.openRawResource(R.raw.notification_content)
-                .bufferedReader()
-                .use { it.readText() }
-        }.onSuccess { content ->
-            if (content.isNotBlank()) {
-                AdvertiseNotificationManager.updateNotificationContent(content)
-                Log.i(TAG, "Local notification_content loaded")
-            }
-        }.onFailure {
-            Log.e(TAG, "Local notification_content load failed", it)
+    // Local/Gradle overrides retain the existing ad IDs without overwriting saved config.
+    private fun applyAdUnitOverrides() {
+        val defaults = Core.app.resources.openRawResource(R.raw.admob_config)
+            .bufferedReader().use { JSONObject(it.readText()) }
+        if (BuildConfig.ADV_ADMOB_OPEN_ID != defaults.getJSONObject("openConfig").getString("id")) {
+            AdmobConfig.openConfig = AdmobConfig.openConfig.copy(id = BuildConfig.ADV_ADMOB_OPEN_ID)
+        }
+        if (BuildConfig.ADV_ADMOB_INTERSTITIAL_ID != defaults.getJSONObject("interConfig").getString("id")) {
+            AdmobConfig.interConfig = AdmobConfig.interConfig.copy(id = BuildConfig.ADV_ADMOB_INTERSTITIAL_ID)
+        }
+        if (BuildConfig.ADV_ADMOB_REWARDED_ID != defaults.getJSONObject("videoConfig").getString("id")) {
+            val id = BuildConfig.ADV_ADMOB_REWARDED_ID
+            AdmobConfig.videoConfig = AdmobConfig.videoConfig.copy(id = id, poolSize = if (id.isBlank()) 0 else 1)
+        }
+        if (BuildConfig.ADV_ADMOB_BANNER_ID != defaults.getJSONObject("bannerConfig").getString("id")) {
+            AdmobConfig.bannerConfig = AdmobConfig.bannerConfig.copy(id = BuildConfig.ADV_ADMOB_BANNER_ID)
+        }
+        val nativeId = BuildConfig.ADV_ADMOB_NATIVE_ID
+        if (nativeId.isNotBlank()) {
+            AdmobConfig.nativeConfig = AdmobConfig.nativeConfig.copy(
+                ads = listOf(NativeAdConfig(nativeId, nativeId, nativeId)),
+            )
         }
     }
 
     suspend fun awaitInitialization(timeoutMs: Long? = null) {
         val job = initializationJob ?: return
-        if (timeoutMs == null) {
-            job.join()
-        } else {
-            withTimeoutOrNull(timeoutMs) { job.join() }
-        }
+        if (timeoutMs == null) job.join() else withTimeoutOrNull(timeoutMs) { job.join() }
     }
 
-
-
-    fun isInitialized(): Boolean = isInitialized.get()
+    fun isInitialized(): Boolean = initialized
 
     fun cleanup() {
         initializationJob?.cancel()
-        initializationScope.cancel()
         initializationJob = null
-        isInitialized.set(false)
-        isInitializing.set(false)
+        initialized = false
     }
 }

@@ -10,7 +10,7 @@ import com.cleanphone.freespace.utility.base.MyApp
 import com.cleanphone.freespace.utility.base.config.AppConfig
 import com.cleanphone.freespace.utility.bean.PlayIntegrityBean
 
-import com.pdffox.adv.log.LogUtil
+import com.mar2sdk.core.log.LogUtil
 import com.google.android.gms.tasks.Task
 import com.google.android.play.core.integrity.IntegrityManagerFactory
 import com.google.android.play.core.integrity.StandardIntegrityManager
