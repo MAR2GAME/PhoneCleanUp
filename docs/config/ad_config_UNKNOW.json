@@ -2,11 +2,11 @@
   "defaultPlatform": "ADMOB",
   "activePlatforms": [],
   "explorePlatforms": "ADMOB",
-  "exploreTime": 0,
+  "exploreTime": 10000,
   "priceMultiplier": 1.0,
   "priceOffset": 0.0,
   "showMaxTime": 10000,
-  "showMinTime": 0,
+  "showMinTime": 500,
   "isOpen": true,
   "isRisk": false,
   "showMod": "MODE_555",
@@ -36,7 +36,7 @@
       ]
     },
     "foreGroundAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 4,
       "24HMax": 20,
       "interval": 30,
@@ -62,7 +62,7 @@
       ]
     },
     "enterResultFromScanDevice": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -75,7 +75,7 @@
       ]
     },
     "enterHomeFromScanDeviceResultAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -88,7 +88,7 @@
       ]
     },
     "fileAccessCancelAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -101,7 +101,7 @@
       ]
     },
     "junkCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -114,7 +114,7 @@
       ]
     },
     "notificationCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -127,7 +127,7 @@
       ]
     },
     "networkSpeedFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -140,7 +140,7 @@
       ]
     },
     "processManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -153,7 +153,7 @@
       ]
     },
     "batteryInfoFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -166,7 +166,7 @@
       ]
     },
     "appManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -179,7 +179,7 @@
       ]
     },
     "speakerCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -192,7 +192,7 @@
       ]
     },
     "largeFileFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -205,7 +205,7 @@
       ]
     },
     "screenshotFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -218,7 +218,7 @@
       ]
     },
     "fileManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -231,7 +231,7 @@
       ]
     },
     "enterJunkCleanAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -244,7 +244,7 @@
       ]
     },
     "enterNotificationCleanAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -257,7 +257,7 @@
       ]
     },
     "enterAppUsageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -270,7 +270,7 @@
       ]
     },
     "enterNetworkScanAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -283,7 +283,7 @@
       ]
     },
     "enterNetworkSpeedAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -296,7 +296,7 @@
       ]
     },
     "enterNetworkUsageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -309,7 +309,7 @@
       ]
     },
     "enterProcessManageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -322,7 +322,7 @@
       ]
     },
     "enterBatteryInfoAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -335,7 +335,7 @@
       ]
     },
     "enterAppManageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -348,7 +348,7 @@
       ]
     },
     "enterSpeakerCleanAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -361,7 +361,7 @@
       ]
     },
     "enterFileManageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -374,7 +374,7 @@
       ]
     },
     "returnHomePageAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -387,7 +387,7 @@
       ]
     },
     "uninstallOneAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -400,7 +400,7 @@
       ]
     },
     "uninstallTwoAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,

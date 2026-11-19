@@ -2,11 +2,11 @@
   "defaultPlatform": "ADMOB",
   "activePlatforms": [],
   "explorePlatforms": "ADMOB",
-  "exploreTime": 0,
+  "exploreTime": 10000,
   "priceMultiplier": 1.0,
   "priceOffset": 0.0,
   "showMaxTime": 10000,
-  "showMinTime": 0,
+  "showMinTime": 500,
   "isOpen": true,
   "isRisk": false,
   "showMod": "MODE_555",
@@ -101,7 +101,7 @@
       ]
     },
     "junkCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -114,7 +114,7 @@
       ]
     },
     "notificationCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -140,7 +140,7 @@
       ]
     },
     "processManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -153,7 +153,7 @@
       ]
     },
     "batteryInfoFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -166,7 +166,7 @@
       ]
     },
     "appManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -179,7 +179,7 @@
       ]
     },
     "speakerCleanFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -192,7 +192,7 @@
       ]
     },
     "largeFileFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -205,7 +205,7 @@
       ]
     },
     "screenshotFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,
@@ -218,7 +218,7 @@
       ]
     },
     "fileManageFinishAdv": {
-      "rate": 1,
+      "rate": 0,
       "1HMax": 5,
       "24HMax": 10,
       "interval": 0,

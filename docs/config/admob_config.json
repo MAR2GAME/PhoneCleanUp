@@ -23,7 +23,7 @@
   },
   "videoConfig": {
     "id": "",
-    "timeout": 3600000,
+    "timeout": 3000000,
     "poolSize": 0,
     "probeConfig": {
       "mod": "REFLECT",
