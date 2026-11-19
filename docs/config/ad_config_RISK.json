@@ -1,0 +1,418 @@
+{
+  "defaultPlatform": "ADMOB",
+  "activePlatforms": [],
+  "explorePlatforms": "ADMOB",
+  "exploreTime": 0,
+  "priceMultiplier": 1.0,
+  "priceOffset": 0.0,
+  "showMaxTime": 10000,
+  "showMinTime": 0,
+  "isOpen": true,
+  "isRisk": false,
+  "showMod": "MODE_555",
+  "1HMax": 50,
+  "24HMax": 50,
+  "interval": 0,
+  "autoRate": {
+    "enable": false,
+    "targets": {
+      "OPEN": 0.2,
+      "INTER": 0.5,
+      "VIDEO": 0.3
+    }
+  },
+  "ad_units": {
+    "openPageAdv": {
+      "rate": 1,
+      "1HMax": 4,
+      "24HMax": 20,
+      "interval": 0,
+      "format": "OPEN",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "foreGroundAdv": {
+      "rate": 0,
+      "1HMax": 4,
+      "24HMax": 20,
+      "interval": 30,
+      "format": "OPEN",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "openMainBottomAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 5,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterResultFromScanDevice": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterHomeFromScanDeviceResultAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "fileAccessCancelAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "junkCleanFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "notificationCleanFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "networkSpeedFinishAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "processManageFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "batteryInfoFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "appManageFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "speakerCleanFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "largeFileFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "screenshotFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "fileManageFinishAdv": {
+      "rate": 1,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterJunkCleanAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterNotificationCleanAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterAppUsageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterNetworkScanAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterNetworkSpeedAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterNetworkUsageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterProcessManageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterBatteryInfoAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterAppManageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterSpeakerCleanAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "enterFileManageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "returnHomePageAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "uninstallOneAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    },
+    "uninstallTwoAdv": {
+      "rate": 0,
+      "1HMax": 5,
+      "24HMax": 10,
+      "interval": 0,
+      "format": "INTER",
+      "fromRoutes": [
+        "*"
+      ],
+      "toRoutes": [
+        "*"
+      ]
+    }
+  },
+  "ad_banner": {},
+  "ad_native": {}
+}

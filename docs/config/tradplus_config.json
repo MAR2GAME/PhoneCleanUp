@@ -1,0 +1,31 @@
+{
+  "appId": "",
+  "openConfig": {
+    "id": "",
+    "timeout": 12600000,
+    "poolSize": 1
+  },
+  "interConfig": {
+    "id": "",
+    "timeout": 3000000,
+    "poolSize": 1
+  },
+  "videoConfig": {
+    "id": "",
+    "timeout": 3000000,
+    "poolSize": 1
+  },
+  "bannerConfig": {
+    "id": ""
+  },
+  "nativeConfig": {
+    "timeout": 30000,
+    "ads": [
+      {
+        "HID": "",
+        "MID": "",
+        "LID": ""
+      }
+    ]
+  }
+}

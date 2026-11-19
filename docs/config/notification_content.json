@@ -1,0 +1,1928 @@
+{
+  "contents": [
+    {
+      "Title": "Unused Apps Detected",
+      "Content": "You have apps you haven't used in months. Remove them to save space.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Aplicaciones no utilizadas detectadas",
+          "content": "Tienes aplicaciones que no has usado en meses. Elimínalas para ahorrar espacio.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Applications inutilisées détectées",
+          "content": "Vous avez des applications que vous n'avez pas utilisées depuis des mois. Supprimez-les pour libérer de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Nicht verwendete Apps erkannt",
+          "content": "Sie haben Apps, die Sie seit Monaten nicht mehr benutzt haben. Löschen Sie sie, um Speicherplatz freizugeben.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Your RAM is Clogged Up",
+      "Content": "Free up memory for a smoother experience. Close unnecessary tasks.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Tu RAM está obstruida",
+          "content": "Libera memoria para una experiencia más fluida. Cierra tareas innecesarias.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Votre mémoire RAM est saturée.",
+          "content": "Libérez de la mémoire pour une expérience plus fluide. Fermez les tâches inutiles.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Ihr Arbeitsspeicher ist überlastet.",
+          "content": "Speicherplatz freigeben für eine flüssigere Nutzung. Nicht benötigte Prozesse schließen.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Battery Healthy?",
+      "Content": "Get a full analysis of your battery's condition and capacity.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "¿Está su batería en buen estado?",
+          "content": "Obtenga un análisis completo del estado y la capacidad de su batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Votre batterie est-elle en bon état ?",
+          "content": "Obtenez une analyse complète de l'état et de la capacité de votre batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Ist Ihr Akku in Ordnung?",
+          "content": "Erhalten Sie eine vollständige Analyse des Zustands und der Kapazität Ihrer Batterie.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Duplicate Screenshots?",
+      "Content": "We found similar screenshots you can delete to save space.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "¿Capturas de pantalla duplicadas?",
+          "content": "Encontramos capturas de pantalla similares que puedes eliminar para ahorrar espacio.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Captures d'écran en double ?",
+          "content": "Nous avons trouvé des captures d'écran similaires que vous pouvez supprimer pour gagner de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Doppelte Screenshots?",
+          "content": "Wir haben ähnliche Screenshots gefunden, die Sie löschen können, um Speicherplatz zu sparen.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Running Out of Room?",
+      "Content": "Your giant files might be the culprit. Sort and delete them easily.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "¿Se está quedando sin espacio?",
+          "content": "Tus archivos gigantes podrían ser los culpables. Ordénalos y elimínalos fácilmente.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Vous manquez de place ?",
+          "content": "Vos fichiers volumineux sont peut-être la cause du problème. Triez-les et supprimez-les facilement.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Platzmangel?",
+          "content": "Möglicherweise sind Ihre riesigen Dateien die Ursache. Sortieren und löschen Sie sie einfach.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Storage Cleanup Alert!",
+      "Content": "Your phone has 1.2 GB of junk files. Free up space now!",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¡Alerta de limpieza de almacenamiento!",
+          "content": "Tu teléfono tiene 1,2 GB de archivos basura. ¡Libera espacio ya!",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "Alerte nettoyage de votre entrepôt !",
+          "content": "Votre téléphone contient 1,2 Go de fichiers inutiles. Libérez de l'espace dès maintenant !",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "Aufräumalarm!",
+          "content": "Ihr Telefon enthält 1,2 GB unnötige Dateien. Geben Sie jetzt Speicherplatz frei!",
+          "button": "Scan"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Speaker Check-up",
+      "Content": "Ensure your music and calls are crystal clear. Clean it now.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Es hora de hacer una revisión del orador",
+          "content": "Asegúrate de que tu música y llamadas tengan una nitidez impecable. Límpialo ahora.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Il est temps de faire vérifier les haut-parleurs.",
+          "content": "Assurez-vous que votre musique et vos appels soient d'une clarté cristalline. Nettoyez-le maintenant.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Zeit für einen Lautsprecher-Check",
+          "content": "Sorgen Sie für kristallklare Musik und Anrufe. Reinigen Sie Ihr Gerät jetzt.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Declutter Your Home Screen",
+      "Content": "Make your phone feel new by uninstalling apps you don't need.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Despeja tu pantalla de inicio",
+          "content": "Haz que tu teléfono se sienta como nuevo desinstalando aplicaciones que no necesitas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Désencombrez votre écran d'accueil",
+          "content": "Redonnez un coup de neuf à votre téléphone en désinstallant les applications dont vous n'avez pas besoin.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Räumen Sie Ihren Startbildschirm auf",
+          "content": "Verleihen Sie Ihrem Smartphone ein neues Gefühl, indem Sie Apps deinstallieren, die Sie nicht benötigen.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Battery Drain Detected",
+      "Content": "Background apps are using power. Manage them to save battery.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Se detectó descarga de batería",
+          "content": "Las aplicaciones en segundo plano consumen energía. Adminístralas para ahorrar batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Décharge de la batterie détectée",
+          "content": "Les applications en arrière-plan consomment de l'énergie. Gérez-les pour économiser la batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Batterieentladung festgestellt",
+          "content": "Hintergrund-Apps verbrauchen Strom. Verwalten Sie diese, um Akku zu sparen.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Free Up Gigabytes",
+      "Content": "Find forgotten large files and get massive storage back.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Liberar gigabytes",
+          "content": "Encuentre archivos grandes olvidados y recupere un almacenamiento masivo.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Libérez des gigaoctets",
+          "content": "Retrouvez vos fichiers volumineux oubliés et récupérez un espace de stockage considérable.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Gigabytes freigeben",
+          "content": "Finden Sie vergessene große Dateien und gewinnen Sie massiv Speicherplatz zurück.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Screenshot Review",
+      "Content": "Keep the important ones, delete the rest. It's quick and easy!",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Es hora de una revisión de capturas de pantalla",
+          "content": "Conserva lo importante y borra el resto. ¡Es rápido y fácil!",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Il est temps de faire une analyse de capture d'écran.",
+          "content": "Gardez les plus importantes, supprimez les autres. C'est rapide et facile !",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Zeit für eine Screenshot-Analyse",
+          "content": "Behalte die wichtigen Nachrichten, lösche den Rest. Es geht schnell und einfach!",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Screenshot Clutter Alert!",
+      "Content": "You have 50+ screenshots. Clear out the blurry and old ones.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "¡Alerta de desorden en la captura de pantalla!",
+          "content": "Tienes más de 50 capturas de pantalla. Borra las borrosas y antiguas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Alerte au bazar de captures d'écran !",
+          "content": "Vous avez plus de 50 captures d'écran. Supprimez celles qui sont floues ou anciennes.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Screenshot-Chaos-Alarm!",
+          "content": "Du hast über 50 Screenshots. Lösche die unscharfen und alten.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Ready for a Fresh Start?",
+      "Content": "Uninstall multiple apps at once and free up significant storage.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "¿Listo para un nuevo comienzo?",
+          "content": "Desinstale varias aplicaciones a la vez y libere una cantidad significativa de almacenamiento.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Prêt pour un nouveau départ ?",
+          "content": "Désinstallez plusieurs applications simultanément et libérez un espace de stockage considérable.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Bereit für einen Neuanfang?",
+          "content": "Deinstallieren Sie mehrere Apps gleichzeitig und geben Sie so erheblich Speicherplatz frei.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Your Phone Needs a Sweep",
+      "Content": "Don't let junk files slow you down. Clean them up in seconds.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Tu teléfono necesita una limpieza",
+          "content": "No dejes que los archivos basura te frenen. Elimínalos en segundos.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Votre téléphone a besoin d'un nettoyage",
+          "content": "Ne laissez pas les fichiers inutiles vous ralentir. Supprimez-les en quelques secondes.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Ihr Telefon muss gereinigt werden",
+          "content": "Lassen Sie sich nicht von unnötigen Dateien ausbremsen. Bereinigen Sie sie in Sekundenschnelle.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Speaker Muffled?",
+      "Content": "Improve your phone's sound with a quick, safe speaker clean.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "¿Su altavoz está amortiguado?",
+          "content": "Mejore el sonido de su teléfono con una limpieza de altavoz rápida y segura.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Votre haut-parleur est-il étouffé ?",
+          "content": "Améliorez le son de votre téléphone grâce à un nettoyage rapide et sûr du haut-parleur.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Ist Ihr Lautsprecher dumpf?",
+          "content": "Verbessern Sie den Klang Ihres Telefons mit einer schnellen und sicheren Lautsprecherreinigung.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Time for a Quick Clean?",
+      "Content": "Cache and temp files are piling up. Tap to scan and remove them.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¿Es hora de una limpieza rápida?",
+          "content": "Los archivos de caché y temporales se están acumulando. Toca para escanearlos y eliminarlos.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "Besoin d'un petit nettoyage ?",
+          "content": "Les fichiers cache et temporaires s'accumulent. Appuyez pour les analyser et les supprimer.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "Zeit für eine schnelle Reinigung?",
+          "content": "Cache- und temporäre Dateien sammeln sich an. Tippen Sie, um sie zu scannen und zu entfernen.",
+          "button": "Scan"
+        }
+      }
+    },
+    {
+      "Title": "Check Your Battery Health",
+      "Content": "Is your battery draining fast? Get a detailed report and tips.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Comprueba el estado de tu batería",
+          "content": "¿Se te descarga la batería rápidamente? Obtén un informe detallado y consejos.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Vérifiez l'état de votre batterie",
+          "content": "Votre batterie se décharge rapidement ? Obtenez un rapport détaillé et des conseils.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Überprüfen Sie den Zustand Ihres Akkus.",
+          "content": "Entlädt sich Ihr Akku schnell? Erhalten Sie einen detaillierten Bericht und Tipps.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Simplify Your Phone",
+      "Content": "Less is more. Get rid of app clutter with our easy uninstaller.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "Simplifica tu teléfono",
+          "content": "Menos es más. Elimina el desorden de aplicaciones con nuestro sencillo desinstalador.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Simplifiez votre téléphone",
+          "content": "Moins, c'est mieux. Débarrassez-vous des applications inutiles grâce à notre désinstalleur facile à utiliser.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Vereinfachen Sie Ihr Telefon",
+          "content": "Weniger ist mehr. Befreien Sie sich von unnötigen Apps mit unserem benutzerfreundlichen Deinstallationsprogramm.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Free Up Space Instantly",
+      "Content": "Get more room for photos and apps with a single tap.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Libere espacio al instante",
+          "content": "Obtén más espacio para fotos y aplicaciones con un solo toque.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Libérez de l'espace instantanément",
+          "content": "Gagnez de l'espace pour vos photos et applications en un seul clic.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Sofort Speicherplatz freigeben",
+          "content": "Mehr Speicherplatz für Fotos und Apps mit einem einzigen Fingertipp.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Low on Storage?",
+      "Content": "We found unnecessary files you can safely delete. Check it out!",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "¿Te queda poco espacio de almacenamiento?",
+          "content": "Encontramos archivos innecesarios que puedes eliminar sin problemas. ¡Échales un vistazo!",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Manque de stockage ?",
+          "content": "Nous avons trouvé des fichiers inutiles que vous pouvez supprimer sans risque. Jetez-y un œil !",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Wenig Speicherplatz?",
+          "content": "Wir haben unnötige Dateien gefunden, die Sie bedenkenlos löschen können. Schauen Sie mal rein!",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Screenshot Cleanup Time",
+      "Content": "Found 25 old screenshots. Free up space by removing ones you don't need.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "🧹 Hora de limpiar capturas de pantalla",
+          "content": "Se encontraron 25 capturas de pantalla antiguas. Libera espacio eliminando las que no necesites.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "🧹 Temps de nettoyage des captures d'écran",
+          "content": "25 anciennes captures d'écran ont été trouvées. Libérez de l'espace en supprimant celles dont vous n'avez plus besoin.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "🧹 Screenshot-Bereinigungszeit",
+          "content": "Es wurden 25 alte Screenshots gefunden. Schaffen Sie Speicherplatz, indem Sie nicht benötigte Screenshots löschen.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "💪 Tame Large Files",
+      "Content": "Found some old large files you might not need anymore. Want to check?",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "💪 Domina archivos grandes",
+          "content": "Encontré algunos archivos antiguos y grandes que quizá ya no necesites. ¿Quieres revisarlos?",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "💪 Dompter les fichiers volumineux",
+          "content": "J'ai trouvé de vieux fichiers volumineux dont vous n'aurez peut-être plus besoin. Voulez-vous vérifier ?",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "💪 Große Dateien bändigen",
+          "content": "Ich habe einige alte, große Dateien gefunden, die Sie möglicherweise nicht mehr benötigen. Möchten Sie sie überprüfen?",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🚀 Storage Almost Full",
+      "Content": "Your phone storage is running low. Clean junk files to make room.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "🚀 Almacenamiento casi lleno",
+          "content": "El almacenamiento de tu teléfono se está agotando. Limpia los archivos basura para liberar espacio.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "🚀 Stockage presque plein",
+          "content": "L'espace de stockage de votre téléphone est presque plein. Supprimez les fichiers inutiles pour libérer de la place.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "🚀 Lagerraum fast voll",
+          "content": "Der Speicherplatz auf Ihrem Telefon ist fast voll. Löschen Sie unnötige Dateien, um Platz zu schaffen.",
+          "button": "Scan"
+        }
+      }
+    },
+    {
+      "Title": "📈 Battery Report Ready",
+      "Content": "View your detailed battery information, including current charge level.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Informe de batería listo",
+          "content": "Vea información detallada de la batería, incluido el nivel de carga actual.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📈 Rapport de batterie prêt",
+          "content": "Consultez les informations détaillées de votre batterie, y compris son niveau de charge actuel.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📈 Akkubericht verfügbar",
+          "content": "Sehen Sie sich Ihre detaillierten Batterieinformationen an, einschließlich des aktuellen Ladezustands.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Speaker Maintenance",
+      "Content": "Keep your speaker clear. Use the sound wave tool to assist with dust removal.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Mantenimiento de altavoces",
+          "content": "Mantenga el altavoz limpio. Utilice la herramienta de ondas de sonido para eliminar el polvo.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "🧹 Entretien des haut-parleurs",
+          "content": "Veillez à ce que votre haut-parleur soit propre. Utilisez l'outil de nettoyage des ondes sonores pour faciliter l'élimination de la poussière.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "🧹 Lautsprecherwartung",
+          "content": "Halten Sie Ihre Lautsprecher sauber. Verwenden Sie das Schallwellen-Tool, um Staub zu entfernen.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "🧹 Simplify Your Phone",
+      "Content": "Make space by removing apps you no longer use. We've highlighted some candidates.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "🧹 Simplifica tu teléfono",
+          "content": "Libera espacio eliminando las apps que ya no usas. Hemos destacado algunas opciones.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🧹 Simplifiez votre téléphone",
+          "content": "Libérez de l'espace en supprimant les applications que vous n'utilisez plus. Nous en avons sélectionné quelques-unes.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🧹 Vereinfache dein Handy",
+          "content": "Schaffen Sie Speicherplatz, indem Sie Apps deinstallieren, die Sie nicht mehr verwenden. Wir haben einige Kandidaten hervorgehoben.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🧠 Boost Available Memory",
+      "Content": "Stop a few background processes to free up RAM for a smoother experience.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "🧠 Aumenta la memoria disponible",
+          "content": "Detenga algunos procesos en segundo plano para liberar RAM y disfrutar de una experiencia más fluida.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🧠 Augmenter la mémoire disponible",
+          "content": "Arrêtez quelques processus en arrière-plan pour libérer de la RAM et profiter d'une expérience plus fluide.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🧠 Verfügbaren Speicher erhöhen",
+          "content": "Um Arbeitsspeicher freizugeben und so ein flüssigeres Nutzungserlebnis zu gewährleisten, sollten einige Hintergrundprozesse beendet werden.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🖼️ Manage Your Screenshots",
+      "Content": "Your screenshot folder is getting full. Review and clean them up easily.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "🖼️ Administra tus capturas de pantalla",
+          "content": "Tu carpeta de capturas de pantalla se está llenando. Revísalas y límpialas fácilmente.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "🖼️ Gérez vos captures d'écran",
+          "content": "Votre dossier de captures d'écran est presque plein. Consultez-le et nettoyez-le facilement.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "🖼️ Screenshots verwalten",
+          "content": "Ihr Screenshot-Ordner ist fast voll. Sehen Sie Ihre Screenshots an und räumen Sie sie ganz einfach auf.",
+          "button": "Scan"
+        }
+      }
+    },
+    {
+      "Title": "📁 Your Storage Giants",
+      "Content": "See which files are taking up the most space on your device. Manage them here.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "📁 Tus gigantes del almacenamiento",
+          "content": "Consulta qué archivos ocupan más espacio en tu dispositivo. Adminístralos aquí.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📁 Vos géants du stockage",
+          "content": "Découvrez quels fichiers occupent le plus d'espace sur votre appareil. Gérez-les ici.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📁 Ihre Lagergiganten",
+          "content": "Sehen Sie, welche Dateien den meisten Speicherplatz auf Ihrem Gerät belegen. Verwalten Sie sie hier.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "📱 Quick Clean-Up?",
+      "Content": "A quick scan can free up space. Clean junk files in just one tap.",
+      "Button": "Scan",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "📱¿Limpieza rápida?",
+          "content": "Un análisis rápido puede liberar espacio. Limpia archivos basura con un solo toque.",
+          "button": "Escanear"
+        },
+        "fr": {
+          "title": "📱 Nettoyage rapide ?",
+          "content": "Une analyse rapide permet de libérer de l'espace. Supprimez les fichiers inutiles en un seul clic.",
+          "button": "Balayage"
+        },
+        "de": {
+          "title": "📱 Schnelles Aufräumen?",
+          "content": "Ein schneller Scan kann Speicherplatz freigeben. Bereinigen Sie überflüssige Dateien mit nur einem Fingertipp.",
+          "button": "Scan"
+        }
+      }
+    },
+    {
+      "Title": "🔋 Your Battery Health",
+      "Content": "Check your battery's current health status and temperature.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "🔋 La salud de tu batería",
+          "content": "Verifique el estado actual y la temperatura de su batería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🔋 État de votre batterie",
+          "content": "Vérifiez l'état et la température actuels de votre batterie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🔋 Ihr Batteriezustand",
+          "content": "Überprüfen Sie den aktuellen Gesundheitszustand und die Temperatur Ihrer Batterie.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🔊 Clean Speaker Grille?",
+      "Content": "Notice muffled sound? Try our tool to help loosen dust from your speaker.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "🔊 ¿Limpiar la rejilla del altavoz?",
+          "content": "¿Notas un sonido apagado? Prueba nuestra herramienta para quitar el polvo de tu altavoz.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "🔊 Nettoyer la grille du haut-parleur ?",
+          "content": "Vous remarquez un son étouffé ? Essayez notre outil pour déloger la poussière de votre haut-parleur.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "🔊 Saubere Lautsprecherabdeckung?",
+          "content": "Klingt der Ton dumpf? Probieren Sie unser Werkzeug, um Staub von Ihrem Lautsprecher zu entfernen.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "📦 Unused Apps Found",
+      "Content": "You have 5 apps that haven't been used in over a month. Consider uninstalling them.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "app_manager",
+      "Languages": {
+        "es": {
+          "title": "📦 Se encontraron aplicaciones no utilizadas",
+          "content": "Tienes 5 aplicaciones que no has usado en más de un mes. Considera desinstalarlas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📦 Applications inutilisées trouvées",
+          "content": "Vous avez 5 applications que vous n'avez pas utilisées depuis plus d'un mois. Envisagez de les désinstaller.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📦 Unbenutzte Apps gefunden",
+          "content": "Sie haben 5 Apps, die seit über einem Monat nicht mehr benutzt wurden. Überlegen Sie, ob Sie diese deinstallieren sollten.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "📊 RAM Usage is High",
+      "Content": "3 background apps are using a lot of memory. See which ones and free it up.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "📊 El uso de RAM es alto",
+          "content": "Tres aplicaciones en segundo plano consumen mucha memoria. Identifica cuáles y libéralas.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📊 Utilisation de la RAM élevée",
+          "content": "Trois applications en arrière-plan consomment beaucoup de mémoire. Identifiez-les et libérez de l'espace.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📊 Hohe RAM-Auslastung",
+          "content": "Drei Hintergrund-Apps belegen viel Arbeitsspeicher. Finden Sie heraus, welche das sind, und geben Sie Speicherplatz frei.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "📸 Screenshot Album Ready",
+      "Content": "You have 12 new screenshots. Organize or delete them to declutter your gallery.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Álbum de capturas de pantalla listo",
+          "content": "Tienes 12 capturas de pantalla nuevas. Organízalas o elimínalas para organizar tu galería.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "📸 Album de captures d'écran prêt",
+          "content": "Vous avez 12 nouvelles captures d'écran. Organisez-les ou supprimez-les pour désencombrer votre galerie.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "📸 Screenshot-Album bereit",
+          "content": "Sie haben 12 neue Screenshots. Ordnen oder löschen Sie diese, um Ihre Galerie aufzuräumen.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🎥 Large Videos Found",
+      "Content": "3 videos are taking over 4.5 GB of your space. Review and manage them.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "🎥 Se encontraron videos grandes",
+          "content": "Hay 3 videos que ocupan más de 4,5 GB de espacio. Revísalos y adminístralos.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "🎥 Vidéos volumineuses trouvées",
+          "content": "3 vidéos occupent plus de 4,5 Go d'espace. Veuillez les vérifier et les gérer.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "🎥 Große Videos gefunden",
+          "content": "Drei Videos belegen über 4,5 GB Speicherplatz. Überprüfen und verwalten Sie diese.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "🗑️ Junk Files Found",
+      "Content": "We found 1.2 GB of temporary files and cache. Tap to clean up and free up space.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "🗑️ Archivos basura encontrados",
+          "content": "Encontramos 1,2 GB de archivos temporales y caché. Pulsa para limpiar y liberar espacio.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "🗑️ Fichiers indésirables trouvés",
+          "content": "Nous avons trouvé 1,2 Go de fichiers temporaires et de cache. Appuyez pour les supprimer et libérer de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "🗑️ Junk-Dateien gefunden",
+          "content": "Wir haben 1,2 GB an temporären Dateien und Cache gefunden. Tippen Sie hier, um diese zu bereinigen und Speicherplatz freizugeben.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Free up storage space by cleaning useless files!",
+      "Content": "",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "home",
+      "Languages": {
+        "es": {
+          "title": "¡Libera espacio de almacenamiento limpiando archivos inútiles!",
+          "content": "",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Libérez de l'espace de stockage en supprimant les fichiers inutiles !",
+          "content": "",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Schaffen Sie Speicherplatz, indem Sie unnötige Dateien löschen!",
+          "content": "",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Uninstalled successfully.",
+      "Content": "Clean up residual junk files for more space.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "junk_files",
+      "Languages": {
+        "es": {
+          "title": "Desinstalado exitosamente.",
+          "content": "Limpia los archivos basura residuales para obtener más espacio.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Désinstallation réussie.",
+          "content": "Supprimez les fichiers inutiles résiduels pour libérer de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Erfolgreich deinstalliert.",
+          "content": "Entfernen Sie verbliebene Datenmülldateien, um mehr Speicherplatz zu schaffen.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Sound Quality Boost",
+      "Content": "Clear your speaker from dust and lint for clearer audio.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Mejora de la calidad del sonido",
+          "content": "Limpie el polvo y la pelusa de su altavoz para disfrutar de un audio más claro.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Amélioration de la qualité sonore",
+          "content": "Nettoyez votre haut-parleur de la poussière et des peluches pour un son plus clair.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Klangqualitätsverbesserung",
+          "content": "Für einen klareren Klang sollten Sie Ihre Lautsprecher von Staub und Flusen befreien.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Manage Your Heavy Files",
+      "Content": "Organize your videos, archives, and documents by size.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Administre sus archivos pesados",
+          "content": "Organiza tus vídeos, archivos y documentos por tamaño.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Gérez vos fichiers volumineux",
+          "content": "Organisez vos vidéos, archives et documents par taille.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Verwalten Sie Ihre großen Dateien",
+          "content": "Organisieren Sie Ihre Videos, Archive und Dokumente nach Größe.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Charging is completed, battery power reaches 100%",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "La carga está completa y la batería alcanza el 100%.",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "La charge est terminée, la batterie est chargée à 100 %.",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Der Ladevorgang ist abgeschlossen, die Batterieleistung hat 100 % erreicht.",
+          "content": "",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Boost Your Volume",
+      "Content": "Remove audio blockage for a better listening experience.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Aumenta tu volumen",
+          "content": "Elimina el bloqueo de audio para una mejor experiencia auditiva.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Augmentez votre volume",
+          "content": "Éliminez les blocages audio pour une meilleure expérience d'écoute.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Erhöhen Sie Ihre Lautstärke",
+          "content": "Beseitigen Sie Audioblockaden für ein besseres Hörerlebnis.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Large Files Taking Space",
+      "Content": "You have large videos and files eating up your storage. Review them?",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Archivos grandes que ocupan espacio",
+          "content": "Tienes videos y archivos grandes que ocupan tu espacio de almacenamiento. ¿Quieres revisarlos?",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Fichiers volumineux occupant de l'espace",
+          "content": "Vous avez des vidéos et des fichiers volumineux qui occupent tout votre espace de stockage. Êtes-vous prêt à les examiner ?",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Große Dateien belegen Speicherplatz",
+          "content": "Sie haben große Videos und Dateien, die Ihren Speicherplatz belegen. Wollen Sie diese überprüfen?",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Battery power: 50%, check battery info now!",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "Carga de la batería: 50%, ¡verifique la información de la batería ahora!",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Niveau de batterie : 50 %, vérifiez les informations sur la batterie maintenant !",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Akkustand: 50 %, Akkuinformationen jetzt prüfen!",
+          "content": "",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Performance Boost Available",
+      "Content": "Tap to optimize running processes and improve your phone's speed.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "Mejora del rendimiento disponible",
+          "content": "Toque para optimizar los procesos en ejecución y mejorar la velocidad de su teléfono.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Amélioration des performances disponible",
+          "content": "Appuyez pour optimiser les processus en cours et améliorer la vitesse de votre téléphone.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Leistungssteigerung verfügbar",
+          "content": "Tippen Sie, um laufende Prozesse zu optimieren und die Geschwindigkeit Ihres Telefons zu verbessern.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "Declutter Your Photos",
+      "Content": "Start by cleaning up unnecessary screenshots. Free up space fast.",
+      "Button": "Clean",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Ordena tus fotos",
+          "content": "Empieza por eliminar capturas de pantalla innecesarias. Libera espacio rápidamente.",
+          "button": "Limpio"
+        },
+        "fr": {
+          "title": "Désencombrez vos photos",
+          "content": "Commencez par supprimer les captures d'écran inutiles. Libérez rapidement de l'espace.",
+          "button": "Faire le ménage"
+        },
+        "de": {
+          "title": "Räume deine Fotos auf",
+          "content": "Beginnen Sie damit, unnötige Screenshots zu löschen. So schaffen Sie schnell Speicherplatz.",
+          "button": "Sauber"
+        }
+      }
+    },
+    {
+      "Title": "Clean Speaker, Clear Sound",
+      "Content": "Get the best sound quality from your device with one tap.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "speaker_cleaner",
+      "Languages": {
+        "es": {
+          "title": "Altavoz limpio, sonido claro",
+          "content": "Obtenga la mejor calidad de sonido de su dispositivo con un solo toque.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Haut-parleur propre, son clair",
+          "content": "Obtenez la meilleure qualité sonore de votre appareil en un seul clic.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Sauberer Lautsprecher, klarer Klang",
+          "content": "Holen Sie mit einem Fingertipp die beste Klangqualität aus Ihrem Gerät heraus.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Tidy Up Your Gallery",
+      "Content": "Your gallery is full of screenshots. Let's organize them for you.",
+      "Button": "Go",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "screenshots",
+      "Languages": {
+        "es": {
+          "title": "Pon en orden tu galería",
+          "content": "Tu galería está llena de capturas de pantalla. Vamos a organizarlas.",
+          "button": "Ir"
+        },
+        "fr": {
+          "title": "Rangez votre galerie",
+          "content": "Votre galerie regorge de captures d'écran. Laissez-nous les organiser pour vous.",
+          "button": "Aller"
+        },
+        "de": {
+          "title": "Räume deine Galerie auf",
+          "content": "Ihre Galerie ist voller Screenshots. Lassen Sie uns diese für Sie organisieren.",
+          "button": "Gehen"
+        }
+      }
+    },
+    {
+      "Title": "Find Your Space Hogs",
+      "Content": "Identify and manage your largest files to free up gigabytes.",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "large_files",
+      "Languages": {
+        "es": {
+          "title": "Encuentra tus acaparadores de espacio",
+          "content": "Identifique y administre sus archivos más grandes para liberar gigabytes.",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Trouvez vos gros consommateurs d'espace",
+          "content": "Identifiez et gérez vos fichiers les plus volumineux pour libérer des gigaoctets.",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Finde deine Weltraumfresser",
+          "content": "Identifizieren und verwalten Sie Ihre größten Dateien, um Gigabytes freizugeben.",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "View the phone battery consumption recently!",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "battery_info",
+      "Languages": {
+        "es": {
+          "title": "¡Mira el consumo reciente de batería del teléfono!",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "Consultez la consommation récente de la batterie de votre téléphone !",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Sehen Sie sich den aktuellen Akkuverbrauch Ihres Telefons an!",
+          "content": "",
+          "button": "Überprüfen"
+        }
+      }
+    },
+    {
+      "Title": "RAM used 83%, check the apps running in the background.",
+      "Content": "",
+      "Button": "Check",
+      "Scenes": [
+        "unlock_home_launcher",
+        "home_recent",
+        "power_connected",
+        "package_added",
+        "package_removed",
+        "return_to_home",
+        "volume_changed",
+        "screen_on_a",
+        "timer-a",
+        "timer-b",
+        "timer-c",
+        "timer-d"
+      ],
+      "Route": "process_manager",
+      "Languages": {
+        "es": {
+          "title": "RAM utilizada 83%, verifique las aplicaciones ejecutándose en segundo plano.",
+          "content": "",
+          "button": "Controlar"
+        },
+        "fr": {
+          "title": "La mémoire vive est utilisée à 83 %, vérifiez les applications qui s'exécutent en arrière-plan.",
+          "content": "",
+          "button": "Vérifier"
+        },
+        "de": {
+          "title": "Der Arbeitsspeicher ist zu 83 % ausgelastet. Überprüfen Sie die im Hintergrund laufenden Apps.",
+          "content": "",
+          "button": "Überprüfen"
+        }
+      }
+    }
+  ]
+}

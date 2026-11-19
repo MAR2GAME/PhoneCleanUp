@@ -1,0 +1,134 @@
+{
+  "isSend": true,
+  "isForegroundSend": false,
+  "isScreenOffSend": true,
+  "isScreenLockSend": true,
+  "interval_second": 1800,
+  "24HMaxBatch": 70,
+  "1HMaxBatch": 70,
+  "24HMaxItem": 70,
+  "1HMaxItem": 70,
+  "busyBatchPolicy": "drop",
+  "busyBatchDelaySeconds": 30,
+  "ChannelCount": 5,
+  "triggers": {
+    "unlock_home_launcher": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "home_recent": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "power_connected": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "package_added": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 1,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "package_removed": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 1,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "return_to_home": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "volume_changed": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    },
+    "screen_on_a": {
+      "first_delay": 1800,
+      "delay": 3,
+      "count": 0,
+      "styles": [
+        1
+      ],
+      "interval_batch": 0,
+      "interval_item": 6
+    }
+  },
+  "timer": {
+    "timer-a": {
+      "HH": 6,
+      "MM": 0,
+      "count": 0,
+      "styles": [
+        1
+      ]
+    },
+    "timer-b": {
+      "HH": 9,
+      "MM": 0,
+      "count": 0,
+      "styles": [
+        1
+      ]
+    },
+    "timer-c": {
+      "HH": 14,
+      "MM": 0,
+      "count": 0,
+      "styles": [
+        1
+      ]
+    },
+    "timer-d": {
+      "HH": 20,
+      "MM": 0,
+      "count": 0,
+      "styles": [
+        1
+      ]
+    }
+  },
+  "groups": {
+    "interval_between_groups": 0,
+    "list": []
+  }
+}
