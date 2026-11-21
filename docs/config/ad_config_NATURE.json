@@ -24,8 +24,8 @@
   "ad_units": {
     "openPageAdv": {
       "rate": 1,
-      "1HMax": 4,
-      "24HMax": 20,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "OPEN",
       "fromRoutes": [
@@ -36,9 +36,9 @@
       ]
     },
     "foreGroundAdv": {
-      "rate": 0,
-      "1HMax": 4,
-      "24HMax": 20,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 30,
       "format": "OPEN",
       "fromRoutes": [
@@ -50,8 +50,8 @@
     },
     "openMainBottomAdv": {
       "rate": 0,
-      "1HMax": 5,
-      "24HMax": 5,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -62,9 +62,9 @@
       ]
     },
     "enterResultFromScanDevice": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -75,9 +75,9 @@
       ]
     },
     "enterHomeFromScanDeviceResultAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -88,9 +88,9 @@
       ]
     },
     "fileAccessCancelAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -102,8 +102,8 @@
     },
     "junkCleanFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -115,8 +115,8 @@
     },
     "notificationCleanFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -127,9 +127,9 @@
       ]
     },
     "networkSpeedFinishAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -141,8 +141,8 @@
     },
     "processManageFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -154,8 +154,8 @@
     },
     "batteryInfoFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -167,8 +167,8 @@
     },
     "appManageFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -180,8 +180,8 @@
     },
     "speakerCleanFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -193,8 +193,8 @@
     },
     "largeFileFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -206,8 +206,8 @@
     },
     "screenshotFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -219,8 +219,8 @@
     },
     "fileManageFinishAdv": {
       "rate": 1,
-      "1HMax": 5,
-      "24HMax": 10,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -231,9 +231,9 @@
       ]
     },
     "enterJunkCleanAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -244,9 +244,9 @@
       ]
     },
     "enterNotificationCleanAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -257,9 +257,9 @@
       ]
     },
     "enterAppUsageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -270,9 +270,9 @@
       ]
     },
     "enterNetworkScanAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -283,9 +283,9 @@
       ]
     },
     "enterNetworkSpeedAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -296,9 +296,9 @@
       ]
     },
     "enterNetworkUsageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -309,9 +309,9 @@
       ]
     },
     "enterProcessManageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -322,9 +322,9 @@
       ]
     },
     "enterBatteryInfoAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -335,9 +335,9 @@
       ]
     },
     "enterAppManageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -348,9 +348,9 @@
       ]
     },
     "enterSpeakerCleanAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -361,9 +361,9 @@
       ]
     },
     "enterFileManageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -374,9 +374,9 @@
       ]
     },
     "returnHomePageAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -387,9 +387,9 @@
       ]
     },
     "uninstallOneAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
@@ -400,9 +400,9 @@
       ]
     },
     "uninstallTwoAdv": {
-      "rate": 0,
-      "1HMax": 5,
-      "24HMax": 10,
+      "rate": 1,
+      "1HMax": 50,
+      "24HMax": 50,
       "interval": 0,
       "format": "INTER",
       "fromRoutes": [
